@@ -13,17 +13,22 @@
 		15033082245D92EC00333EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033081245D92EC00333EF1 /* Assets.xcassets */; };
 		15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033084245D92EC00333EF1 /* Preview Assets.xcassets */; };
 		15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
+		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
+		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15033078245D92EB00333EF1 /* Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lafyuu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15033078245D92EB00333EF1 /* Dev Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev Lafyuu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1503307B245D92EB00333EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1503307D245D92EB00333EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1503307F245D92EB00333EF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15033081245D92EC00333EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15033084245D92EC00333EF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15033087245D92EC00333EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		15033089245D92EC00333EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		150330BB245DAB9D00333EF1 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +53,7 @@
 		15033079245D92EB00333EF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15033078245D92EB00333EF1 /* Lafyuu.app */,
+				15033078245D92EB00333EF1 /* Dev Lafyuu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +61,8 @@
 		1503307A245D92EB00333EF1 /* Lafyuu */ = {
 			isa = PBXGroup;
 			children = (
-				1503307B245D92EB00333EF1 /* AppDelegate.swift */,
-				1503307D245D92EB00333EF1 /* SceneDelegate.swift */,
-				1503307F245D92EB00333EF1 /* ContentView.swift */,
-				15033081245D92EC00333EF1 /* Assets.xcassets */,
-				15033086245D92EC00333EF1 /* LaunchScreen.storyboard */,
-				15033089245D92EC00333EF1 /* Info.plist */,
+				15033090245D933F00333EF1 /* Classes */,
+				15033091245D934A00333EF1 /* Resources */,
 				15033083245D92EC00333EF1 /* Preview Content */,
 			);
 			path = Lafyuu;
@@ -75,6 +76,61 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1503308F245D932B00333EF1 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				1503307B245D92EB00333EF1 /* AppDelegate.swift */,
+				1503307D245D92EB00333EF1 /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		15033090245D933F00333EF1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1503308F245D932B00333EF1 /* Applications */,
+				150330BA245DAB8600333EF1 /* Env */,
+				15033092245D935C00333EF1 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15033091245D934A00333EF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15B08F36245DD7EE0070268A /* Info.plist */,
+				15033081245D92EC00333EF1 /* Assets.xcassets */,
+				15033094245DA79400333EF1 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		15033092245D935C00333EF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15033086245D92EC00333EF1 /* LaunchScreen.storyboard */,
+				1503307F245D92EB00333EF1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15033094245DA79400333EF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */,
+				150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		150330BA245DAB8600333EF1 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				150330BB245DAB9D00333EF1 /* R.generated.swift */,
+			);
+			path = Env;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +141,8 @@
 				15033074245D92EB00333EF1 /* Sources */,
 				15033075245D92EB00333EF1 /* Frameworks */,
 				15033076245D92EB00333EF1 /* Resources */,
+				150330B9245DAB1D00333EF1 /* R.swift */,
+				15B08F3C245DDFF80070268A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -92,7 +150,7 @@
 			);
 			name = Lafyuu;
 			productName = Lafyuu;
-			productReference = 15033078245D92EB00333EF1 /* Lafyuu.app */;
+			productReference = 15033078245D92EB00333EF1 /* Dev Lafyuu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +161,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = STRGL;
+				ORGANIZATIONNAME = "Mikiya Abe";
 				TargetAttributes = {
 					15033077245D92EB00333EF1 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -133,6 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */,
+				15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */,
 				15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */,
 				15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */,
 				15033082245D92EC00333EF1 /* Assets.xcassets in Resources */,
@@ -140,6 +200,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		150330B9245DAB1D00333EF1 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Lafyuu/Classes/Env/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/Lafyuu/Classes/Env/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+		15B08F3C245DDFF80070268A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15033074245D92EB00333EF1 /* Sources */ = {
@@ -216,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,17 +385,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
 				DEVELOPMENT_TEAM = 3V7GGDY985;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Lafyuu/Info.plist;
+				INFOPLIST_FILE = Lafyuu/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.struuuuggle.Lafyuu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.lafyuu-dev";
+				PRODUCT_NAME = "Dev $(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "development for Lafyuu";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,17 +407,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
-				DEVELOPMENT_TEAM = 3V7GGDY985;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Lafyuu/Info.plist;
+				INFOPLIST_FILE = Lafyuu/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.struuuuggle.Lafyuu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.struuuuggle.lafyuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

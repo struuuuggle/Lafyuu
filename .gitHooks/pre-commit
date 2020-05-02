@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Only files changed within the commit will be autocorrected.
+# This pre-commit hooks should work fine with whatever Git tools such as IDEs, VCS tools and terminal.
+if which swiftlint >/dev/null 2>&1 ; then
+  git diff --cached --name-only --diff-filter=d | grep -e ".swift$" | while read filename; do
+      swiftlint autocorrect --format --quiet --format --path $filename
+      git add $filename
+  done
+else
+    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"
+    exit 1
+fi
