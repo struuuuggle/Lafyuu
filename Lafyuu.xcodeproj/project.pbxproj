@@ -17,7 +17,12 @@
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
 		15BC33AB245E554C00D0989B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33A3245E52DF00D0989B /* R.generated.swift */; };
-		15BC33AE245E5D3200D0989B /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 15BC33AD245E5D3200D0989B /* Rswift */; };
+		15BC33B7245E6AA700D0989B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33B6245E6AA700D0989B /* HomeView.swift */; };
+		15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33B8245E6ABA00D0989B /* ExploreView.swift */; };
+		15BC33BB245E6AC800D0989B /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BA245E6AC800D0989B /* CartView.swift */; };
+		15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BC245E6AD700D0989B /* AccountView.swift */; };
+		15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BE245E6AE400D0989B /* OfferView.swift */; };
+		15BC33C2245E795F00D0989B /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 15BC33C1245E795F00D0989B /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
 		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		15BC33B6245E6AA700D0989B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		15BC33B8245E6ABA00D0989B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		15BC33BA245E6AC800D0989B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		15BC33BC245E6AD700D0989B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		15BC33BE245E6AE400D0989B /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BC33AE245E5D3200D0989B /* Rswift in Frameworks */,
+				15BC33C2245E795F00D0989B /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +125,13 @@
 		15033092245D935C00333EF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				15033086245D92EC00333EF1 /* LaunchScreen.storyboard */,
-				1503307F245D92EB00333EF1 /* ContentView.swift */,
+				15BC33B3245E6A6D00D0989B /* Account */,
+				15BC33B1245E6A6500D0989B /* Cart */,
+				15BC33B0245E6A6100D0989B /* Explore */,
+				15BC33AF245E6A5B00D0989B /* Home */,
+				15BC33B5245E6A9100D0989B /* Launch */,
+				15BC33B4245E6A8700D0989B /* Main */,
+				15BC33B2245E6A6800D0989B /* Offer */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +168,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		15BC33AF245E6A5B00D0989B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				15BC33B6245E6AA700D0989B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		15BC33B0245E6A6100D0989B /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				15BC33B8245E6ABA00D0989B /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		15BC33B1245E6A6500D0989B /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				15BC33BA245E6AC800D0989B /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		15BC33B2245E6A6800D0989B /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				15BC33BE245E6AE400D0989B /* OfferView.swift */,
+			);
+			path = Offer;
+			sourceTree = "<group>";
+		};
+		15BC33B3245E6A6D00D0989B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				15BC33BC245E6AD700D0989B /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		15BC33B4245E6A8700D0989B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1503307F245D92EB00333EF1 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		15BC33B5245E6A9100D0989B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				15033086245D92EC00333EF1 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,7 +243,7 @@
 			);
 			name = Lafyuu;
 			packageProductDependencies = (
-				15BC33AD245E5D3200D0989B /* Rswift */,
+				15BC33C1245E795F00D0989B /* Rswift */,
 			);
 			productName = Lafyuu;
 			productReference = 15033078245D92EB00333EF1 /* Dev Lafyuu.app */;
@@ -203,7 +274,7 @@
 			);
 			mainGroup = 1503306F245D92EB00333EF1;
 			packageReferences = (
-				15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */,
+				15BC33C0245E795F00D0989B /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 15033079245D92EB00333EF1 /* Products */;
 			projectDirPath = "";
@@ -275,11 +346,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				1503307C245D92EB00333EF1 /* AppDelegate.swift in Sources */,
 				1503307E245D92EB00333EF1 /* SceneDelegate.swift in Sources */,
+				15BC33B7245E6AA700D0989B /* HomeView.swift in Sources */,
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
+				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
+				15BC33BB245E6AC800D0989B /* CartView.swift in Sources */,
 				15033080245D92EB00333EF1 /* ContentView.swift in Sources */,
+				15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +555,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		15BC33C0245E795F00D0989B /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -490,9 +566,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		15BC33AD245E5D3200D0989B /* Rswift */ = {
+		15BC33C1245E795F00D0989B /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = 15BC33C0245E795F00D0989B /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */

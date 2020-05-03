@@ -1,7 +1,4 @@
 //
-//  ContentView.swift
-//  Lafyuu
-//
 //  Created by Mikiya Abe on 2020/05/02.
 //  Copyright © 2020 Mikiya Abe. All rights reserved.
 //
@@ -13,7 +10,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            Text("Home")
+            HomeView()
                 .tabItem {
                     VStack {
                         Image(R.image.home)
@@ -23,7 +20,7 @@ struct ContentView: View {
                     .accentColor(R.color.blue)
             }
             .tag(0)
-            Text("Explore")
+            ExploreView()
                 .tabItem {
                     VStack {
                         Image(R.image.search)
@@ -33,7 +30,7 @@ struct ContentView: View {
                     .accentColor(R.color.blue)
             }
             .tag(1)
-            Text("Cart")
+            CartView()
                 .tabItem {
                     VStack {
                         Image(R.image.cart)
@@ -43,7 +40,7 @@ struct ContentView: View {
                     .accentColor(R.color.blue)
             }
             .tag(2)
-            Text("Offer")
+            OfferView()
                 .tabItem {
                     VStack {
                         Image(R.image.offer)
@@ -53,7 +50,7 @@ struct ContentView: View {
                     .accentColor(R.color.blue)
             }
             .tag(3)
-            Text("Account")
+            AccountView()
                 .tabItem {
                     VStack {
                         Image(R.image.user)
