@@ -18,26 +18,10 @@ struct EmailTextField: View {
 
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(R.color.white()!.color)
-                .roundCorner(with: R.color.light)
+            tfBackground
             HStack(spacing: 10) {
-                Image(R.image.message)
-                    .frame(width: 24, height: 24)
-                TextField(
-                    "Your Email",
-                    text: $email,
-                    onEditingChanged: ({ _ in
-                    }),
-                    onCommit: ({
-                    })
-                ).font(
-                    // TODO: stateを作ったら入力中のfontを変更 [2020/05/03]
-                    R.font.poppinsRegular,
-                    size: 12
-                ).accentColor(
-                    R.color.grey
-                )
+                icon
+                textField
             }
             .padding([.leading, .trailing], 16)
         }
@@ -46,6 +30,34 @@ struct EmailTextField: View {
             width: width,
             height: height
         )
+    }
+}
+
+// MARK: - private properties
+extension EmailTextField {
+    private var tfBackground: some View {
+        Rectangle()
+            .foregroundColor(R.color.white()!.color)
+            .roundCorner(with: R.color.light)
+    }
+
+    private var icon: some View {
+        Image(R.image.message)
+            .frame(width: 24, height: 24)
+    }
+
+    private var textField: some View {
+        TextField(
+            "Your Email",
+            text: $email,
+            onEditingChanged: ({ _ in
+            }),
+            onCommit: ({
+            })
+        )
+            .keyboardType(.emailAddress)
+            // TODO: stateを作ったら入力中のfontをboldに変更 [2020/05/03]
+            .font(R.font.poppinsRegular, size: 12)
     }
 }
 

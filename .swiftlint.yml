@@ -75,7 +75,6 @@ opt_in_rules:
   - strict_fileprivate
   - strong_iboutlet
   - switch_case_on_newline
-  - toggle_
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
   - unowned_variable_capture

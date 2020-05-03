@@ -6,19 +6,13 @@
 import SwiftUI
 
 struct LargeButton: View {
-    let label: String
-    let type: ButtonType
-    let width: CGFloat
-    let height: CGFloat
-    let handler: (() -> Void)
+    private let label: String
+    private let type: ButtonType
+    private let width: CGFloat
+    private let height: CGFloat
+    private let handler: (() -> Void)
 
-    init(
-        label: String,
-        type: ButtonType = .fill,
-        width: CGFloat = 343,
-        height: CGFloat = 56,
-        handler: @escaping (() -> Void)
-    ) {
+    init(label: String, type: ButtonType = .fill, width: CGFloat = 343, height: CGFloat = 56, handler: @escaping (() -> Void)) {
         self.label = label
         self.type = type
         self.width = width
@@ -28,34 +22,22 @@ struct LargeButton: View {
 
     var body: some View {
         Button(
-            action: ({
-                self.handler()
-            }),
+            action: handler,
             label: ({
                 Text(label)
+                    .kerning(0.5)
                     .padding(
                         [.top, .bottom, .leading, .trailing],
                         16
-                ).frame(
-                    width: width,
-                    height: height
                 )
+                    .frame(width: width, height: height)
             })
         )
-            .roundCorner(
-                with: type.bgColor
-        )
-            .font(
-                R.font.poppinsBold,
-                size: 14
-        )
+            .roundCorner(with: type.bgColor)
+            .font(R.font.poppinsBold, size: 14)
             // TODO: 角が尖っている問題を修正
-            .background(
-                type.bgColor
-        )
-            .foregroundColor(
-                type.fgColor
-        )
+            .background(type.bgColor)
+            .foregroundColor(type.fgColor)
     }
 }
 

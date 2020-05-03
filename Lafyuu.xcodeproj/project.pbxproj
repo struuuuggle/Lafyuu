@@ -55,8 +55,12 @@
 		15FB2F8F245EC70B007ACDA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
 		15FB2F90245EC70B007ACDA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033084245D92EC00333EF1 /* Preview Assets.xcassets */; };
 		15FB2F91245EC70B007ACDA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033081245D92EC00333EF1 /* Assets.xcassets */; };
-		15FB2F99245ECB6A007ACDA5 /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15FB2F98245ECB6A007ACDA5 /* Dev-Info.plist */; };
-		15FB2F9A245ECB8C007ACDA5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15B08F36245DD7EE0070268A /* Info.plist */; };
+		15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F9B245ECD68007ACDA5 /* LoginDividerView.swift */; };
+		15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F9B245ECD68007ACDA5 /* LoginDividerView.swift */; };
+		15FB2F9F245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F9E245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift */; };
+		15FB2FA0245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F9E245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift */; };
+		15FB2FA2245ED32B007ACDA5 /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2FA1245ED32B007ACDA5 /* LoginType.swift */; };
+		15FB2FA3245ED32B007ACDA5 /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2FA1245ED32B007ACDA5 /* LoginType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +91,9 @@
 		15FB2F71245EAAC4007ACDA5 /* ViewModifier+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Shape.swift"; sourceTree = "<group>"; };
 		15FB2F96245EC70B007ACDA5 /* Dev Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev Lafyuu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FB2F98245ECB6A007ACDA5 /* Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
+		15FB2F9B245ECD68007ACDA5 /* LoginDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDividerView.swift; sourceTree = "<group>"; };
+		15FB2F9E245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyLoginButton.swift; sourceTree = "<group>"; };
+		15FB2FA1245ED32B007ACDA5 /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +305,8 @@
 			children = (
 				15FB2F63245E8831007ACDA5 /* EmailTextField.swift */,
 				15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */,
+				15FB2F9B245ECD68007ACDA5 /* LoginDividerView.swift */,
+				15FB2F9E245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -314,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				15FB2F6D245EA019007ACDA5 /* ButtonType.swift */,
+				15FB2FA1245ED32B007ACDA5 /* LoginType.swift */,
 			);
 			path = DataTypes;
 			sourceTree = "<group>";
@@ -409,7 +419,6 @@
 			files = (
 				15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */,
 				15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */,
-				15FB2F9A245ECB8C007ACDA5 /* Info.plist in Resources */,
 				15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */,
 				15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */,
 				15033082245D92EC00333EF1 /* Assets.xcassets in Resources */,
@@ -420,7 +429,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15FB2F99245ECB6A007ACDA5 /* Dev-Info.plist in Resources */,
 				15FB2F8D245EC70B007ACDA5 /* Poppins-Regular.ttf in Resources */,
 				15FB2F8E245EC70B007ACDA5 /* Poppins-Bold.ttf in Resources */,
 				15FB2F8F245EC70B007ACDA5 /* LaunchScreen.storyboard in Resources */,
@@ -518,8 +526,11 @@
 				15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */,
 				15FB2F70245EAA58007ACDA5 /* Constant.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
+				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				1503307C245D92EB00333EF1 /* AppDelegate.swift in Sources */,
 				1503307E245D92EB00333EF1 /* SceneDelegate.swift in Sources */,
+				15FB2F9F245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
+				15FB2FA2245ED32B007ACDA5 /* LoginType.swift in Sources */,
 				15BC33B7245E6AA700D0989B /* HomeView.swift in Sources */,
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
@@ -543,8 +554,11 @@
 				15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */,
 				15FB2F7B245EC70B007ACDA5 /* Constant.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
+				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				15FB2F7D245EC70B007ACDA5 /* AppDelegate.swift in Sources */,
 				15FB2F7E245EC70B007ACDA5 /* SceneDelegate.swift in Sources */,
+				15FB2FA0245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
+				15FB2FA3245ED32B007ACDA5 /* LoginType.swift in Sources */,
 				15FB2F7F245EC70B007ACDA5 /* HomeView.swift in Sources */,
 				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
 				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
