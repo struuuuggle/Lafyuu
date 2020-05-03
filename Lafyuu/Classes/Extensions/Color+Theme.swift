@@ -17,7 +17,9 @@ extension UIColor {
 
     /// Converts UIColor to Color
     ///
-    /// R.color.blue()!.colorのようにアクセスできる
+    /// An Example
+    /// - `R.color.blue()!.color`
+    /// - `R.color.green()!.color`
     var color: Color {
         Color(self)
     }

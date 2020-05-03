@@ -7,10 +7,12 @@ import SwiftUI
 
 struct PasswordTextField: View {
     @Binding private(set) var password: String
+    let placeholder: String
     let width: CGFloat
     let height: CGFloat
 
-    init(password: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+    init(placeholder: String, password: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+        self.placeholder = placeholder
         self._password = password
         self.width = width
         self.height = height
@@ -50,7 +52,7 @@ extension PasswordTextField {
 
     private var textField: some View {
         SecureField(
-            "Password",
+            placeholder,
             text: $password,
             onCommit: ({
             })
@@ -61,13 +63,18 @@ extension PasswordTextField {
                 size: 12
         )
             .foregroundColor(
-                R.color.grey()!.color
+                R.color.grey
         )
     }
 }
 
 struct PasswordTextField_Previews: PreviewProvider {
     static var previews: some View {
-        PasswordTextField(password: .constant(""), width: 343, height: 48)
+        PasswordTextField(
+            placeholder: "Password", password: .constant(""),
+            width: 343,
+            height: 48
+        )
+            .previewLayout(.fixed(width: 375, height: 64))
     }
 }

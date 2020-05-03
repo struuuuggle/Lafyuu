@@ -8,9 +8,7 @@ import SwiftUI
 struct LoginDividerView: View {
     var body: some View {
         HStack {
-            line
-            orText
-            line
+            line; orText; line
         }
     }
 }
@@ -28,12 +26,13 @@ extension LoginDividerView {
     private var orText: some View {
         Text("OR")
             .font(R.font.poppinsBold, size: 14)
-            .foregroundColor(R.color.grey()!.color)
+            .foregroundColor(R.color.grey)
     }
 }
 
 struct LoginDividerView_Previews: PreviewProvider {
     static var previews: some View {
         LoginDividerView()
+            .previewLayout(.fixed(width: 375, height: 64))
     }
 }

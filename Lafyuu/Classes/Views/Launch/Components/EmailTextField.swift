@@ -7,10 +7,12 @@ import SwiftUI
 
 struct EmailTextField: View {
     @Binding private(set) var email: String
+    let placeholder: String
     let width: CGFloat
     let height: CGFloat
 
-    init(email: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+    init(placeholder: String, email: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+        self.placeholder = placeholder
         self._email = email
         self.width = width
         self.height = height
@@ -37,7 +39,7 @@ struct EmailTextField: View {
 extension EmailTextField {
     private var tfBackground: some View {
         Rectangle()
-            .foregroundColor(R.color.white()!.color)
+            .foregroundColor(R.color.white)
             .roundCorner(with: R.color.light)
     }
 
@@ -48,14 +50,13 @@ extension EmailTextField {
 
     private var textField: some View {
         TextField(
-            "Your Email",
+            placeholder,
             text: $email,
             onEditingChanged: ({ _ in
             }),
             onCommit: ({
             })
         )
-            .keyboardType(.emailAddress)
             // TODO: stateを作ったら入力中のfontをboldに変更 [2020/05/03]
             .font(R.font.poppinsRegular, size: 12)
     }
@@ -63,6 +64,9 @@ extension EmailTextField {
 
 struct EmailTextField_Previews: PreviewProvider {
     static var previews: some View {
-        EmailTextField(email: .constant(""), width: 343, height: 48)
+        EmailTextField(
+            placeholder: "Your Email", email: .constant("")
+        )
+            .previewLayout(.fixed(width: 375, height: 64))
     }
 }

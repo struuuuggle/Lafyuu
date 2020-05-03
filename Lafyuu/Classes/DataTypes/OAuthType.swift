@@ -5,12 +5,12 @@
 
 import Rswift
 
-enum LoginType: String {
+enum OAuthType: String {
     case google = "Google"
     case facebook
 }
 
-extension LoginType {
+extension OAuthType {
     var logo: ImageResource {
         switch self {
         case .google:

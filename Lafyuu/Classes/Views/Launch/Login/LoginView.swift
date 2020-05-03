@@ -13,13 +13,13 @@ struct LoginView: View {
     var body: some View {
         VStack(spacing: 28) {
             Spacer()
-            header
+            LaunchHeaderView(type: .login)
 
             VStack(spacing: 16) {
                 VStack(spacing: 8) {
                     // TODO: 入力中にTextFieldをハイライトする [2020/05/03]
-                    EmailTextField(email: $email)
-                    PasswordTextField(password: $password)
+                    EmailTextField(placeholder: "Your Email", email: $email)
+                    PasswordTextField(placeholder: "Password", password: $password)
                 }
                 passwordWarningMessage
                 LargeButton(label: "Sign In") {
@@ -41,30 +41,12 @@ struct LoginView: View {
 
 // MARK: - private properties
 extension LoginView {
-    private var header: some View {
-        VStack(spacing: 16) {
-            Image(R.image.app_icon)
-                .frame(width: 72, height: 72)
-            VStack(spacing: 8) {
-                Text("Welcome to Lafyuu")
-                    .kerning(0.5)
-                    .font(R.font.poppinsBold, size: 16)
-                    .foregroundColor(R.color.dark()!.color)
-
-                Text("Sign in to continue")
-                    .kerning(0.5)
-                    .font(R.font.poppinsRegular, size: 12)
-                    .foregroundColor(R.color.grey()!.color)
-                    .frame(height: 22)
-            }
-        }
-    }
 
     private var passwordWarningMessage: some View {
         HStack {
             Text("Oops! Your Password Is Not Correct")
                 .font(R.font.poppinsBold, size: 12)
-                .foregroundColor(R.color.red()!.color)
+                .foregroundColor(R.color.red)
             Spacer()
         }
         .padding(.leading, 16)
@@ -75,21 +57,21 @@ extension LoginView {
         Text("Forgot Password?")
             .kerning(0.5)
             .font(R.font.poppinsBold, size: 12)
-            .foregroundColor(R.color.blue()!.color)
+            .foregroundColor(R.color.blue)
     }
 
     private var encourageRegistrationText: some View {
         Text("Don't have a acount?")
             .kerning(0.5)
             .font(R.font.poppinsBold, size: 12)
-            .foregroundColor(R.color.grey()!.color)
+            .foregroundColor(R.color.grey)
             +
             Text(" ")
             +
             Text("Register")
                 .kerning(0.5)
                 .font(R.font.poppinsBold, size: 12)
-                .foregroundColor(R.color.blue()!.color)
+                .foregroundColor(R.color.blue)
     }
 }
 

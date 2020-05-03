@@ -46,5 +46,6 @@ struct LargeButton_Previews: PreviewProvider {
         LargeButton(label: "Large Button") {
             print("Tap Large Button")
         }
+        .previewLayout(.fixed(width: 375, height: 64))
     }
 }
