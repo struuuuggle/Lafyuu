@@ -13,24 +13,56 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            Text("First View")
-                .font(.title)
+            Text("Home")
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image(R.image.home)
+                        Text("Home")
+                            .font(R.font.poppinsRegular, size: 10.0)
                     }
-                }
+                    .accentColor(R.color.blue)
+            }
             .tag(0)
-            Text("Second View")
-                .font(.title)
+            Text("Explore")
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(R.image.search)
+                        Text("Explore")
+                            .font(R.font.poppinsRegular, size: 10.0)
                     }
-                }
+                    .accentColor(R.color.blue)
+            }
             .tag(1)
+            Text("Cart")
+                .tabItem {
+                    VStack {
+                        Image(R.image.cart)
+                        Text("Cart")
+                            .font(R.font.poppinsRegular, size: 10.0)
+                    }
+                    .accentColor(R.color.blue)
+            }
+            .tag(2)
+            Text("Offer")
+                .tabItem {
+                    VStack {
+                        Image(R.image.offer)
+                        Text("Offer")
+                            .font(R.font.poppinsRegular, size: 10.0)
+                    }
+                    .accentColor(R.color.blue)
+            }
+            .tag(3)
+            Text("Account")
+                .tabItem {
+                    VStack {
+                        Image(R.image.user)
+                        Text("Account")
+                            .font(R.font.poppinsRegular, size: 10.0)
+                    }
+                    .accentColor(R.color.blue)
+            }
+            .tag(4)
         }
     }
 }

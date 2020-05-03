@@ -9,12 +9,7 @@ disabled_rules:
 opt_in_rules:
   - anyobject_protocol
   - array_init
-  - attributes
-  - closure_body_length
-  - closure_end_indentation
   - closure_spacing
-  - collection
-  - alignment
   - conditional_returns_on_newline
   - contains_over_filter_count
   - contains_over_filter_is_empty
@@ -33,7 +28,6 @@ opt_in_rules:
   - explicit_self
   - fallthrough
   - fatal_error_message
-  - file_name
   - first_where
   - flatmap_over_map_reduce
   - force_unwrapping

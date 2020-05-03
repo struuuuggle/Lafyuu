@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
 		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
+		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
+		15BC33AB245E554C00D0989B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33A3245E52DF00D0989B /* R.generated.swift */; };
+		15BC33AE245E5D3200D0989B /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 15BC33AD245E5D3200D0989B /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,9 @@
 		15033087245D92EC00333EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		150330BB245DAB9D00333EF1 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
+		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BC33AE245E5D3200D0989B /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 			children = (
 				1503307A245D92EB00333EF1 /* Lafyuu */,
 				15033079245D92EB00333EF1 /* Products */,
+				15BC33A5245E539800D0989B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +96,7 @@
 			children = (
 				1503308F245D932B00333EF1 /* Applications */,
 				150330BA245DAB8600333EF1 /* Env */,
+				15BC339C245E501D00D0989B /* Extensions */,
 				15033092245D935C00333EF1 /* Views */,
 			);
 			path = Classes;
@@ -126,9 +133,24 @@
 		150330BA245DAB8600333EF1 /* Env */ = {
 			isa = PBXGroup;
 			children = (
-				150330BB245DAB9D00333EF1 /* R.generated.swift */,
+				15BC33A3245E52DF00D0989B /* R.generated.swift */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		15BC339C245E501D00D0989B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15BC339D245E504200D0989B /* R+SwiftUI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15BC33A5245E539800D0989B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,10 +160,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1503308C245D92EC00333EF1 /* Build configuration list for PBXNativeTarget "Lafyuu" */;
 			buildPhases = (
-				15033074245D92EB00333EF1 /* Sources */,
 				15033075245D92EB00333EF1 /* Frameworks */,
-				15033076245D92EB00333EF1 /* Resources */,
 				150330B9245DAB1D00333EF1 /* R.swift */,
+				15033074245D92EB00333EF1 /* Sources */,
+				15033076245D92EB00333EF1 /* Resources */,
 				15B08F3C245DDFF80070268A /* SwiftLint */,
 			);
 			buildRules = (
@@ -149,6 +171,9 @@
 			dependencies = (
 			);
 			name = Lafyuu;
+			packageProductDependencies = (
+				15BC33AD245E5D3200D0989B /* Rswift */,
+			);
 			productName = Lafyuu;
 			productReference = 15033078245D92EB00333EF1 /* Dev Lafyuu.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 1503306F245D92EB00333EF1;
+			packageReferences = (
+				15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = 15033079245D92EB00333EF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				1503307C245D92EB00333EF1 /* AppDelegate.swift in Sources */,
 				1503307E245D92EB00333EF1 /* SceneDelegate.swift in Sources */,
+				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15033080245D92EB00333EF1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15BC33AD245E5D3200D0989B /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15BC33AC245E5D3200D0989B /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15033070245D92EB00333EF1 /* Project object */;
 }
