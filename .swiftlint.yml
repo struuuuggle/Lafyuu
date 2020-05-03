@@ -23,14 +23,12 @@ opt_in_rules:
   - empty_string
   - empty_xctest_method
   - expiring_todo
-  - explicit_enum_raw_value
   - explicit_init
   - explicit_self
   - fallthrough
   - fatal_error_message
   - first_where
   - flatmap_over_map_reduce
-  - force_unwrapping
   - function_default_parameter_at_end
   - identical_operands
   - implicit_return
@@ -44,7 +42,6 @@ opt_in_rules:
   - lower_acl_than_parent
   - missing_docs
   - modifier_order
-  - multiline_function_chains
   - multiline_literal_brackets
   - multiline_parameters
   - multiline_parameters_brackets
@@ -78,8 +75,7 @@ opt_in_rules:
   - strict_fileprivate
   - strong_iboutlet
   - switch_case_on_newline
-  - toggle_bool
-  - type_contents_order
+  - toggle_
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
   - unowned_variable_capture

@@ -11,6 +11,10 @@ extension View {
     @inlinable func accentColor(_ resource: ColorResourceType) -> some View {
         self.accentColor(Color(resource.name))
     }
+
+    @inlinable func font(_ resource: FontResourceType, size: CGFloat) -> some View {
+        self.font(Font.custom(resource.fontName, size: size))
+    }
 }
 
 extension Image {
