@@ -31,10 +31,36 @@
 		15FB2F6E245EA019007ACDA5 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F6D245EA019007ACDA5 /* ButtonType.swift */; };
 		15FB2F70245EAA58007ACDA5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F6F245EAA58007ACDA5 /* Constant.swift */; };
 		15FB2F72245EAAC4007ACDA5 /* ViewModifier+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F71245EAAC4007ACDA5 /* ViewModifier+Shape.swift */; };
+		15FB2F77245EC70B007ACDA5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 15FB2F74245EC70B007ACDA5 /* Rswift */; };
+		15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33B8245E6ABA00D0989B /* ExploreView.swift */; };
+		15FB2F7B245EC70B007ACDA5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F6F245EAA58007ACDA5 /* Constant.swift */; };
+		15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33A3245E52DF00D0989B /* R.generated.swift */; };
+		15FB2F7D245EC70B007ACDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503307B245D92EB00333EF1 /* AppDelegate.swift */; };
+		15FB2F7E245EC70B007ACDA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503307D245D92EB00333EF1 /* SceneDelegate.swift */; };
+		15FB2F7F245EC70B007ACDA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33B6245E6AA700D0989B /* HomeView.swift */; };
+		15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
+		15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BC245E6AD700D0989B /* AccountView.swift */; };
+		15FB2F82245EC70B007ACDA5 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BA245E6AC800D0989B /* CartView.swift */; };
+		15FB2F83245EC70B007ACDA5 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F63245E8831007ACDA5 /* EmailTextField.swift */; };
+		15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F6D245EA019007ACDA5 /* ButtonType.swift */; };
+		15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F67245E8FE7007ACDA5 /* Color+Theme.swift */; };
+		15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */; };
+		15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F6A245E9DDF007ACDA5 /* LargeButton.swift */; };
+		15FB2F88245EC70B007ACDA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F60245E8754007ACDA5 /* LoginView.swift */; };
+		15FB2F89245EC70B007ACDA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503307F245D92EB00333EF1 /* ContentView.swift */; };
+		15FB2F8A245EC70B007ACDA5 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BE245E6AE400D0989B /* OfferView.swift */; };
+		15FB2F8B245EC70B007ACDA5 /* ViewModifier+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F71245EAAC4007ACDA5 /* ViewModifier+Shape.swift */; };
+		15FB2F8D245EC70B007ACDA5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
+		15FB2F8E245EC70B007ACDA5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
+		15FB2F8F245EC70B007ACDA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
+		15FB2F90245EC70B007ACDA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033084245D92EC00333EF1 /* Preview Assets.xcassets */; };
+		15FB2F91245EC70B007ACDA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033081245D92EC00333EF1 /* Assets.xcassets */; };
+		15FB2F99245ECB6A007ACDA5 /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15FB2F98245ECB6A007ACDA5 /* Dev-Info.plist */; };
+		15FB2F9A245ECB8C007ACDA5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15B08F36245DD7EE0070268A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15033078245D92EB00333EF1 /* Dev Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev Lafyuu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15033078245D92EB00333EF1 /* Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lafyuu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1503307B245D92EB00333EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1503307D245D92EB00333EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1503307F245D92EB00333EF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +85,8 @@
 		15FB2F6D245EA019007ACDA5 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
 		15FB2F6F245EAA58007ACDA5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		15FB2F71245EAAC4007ACDA5 /* ViewModifier+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Shape.swift"; sourceTree = "<group>"; };
+		15FB2F96245EC70B007ACDA5 /* Dev Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev Lafyuu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FB2F98245ECB6A007ACDA5 /* Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +95,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				15BC33C2245E795F00D0989B /* Rswift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FB2F76245EC70B007ACDA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FB2F77245EC70B007ACDA5 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +121,8 @@
 		15033079245D92EB00333EF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15033078245D92EB00333EF1 /* Dev Lafyuu.app */,
+				15033078245D92EB00333EF1 /* Lafyuu.app */,
+				15FB2F96245EC70B007ACDA5 /* Dev Lafyuu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				15B08F36245DD7EE0070268A /* Info.plist */,
+				15FB2F98245ECB6A007ACDA5 /* Dev-Info.plist */,
 				15033081245D92EC00333EF1 /* Assets.xcassets */,
 				15033094245DA79400333EF1 /* Fonts */,
 			);
@@ -302,7 +340,29 @@
 				15BC33C1245E795F00D0989B /* Rswift */,
 			);
 			productName = Lafyuu;
-			productReference = 15033078245D92EB00333EF1 /* Dev Lafyuu.app */;
+			productReference = 15033078245D92EB00333EF1 /* Lafyuu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15FB2F73245EC70B007ACDA5 /* Dev Lafyuu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FB2F93245EC70B007ACDA5 /* Build configuration list for PBXNativeTarget "Dev Lafyuu" */;
+			buildPhases = (
+				15FB2F76245EC70B007ACDA5 /* Frameworks */,
+				15FB2F78245EC70B007ACDA5 /* R.swift */,
+				15FB2F79245EC70B007ACDA5 /* Sources */,
+				15FB2F8C245EC70B007ACDA5 /* Resources */,
+				15FB2F92245EC70B007ACDA5 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dev Lafyuu";
+			packageProductDependencies = (
+				15FB2F74245EC70B007ACDA5 /* Rswift */,
+			);
+			productName = Lafyuu;
+			productReference = 15FB2F96245EC70B007ACDA5 /* Dev Lafyuu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -337,6 +397,7 @@
 			projectRoot = "";
 			targets = (
 				15033077245D92EB00333EF1 /* Lafyuu */,
+				15FB2F73245EC70B007ACDA5 /* Dev Lafyuu */,
 			);
 		};
 /* End PBXProject section */
@@ -348,9 +409,23 @@
 			files = (
 				15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */,
 				15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */,
+				15FB2F9A245ECB8C007ACDA5 /* Info.plist in Resources */,
 				15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */,
 				15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */,
 				15033082245D92EC00333EF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FB2F8C245EC70B007ACDA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FB2F99245ECB6A007ACDA5 /* Dev-Info.plist in Resources */,
+				15FB2F8D245EC70B007ACDA5 /* Poppins-Regular.ttf in Resources */,
+				15FB2F8E245EC70B007ACDA5 /* Poppins-Bold.ttf in Resources */,
+				15FB2F8F245EC70B007ACDA5 /* LaunchScreen.storyboard in Resources */,
+				15FB2F90245EC70B007ACDA5 /* Preview Assets.xcassets in Resources */,
+				15FB2F91245EC70B007ACDA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +470,44 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		15FB2F78245EC70B007ACDA5 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Lafyuu/Classes/Env/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/Lafyuu/Classes/Env/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+		15FB2F92245EC70B007ACDA5 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -420,6 +533,31 @@
 				15033080245D92EB00333EF1 /* ContentView.swift in Sources */,
 				15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */,
 				15FB2F72245EAAC4007ACDA5 /* ViewModifier+Shape.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FB2F79245EC70B007ACDA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */,
+				15FB2F7B245EC70B007ACDA5 /* Constant.swift in Sources */,
+				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
+				15FB2F7D245EC70B007ACDA5 /* AppDelegate.swift in Sources */,
+				15FB2F7E245EC70B007ACDA5 /* SceneDelegate.swift in Sources */,
+				15FB2F7F245EC70B007ACDA5 /* HomeView.swift in Sources */,
+				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
+				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
+				15FB2F82245EC70B007ACDA5 /* CartView.swift in Sources */,
+				15FB2F83245EC70B007ACDA5 /* EmailTextField.swift in Sources */,
+				15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */,
+				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
+				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,
+				15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */,
+				15FB2F88245EC70B007ACDA5 /* LoginView.swift in Sources */,
+				15FB2F89245EC70B007ACDA5 /* ContentView.swift in Sources */,
+				15FB2F8A245EC70B007ACDA5 /* OfferView.swift in Sources */,
+				15FB2F8B245EC70B007ACDA5 /* ViewModifier+Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
 				DEVELOPMENT_TEAM = 3V7GGDY985;
@@ -565,9 +703,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.lafyuu-dev";
-				PRODUCT_NAME = "Dev $(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "development for Lafyuu";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.struuuuggle.lafyuu;
+				PRODUCT_NAME = Lafyuu;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -580,7 +718,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3V7GGDY985;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Lafyuu/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,8 +726,52 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.struuuuggle.lafyuu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Lafyuu;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15FB2F94245EC70B007ACDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
+				DEVELOPMENT_TEAM = 3V7GGDY985;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lafyuu/Resources/Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.lafyuu-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "development for Lafyuu";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15FB2F95245EC70B007ACDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Lafyuu/Preview Content\"";
+				DEVELOPMENT_TEAM = 3V7GGDY985;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lafyuu/Resources/Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.lafyuu-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "development for Lafyuu";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -616,10 +798,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		15FB2F93245EC70B007ACDA5 /* Build configuration list for PBXNativeTarget "Dev Lafyuu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FB2F94245EC70B007ACDA5 /* Debug */,
+				15FB2F95245EC70B007ACDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		15BC33C0245E795F00D0989B /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		15FB2F75245EC70B007ACDA5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -633,6 +832,11 @@
 		15BC33C1245E795F00D0989B /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 15BC33C0245E795F00D0989B /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+		15FB2F74245EC70B007ACDA5 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15FB2F75245EC70B007ACDA5 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
