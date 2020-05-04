@@ -6,17 +6,17 @@
 import Rswift
 
 enum OAuthType: String {
-    case google = "Google"
-    case facebook
+  case google = "Google"
+  case facebook
 }
 
 extension OAuthType {
-    var logo: ImageResource {
-        switch self {
-        case .google:
-            return R.image.google
-        case .facebook:
-            return R.image.facebook
-        }
+  var logo: ImageResource {
+    switch self {
+    case .google:
+      return R.image.google
+    case .facebook:
+      return R.image.facebook
     }
+  }
 }

@@ -6,13 +6,13 @@
 import SwiftUI
 
 struct OfferView: View {
-    var body: some View {
-        Text("Offer View")
-    }
+  var body: some View {
+    Text("Offer View")
+  }
 }
 
 struct OfferView_Previews: PreviewProvider {
-    static var previews: some View {
-        OfferView()
-    }
+  static var previews: some View {
+    OfferView()
+  }
 }

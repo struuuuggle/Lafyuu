@@ -5,6 +5,17 @@ disabled_rules:
 - todo
 - vertical_whitespace_opening_braces
 
+# lint対象から除外するファイルのパス
+excluded:
+  - Carthage/
+  - Pods/
+  - vendor/
+  - fastlane/
+  - Lafyuu/Classes/*/R.generated.swift
+
+# インデント
+indentation: 2
+
 # defaultルール以外でopt_inするルール
 opt_in_rules:
   - anyobject_protocol
@@ -33,6 +44,7 @@ opt_in_rules:
   - identical_operands
   - implicit_return
   - implicitly_unwrapped_optional
+  - indentation: 2
   - joined_default_parameter
   - last_where
   - legacy_multiple
@@ -86,11 +98,3 @@ opt_in_rules:
   - vertical_whitespace_opening_braces
   - xct_specific_matcher
   - yoda_condition
-
-# lint対象から除外するファイルのパス
-excluded:
-  - Carthage/
-  - Pods/
-  - vendor/
-  - fastlane/
-  - Lafyuu/Classes/*/R.generated.swift

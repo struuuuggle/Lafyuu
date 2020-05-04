@@ -6,11 +6,11 @@
 import SwiftUI
 
 enum Constant {
-    enum View {
-        static let radius: CGFloat = 5
-    }
+  enum View {
+    static let radius: CGFloat = 5
+  }
 
-    enum Icon {
-        static let size: CGFloat = 24
-    }
+  enum Icon {
+    static let size: CGFloat = 24
+  }
 }

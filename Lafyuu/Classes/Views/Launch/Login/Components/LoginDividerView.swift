@@ -6,33 +6,33 @@
 import SwiftUI
 
 struct LoginDividerView: View {
-    var body: some View {
-        HStack {
-            line; orText; line
-        }
+  var body: some View {
+    HStack {
+      line; orText; line
     }
+  }
 }
 
 // MARK: - private properties
 extension LoginDividerView {
-    private var line: some View {
-        VStack {
-            Divider()
-                .background(R.color.light()!.color)
-                .padding([.leading, .trailing], 16)
-        }
+  private var line: some View {
+    VStack {
+      Divider()
+        .background(R.color.light()!.color)
+        .padding([.leading, .trailing], 16)
     }
+  }
 
-    private var orText: some View {
-        Text("OR")
-            .font(R.font.poppinsBold, size: 14)
-            .foregroundColor(R.color.grey)
-    }
+  private var orText: some View {
+    Text("OR")
+      .font(R.font.poppinsBold, size: 14)
+      .foregroundColor(R.color.grey)
+  }
 }
 
 struct LoginDividerView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginDividerView()
-            .previewLayout(.fixed(width: 375, height: 64))
-    }
+  static var previews: some View {
+    LoginDividerView()
+      .previewLayout(.fixed(width: 375, height: 64))
+  }
 }

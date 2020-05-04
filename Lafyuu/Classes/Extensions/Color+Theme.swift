@@ -8,19 +8,19 @@ import SwiftUI
 import UIKit
 
 extension Color {
-    init(_ resource: ColorResource) {
-        self.init(resource.name)
-    }
+  init(_ resource: ColorResource) {
+    self.init(resource.name)
+  }
 }
 
 extension UIColor {
 
-    /// Converts UIColor to Color
-    ///
-    /// An Example
-    /// - `R.color.blue()!.color`
-    /// - `R.color.green()!.color`
-    var color: Color {
-        Color(self)
-    }
+  /// Converts UIColor to Color
+  ///
+  /// An Example
+  /// - `R.color.blue()!.color`
+  /// - `R.color.green()!.color`
+  var color: Color {
+    Color(self)
+  }
 }
