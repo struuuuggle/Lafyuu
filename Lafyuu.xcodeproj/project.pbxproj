@@ -13,6 +13,12 @@
 		15033082245D92EC00333EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033081245D92EC00333EF1 /* Assets.xcassets */; };
 		15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033084245D92EC00333EF1 /* Preview Assets.xcassets */; };
 		15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
+		15A8C7CC24603E3600C82233 /* LoginViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */; };
+		15A8C7CD24603E3600C82233 /* LoginViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */; };
+		15A8C7CF24606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */; };
+		15A8C7D024606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */; };
+		15A8C7D32460814200C82233 /* LaunchFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7D22460814200C82233 /* LaunchFootnote.swift */; };
+		15A8C7D42460814200C82233 /* LaunchFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7D22460814200C82233 /* LaunchFootnote.swift */; };
 		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
@@ -69,6 +75,8 @@
 		15FB2FAE245F0329007ACDA5 /* LaunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2FAC245F0329007ACDA5 /* LaunchType.swift */; };
 		15FB2FB4245F0634007ACDA5 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2FB3245F0634007ACDA5 /* NameTextField.swift */; };
 		15FB2FB5245F0634007ACDA5 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2FB3245F0634007ACDA5 /* NameTextField.swift */; };
+		15FC4980245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */; };
+		15FC4981245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +89,9 @@
 		15033087245D92EC00333EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
+		15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewCoordinator.swift; sourceTree = "<group>"; };
+		15A8C7D22460814200C82233 /* LaunchFootnote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootnote.swift; sourceTree = "<group>"; };
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
 		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -106,6 +117,7 @@
 		15FB2FA9245F001B007ACDA5 /* LaunchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHeaderView.swift; sourceTree = "<group>"; };
 		15FB2FAC245F0329007ACDA5 /* LaunchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchType.swift; sourceTree = "<group>"; };
 		15FB2FB3245F0634007ACDA5 /* NameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
+		15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,9 @@
 			children = (
 				1503307B245D92EB00333EF1 /* AppDelegate.swift */,
 				1503307D245D92EB00333EF1 /* SceneDelegate.swift */,
+				15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */,
+				15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */,
+				15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */,
 			);
 			path = Applications;
 			sourceTree = "<group>";
@@ -176,6 +191,7 @@
 		15033090245D933F00333EF1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				15A8C7D12460726200C82233 /* Coordinator */,
 				1503308F245D932B00333EF1 /* Applications */,
 				15FB2F6C245E9FFF007ACDA5 /* DataTypes */,
 				150330BA245DAB8600333EF1 /* Env */,
@@ -227,6 +243,13 @@
 				15FB2F6F245EAA58007ACDA5 /* Constant.swift */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		15A8C7D12460726200C82233 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		15BC339C245E501D00D0989B /* Extensions */ = {
@@ -356,6 +379,7 @@
 				15FB2F63245E8831007ACDA5 /* EmailTextField.swift */,
 				15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */,
 				15FB2FA9245F001B007ACDA5 /* LaunchHeaderView.swift */,
+				15A8C7D22460814200C82233 /* LaunchFootnote.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -563,8 +587,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A8C7CF24606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAD245F0329007ACDA5 /* LaunchType.swift in Sources */,
 				15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */,
+				15FC4980245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */,
 				15FB2F70245EAA58007ACDA5 /* Constant.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
@@ -574,6 +600,7 @@
 				15FB2F9F245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA2245ED32B007ACDA5 /* OAuthType.swift in Sources */,
 				15BC33B7245E6AA700D0989B /* HomeView.swift in Sources */,
+				15A8C7CC24603E3600C82233 /* LoginViewCoordinator.swift in Sources */,
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
 				15FB2FA7245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
@@ -585,6 +612,7 @@
 				15FB2F6B245E9DDF007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F61245E8754007ACDA5 /* LoginView.swift in Sources */,
 				15033080245D92EB00333EF1 /* ContentView.swift in Sources */,
+				15A8C7D32460814200C82233 /* LaunchFootnote.swift in Sources */,
 				15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */,
 				15FB2FB4245F0634007ACDA5 /* NameTextField.swift in Sources */,
 				15FB2F72245EAAC4007ACDA5 /* ViewModifier+Shape.swift in Sources */,
@@ -595,8 +623,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A8C7D024606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAE245F0329007ACDA5 /* LaunchType.swift in Sources */,
 				15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */,
+				15FC4981245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */,
 				15FB2F7B245EC70B007ACDA5 /* Constant.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
@@ -606,6 +636,7 @@
 				15FB2FA0245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA3245ED32B007ACDA5 /* OAuthType.swift in Sources */,
 				15FB2F7F245EC70B007ACDA5 /* HomeView.swift in Sources */,
+				15A8C7CD24603E3600C82233 /* LoginViewCoordinator.swift in Sources */,
 				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
 				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
 				15FB2FA8245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
@@ -617,6 +648,7 @@
 				15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F88245EC70B007ACDA5 /* LoginView.swift in Sources */,
 				15FB2F89245EC70B007ACDA5 /* ContentView.swift in Sources */,
+				15A8C7D42460814200C82233 /* LaunchFootnote.swift in Sources */,
 				15FB2F8A245EC70B007ACDA5 /* OfferView.swift in Sources */,
 				15FB2FB5245F0634007ACDA5 /* NameTextField.swift in Sources */,
 				15FB2F8B245EC70B007ACDA5 /* ViewModifier+Shape.swift in Sources */,

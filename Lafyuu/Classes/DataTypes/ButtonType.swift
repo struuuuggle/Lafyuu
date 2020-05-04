@@ -16,7 +16,6 @@ extension ButtonType {
         switch self {
         case .fill:
             return R.color.white()!.color
-
         case .clear:
             return R.color.grey()!.color
         }
@@ -26,7 +25,6 @@ extension ButtonType {
         switch self {
         case .fill:
             return R.color.blue()!.color
-
         case .clear:
             return Color.clear
         }

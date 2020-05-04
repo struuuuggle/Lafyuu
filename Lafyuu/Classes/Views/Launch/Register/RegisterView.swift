@@ -5,7 +5,13 @@
 
 import SwiftUI
 
+protocol RegisterViewDelegate: AnyObject {
+    func tryToLogin()
+}
+
 struct RegisterView: View {
+    weak var delegate: RegisterViewDelegate?
+    let type: LaunchType = .register
     @State private var fullName: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
@@ -14,19 +20,16 @@ struct RegisterView: View {
     var body: some View {
         VStack(spacing: 28) {
             Spacer()
-            LaunchHeaderView(type: .register)
+            LaunchHeaderView(type: type)
 
             VStack(spacing: 16) {
-                VStack(spacing: 8) {
-                    NameTextField(placeholder: "Full Name", name: $fullName)
-                    EmailTextField(placeholder: "Your Email", email: $email)
-                    PasswordTextField(placeholder: "Password", password: $password)
-                    PasswordTextField(placeholder: "Password AGain", password: $passwordAgain)
-                }
+                formStack
                 LargeButton(label: "Sign Up") {
                 }
             }
-            noAccountText
+            LaunchFootnote(type: type) {
+                self.delegate?.tryToLogin()
+            }
             Spacer()
         }
     }
@@ -34,18 +37,25 @@ struct RegisterView: View {
 
 // MARK: - private properties
 extension RegisterView {
-    var noAccountText: some View {
-        Text("Already have a account?")
-            .kerning(0.5)
-            .font(R.font.poppinsBold, size: 12)
-            .foregroundColor(R.color.grey)
-            +
-            Text(" ")
-            +
-            Text("Sign In")
-                .kerning(0.5)
-                .font(R.font.poppinsBold, size: 12)
-                .foregroundColor(R.color.blue)
+    private var formStack: some View {
+        VStack(spacing: 8) {
+            NameTextField(
+                placeholder: "Full Name",
+                name: $fullName
+            )
+            EmailTextField(
+                placeholder: "Your Email",
+                email: $email
+            )
+            PasswordTextField(
+                placeholder: "Password",
+                password: $password
+            )
+            PasswordTextField(
+                placeholder: "Password AGain",
+                password: $passwordAgain
+            )
+        }
     }
 }
 

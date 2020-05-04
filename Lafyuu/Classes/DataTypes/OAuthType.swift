@@ -15,7 +15,6 @@ extension OAuthType {
         switch self {
         case .google:
             return R.image.google
-
         case .facebook:
             return R.image.facebook
         }

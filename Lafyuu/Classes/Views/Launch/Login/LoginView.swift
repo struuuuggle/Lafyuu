@@ -5,7 +5,13 @@
 
 import SwiftUI
 
+protocol LoginViewDelegate: AnyObject {
+    func tryToRegtister()
+}
+
 struct LoginView: View {
+    weak var delegate: LoginViewDelegate?
+    let type: LaunchType = .login
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordWrong: Bool = false
@@ -13,7 +19,7 @@ struct LoginView: View {
     var body: some View {
         VStack(spacing: 28) {
             Spacer()
-            LaunchHeaderView(type: .login)
+            LaunchHeaderView(type: type)
 
             VStack(spacing: 16) {
                 VStack(spacing: 8) {
@@ -32,7 +38,9 @@ struct LoginView: View {
                     }
                 }
                 forgotPasswordText
-                encourageRegistrationText
+                LaunchFootnote(type: type) {
+                    self.delegate?.tryToRegtister()
+                }
                 Spacer()
             }
         }
@@ -58,20 +66,6 @@ extension LoginView {
             .kerning(0.5)
             .font(R.font.poppinsBold, size: 12)
             .foregroundColor(R.color.blue)
-    }
-
-    private var encourageRegistrationText: some View {
-        Text("Don't have a acount?")
-            .kerning(0.5)
-            .font(R.font.poppinsBold, size: 12)
-            .foregroundColor(R.color.grey)
-            +
-            Text(" ")
-            +
-            Text("Register")
-                .kerning(0.5)
-                .font(R.font.poppinsBold, size: 12)
-                .foregroundColor(R.color.blue)
     }
 }
 
