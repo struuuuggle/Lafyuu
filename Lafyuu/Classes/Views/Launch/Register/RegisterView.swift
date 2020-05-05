@@ -7,6 +7,7 @@ import SwiftUI
 
 protocol RegisterViewDelegate: AnyObject {
   func tryToLogin()
+  func signUp()
 }
 
 struct RegisterView: View {
@@ -25,6 +26,7 @@ struct RegisterView: View {
       VStack(spacing: 16) {
         formStack
         LargeButton(label: "Sign Up") {
+          self.delegate?.signUp()
         }
       }
       LaunchFootnote(type: type) {

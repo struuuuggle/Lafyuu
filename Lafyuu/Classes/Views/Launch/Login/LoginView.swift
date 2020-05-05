@@ -7,6 +7,7 @@ import SwiftUI
 
 protocol LoginViewDelegate: AnyObject {
   func tryToRegtister()
+  func login()
 }
 
 struct LoginView: View {
@@ -29,6 +30,7 @@ struct LoginView: View {
         }
         passwordWarningMessage
         LargeButton(label: "Sign In") {
+          self.delegate?.login()
         }
         LoginDividerView()
         VStack(spacing: 8) {

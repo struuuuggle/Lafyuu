@@ -9,6 +9,7 @@ final class LoginViewCoordinator: BaseCoordinator {
   private let window: UIWindow
   private var rootView: LoginView?
   private var registerVc: RegisterViewCoordinator?
+  private var mainVc: MainViewCoordinator?
 
   init(window: UIWindow) {
     self.window = window
@@ -24,6 +25,12 @@ final class LoginViewCoordinator: BaseCoordinator {
 
 // MARK: - LoginViewDelegate
 extension LoginViewCoordinator: LoginViewDelegate {
+  func login() {
+    let mainVc = MainViewCoordinator(window: window)
+    defer { mainVc.start() }
+    self.mainVc = mainVc
+  }
+
   func tryToRegtister() {
     let registerVc = RegisterViewCoordinator(window: window)
     defer { registerVc.start() }

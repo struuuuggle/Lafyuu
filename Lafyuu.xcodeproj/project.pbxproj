@@ -19,6 +19,8 @@
 		15A8C7D024606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */; };
 		15A8C7D32460814200C82233 /* LaunchFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7D22460814200C82233 /* LaunchFootnote.swift */; };
 		15A8C7D42460814200C82233 /* LaunchFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7D22460814200C82233 /* LaunchFootnote.swift */; };
+		15AE2823246143A5002FE574 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE2822246143A5002FE574 /* MainViewCoordinator.swift */; };
+		15AE2824246143A5002FE574 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE2822246143A5002FE574 /* MainViewCoordinator.swift */; };
 		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
@@ -92,6 +94,7 @@
 		15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
 		15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewCoordinator.swift; sourceTree = "<group>"; };
 		15A8C7D22460814200C82233 /* LaunchFootnote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootnote.swift; sourceTree = "<group>"; };
+		15AE2822246143A5002FE574 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
 		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -324,6 +327,7 @@
 				15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */,
 				15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */,
 				15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */,
+				15AE2822246143A5002FE574 /* MainViewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -609,6 +613,7 @@
 				15FB2F6E245EA019007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F68245E8FE7007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */,
+				15AE2823246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F6B245E9DDF007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F61245E8754007ACDA5 /* LoginView.swift in Sources */,
 				15033080245D92EB00333EF1 /* ContentView.swift in Sources */,
@@ -645,6 +650,7 @@
 				15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,
+				15AE2824246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F88245EC70B007ACDA5 /* LoginView.swift in Sources */,
 				15FB2F89245EC70B007ACDA5 /* ContentView.swift in Sources */,
