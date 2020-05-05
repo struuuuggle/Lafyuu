@@ -11,20 +11,54 @@ struct HomeView: View {
   @State var secondRemaining: TimeInterval = 52
 
   var body: some View {
-    ScrollView {
-      VStack(spacing: 24) {
-        PromotionBanner(
-          hourRemaining: $hourRemaining,
-          minuteRemaining: $minuteRemaining,
-          secondRemaining: $secondRemaining,
-          type: .sale(50)
-        )
+    NavigationView {
+      ScrollView {
+        VStack(spacing: 24) {
+          PromotionBanner(
+            hourRemaining: $hourRemaining,
+            minuteRemaining: $minuteRemaining,
+            secondRemaining: $secondRemaining,
+            type: .sale(50)
+          )
 
-        CategoryView()
+          CategorySectionView()
 
-        Spacer()
+          SaleSectionView(saleType: .flashSale)
+          SaleSectionView(saleType: .megaSale)
+
+          PromotionBanner(
+            hourRemaining: $hourRemaining,
+            minuteRemaining: $minuteRemaining,
+            secondRemaining: $secondRemaining,
+            type: .sale(50)
+          )
+
+          HStack {
+            ProductCard(
+              product: Mock.products.randomElement()!,
+              size: .large
+            )
+            ProductCard(
+              product: Mock.products.randomElement()!,
+              size: .large
+            )
+          }
+          HStack {
+            ProductCard(
+              product: Mock.products.randomElement()!,
+              size: .large
+            )
+            ProductCard(
+              product: Mock.products.randomElement()!,
+              size: .large
+            )
+          }
+
+          Spacer()
+        }
       }
     }
+    .navigationBarTitle("Home")
   }
 }
 

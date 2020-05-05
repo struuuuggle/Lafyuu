@@ -5,6 +5,8 @@ disabled_rules:
 - todo
 - vertical_whitespace_opening_braces
 - nesting
+- identifier_name
+- trailing_comma
 
 # lint対象から除外するファイルのパス
 excluded:

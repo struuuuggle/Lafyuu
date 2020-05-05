@@ -24,7 +24,7 @@ struct ProductCard: View {
 // MARK: - Private properties
 extension ProductCard {
   var thumbnailImage: some View {
-    Image(R.image.kick_1)
+    Image(product.imageUrl)
       .resizable()
       .roundCorner()
       .frame(width: size.imageSize, height: size.imageSize)

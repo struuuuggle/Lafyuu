@@ -25,7 +25,7 @@ struct NameTextField: View {
         icon
         textField
       }
-      .padding(.vertical, 16)
+      .padding(.horizontal, 16)
     }
     .accentColor(Color.blue)
     .frame(

@@ -10,7 +10,7 @@ struct FlipClock: View {
   @Binding var hourRemaining: TimeInterval
   @Binding var minuteRemaining: TimeInterval
   @Binding var secondRemaining: TimeInterval
-  let timer: Publishers.Autoconnect<Timer.TimerPublisher>
+  let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
   let width: CGFloat
   let height: CGFloat
@@ -27,7 +27,6 @@ struct FlipClock: View {
     self._secondRemaining = secondRemaining
     self.width = width
     self.height = height
-    timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
   }
 
   var body: some View {

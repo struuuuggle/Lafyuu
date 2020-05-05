@@ -7,15 +7,71 @@ import Foundation
 import Rswift
 
 enum Mock {
-  static let products: [Product] = Array(
-    repeating: .init(
+  static let products: [Product] = [
+    .init(
       name: "FS - Nike Air Max 270 React ENG",
       imageUrl: ProductImage.allCases.randomElement()!.image,
-      currentPrice: 29943,
-      regularPrice: 53433,
-      discountRate: 24
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
     ),
-    count: 10)
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+    .init(
+      name: "FS - Nike Air Max 270 React ENG",
+      imageUrl: ProductImage.allCases.randomElement()!.image,
+      currentPrice: (10000...20000).randomElement()!,
+      regularPrice: (35000...60000).randomElement()!,
+      discountRate: (1..<50).randomElement()!
+    ),
+  ]
 
   enum ProductImage: CaseIterable {
     case bag1

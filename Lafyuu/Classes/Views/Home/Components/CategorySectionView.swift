@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-struct CategoryView: View {
+struct CategorySectionView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 12) {
       header
@@ -15,7 +15,7 @@ struct CategoryView: View {
 }
 
 // MARK: - Private properties
-extension CategoryView {
+extension CategorySectionView {
   var header: some View {
     HStack {
       Text("Category")
@@ -45,6 +45,6 @@ extension CategoryView {
 
 struct CategoryView_Previews: PreviewProvider {
   static var previews: some View {
-    CategoryView()
+    CategorySectionView()
   }
 }

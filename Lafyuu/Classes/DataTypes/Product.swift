@@ -6,9 +6,10 @@
 import Foundation
 import Rswift
 
-struct Product {
+struct Product: Identifiable {
+  let id: UUID = .init()
   let name: String
-  /// TODO: Use URL [2020/05/05]
+  // TODO: Use URL [2020/05/05]
   let imageUrl: ImageResource
   let currentPrice: Int
   let regularPrice: Int
