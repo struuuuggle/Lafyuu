@@ -6,20 +6,20 @@
 import Rswift
 import SwiftUI
 
-struct ProductView: View {
-  let type: ImageResource
+struct ProductCard: View {
+  let category: Category
   let width: CGFloat
   let height: CGFloat
 
-  init(type: ImageResource, width: CGFloat = 70, height: CGFloat = 108) {
-    self.type = type
+  init(_ category: Category, width: CGFloat = 70, height: CGFloat = 108) {
+    self.category = category
     self.width = width
     self.height = height
   }
 
   var body: some View {
     VStack {
-      ProductIcon(type: type)
+      ProductIcon(category)
       productCaption
     }
     .frame(width: width, height: height)
@@ -27,9 +27,9 @@ struct ProductView: View {
 }
 
 // MARK: - private properties
-extension ProductView {
+extension ProductCard {
   private var productCaption: some View {
-    Text(type.name)
+    Text(category.name)
       .kerning(0.5)
       .lineLimit(2)
       .multilineTextAlignment(.center)
@@ -40,16 +40,16 @@ extension ProductView {
 }
 
 struct ProductIcon: View {
-  let type: ImageResource
+  let category: Category
   let width: CGFloat
   let height: CGFloat
 
   init(
-    type: ImageResource,
+    _ category: Category,
     width: CGFloat = Constant.Icon.Size.medium,
     height: CGFloat = Constant.Icon.Size.medium
   ) {
-    self.type = type
+    self.category = category
     self.width = width
     self.height = height
   }
@@ -59,17 +59,15 @@ struct ProductIcon: View {
       Circle()
         .stroke(R.color.light()!.color, lineWidth: 1)
         .foregroundColor(R.color.white)
-      Image(type)
+      Image(category.imageName)
         .frame(width: Constant.Icon.Size.small, height: Constant.Icon.Size.small)
     }
   }
 }
 
 // MARK: - PreviewProvider
-#if DEBUG
 struct ProductCategory_Previews: PreviewProvider {
   static var previews: some View {
-    ProductView(type: R.image.prd_shirt)
+    ProductCard(.dress)
   }
 }
-#endif
