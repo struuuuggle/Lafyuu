@@ -181,9 +181,6 @@
 			children = (
 				1503307B245D92EB00333EF1 /* AppDelegate.swift */,
 				1503307D245D92EB00333EF1 /* SceneDelegate.swift */,
-				15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */,
-				15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */,
-				15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */,
 			);
 			path = Applications;
 			sourceTree = "<group>";
@@ -191,8 +188,8 @@
 		15033090245D933F00333EF1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				15A8C7D12460726200C82233 /* Coordinator */,
 				1503308F245D932B00333EF1 /* Applications */,
+				15F3799F2460AC5600CA09D0 /* Coordinator */,
 				15FB2F6C245E9FFF007ACDA5 /* DataTypes */,
 				150330BA245DAB8600333EF1 /* Env */,
 				15BC339C245E501D00D0989B /* Extensions */,
@@ -243,13 +240,6 @@
 				15FB2F6F245EAA58007ACDA5 /* Constant.swift */,
 			);
 			path = Env;
-			sourceTree = "<group>";
-		};
-		15A8C7D12460726200C82233 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		15BC339C245E501D00D0989B /* Extensions */ = {
@@ -326,6 +316,16 @@
 				15033086245D92EC00333EF1 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		15F3799F2460AC5600CA09D0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */,
+				15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */,
+				15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		15FB2F5F245E8754007ACDA5 /* Login */ = {
