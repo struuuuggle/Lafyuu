@@ -50,8 +50,8 @@ extension ThirdPartyLoginButton {
       Image(oAuthType.logo)
         .renderingMode(.original)
         .frame(
-          width: Constant.Icon.size,
-          height: Constant.Icon.size
+          width: Constant.Icon.Size.small,
+          height: Constant.Icon.Size.small
       )
       Spacer()
     }

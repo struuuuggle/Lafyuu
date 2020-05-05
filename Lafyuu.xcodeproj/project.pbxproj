@@ -33,6 +33,8 @@
 		15AE283624617259002FE574 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283424617259002FE574 /* PageView.swift */; };
 		15AE283824617272002FE574 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283724617272002FE574 /* PageControl.swift */; };
 		15AE283924617272002FE574 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283724617272002FE574 /* PageControl.swift */; };
+		15AE283E246184B0002FE574 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283D246184B0002FE574 /* ProductCategory.swift */; };
+		15AE283F246184B0002FE574 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283D246184B0002FE574 /* ProductCategory.swift */; };
 		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
@@ -113,6 +115,7 @@
 		15AE283124617200002FE574 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		15AE283424617259002FE574 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		15AE283724617272002FE574 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		15AE283D246184B0002FE574 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
 		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 				15AE28252461471D002FE574 /* PromotionBanner.swift */,
 				15AE283124617200002FE574 /* PageViewController.swift */,
 				15AE283424617259002FE574 /* PageView.swift */,
+				15AE283D246184B0002FE574 /* ProductCategory.swift */,
 				15AE283724617272002FE574 /* PageControl.swift */,
 			);
 			path = Components;
@@ -635,6 +639,7 @@
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
 				15FB2FA7245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
+				15AE283E246184B0002FE574 /* ProductCategory.swift in Sources */,
 				15BC33BB245E6AC800D0989B /* CartView.swift in Sources */,
 				15AE283524617259002FE574 /* PageView.swift in Sources */,
 				15FB2F64245E8831007ACDA5 /* EmailTextField.swift in Sources */,
@@ -678,6 +683,7 @@
 				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
 				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
 				15FB2FA8245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
+				15AE283F246184B0002FE574 /* ProductCategory.swift in Sources */,
 				15FB2F82245EC70B007ACDA5 /* CartView.swift in Sources */,
 				15AE283624617259002FE574 /* PageView.swift in Sources */,
 				15FB2F83245EC70B007ACDA5 /* EmailTextField.swift in Sources */,

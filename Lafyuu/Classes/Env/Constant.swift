@@ -11,6 +11,9 @@ enum Constant {
   }
 
   enum Icon {
-    static let size: CGFloat = 24
+    enum Size {
+      static let small: CGFloat = 24
+      static let medium: CGFloat = 70
+    }
   }
 }

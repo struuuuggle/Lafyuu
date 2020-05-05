@@ -7,14 +7,14 @@ import Rswift
 import SwiftUI
 
 extension View {
-  /// Sets the accent color for the view and the views it contains via R.color
-  @inlinable func accentColor(_ resource: ColorResourceType) -> some View {
-    self.accentColor(Color(resource.name))
-  }
-
   /// Sets the default font for text in the view via R.font.
   @inlinable func font(_ resource: FontResourceType, size: CGFloat) -> some View {
     self.font(Font.custom(resource.fontName, size: size))
+  }
+
+  /// Sets the accent color for the view and the views it contains via R.color
+  @inlinable func accentColor(_ resource: ColorResourceType) -> some View {
+    self.accentColor(Color(resource.name))
   }
 
   /// Set the foreground color within `self` via R.color.
@@ -25,6 +25,11 @@ extension View {
   /// Set the background view within `self` via R.color.
   @inlinable func background(_ resource: ColorResourceType, alignment: Alignment = .center) -> some View {
     self.background(Color(resource.name))
+  }
+
+  /// Set the border of the view via R.color.
+  @inlinable func border(_ resource: ColorResourceType, width: CGFloat = 1) -> some View {
+    self.border(Color(resource.name), width: width)
   }
 }
 
