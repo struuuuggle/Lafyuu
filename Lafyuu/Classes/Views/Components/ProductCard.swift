@@ -3,71 +3,77 @@
 //  Copyright © 2020, Mikiya Abe. All rights reserved.
 //
 
-import Rswift
 import SwiftUI
 
-struct ProductCard: View {
-  let category: Category
-  let width: CGFloat
-  let height: CGFloat
+typealias ProductCardSize = Constant.ProductCard.Size
 
-  init(_ category: Category, width: CGFloat = 70, height: CGFloat = 108) {
-    self.category = category
-    self.width = width
-    self.height = height
-  }
+struct ProductCard: View {
+  let product: Product
+  let size: ProductCardSize
 
   var body: some View {
     VStack {
-      ProductIcon(category)
-      productCaption
+      thumbnailImage
+      caption
     }
-    .frame(width: width, height: height)
+    .frame(width: size.width, height: size.height)
+    .roundCorner(with: R.color.light)
   }
 }
 
-// MARK: - private properties
+// MARK: - Private properties
 extension ProductCard {
-  private var productCaption: some View {
-    Text(category.name)
-      .kerning(0.5)
-      .lineLimit(2)
-      .multilineTextAlignment(.center)
-      .font(R.font.poppinsRegular, size: 10)
-      .foregroundColor(R.color.grey)
-      .frame(width: width, height: 30)
-  }
-}
-
-struct ProductIcon: View {
-  let category: Category
-  let width: CGFloat
-  let height: CGFloat
-
-  init(
-    _ category: Category,
-    width: CGFloat = Constant.Icon.Size.medium,
-    height: CGFloat = Constant.Icon.Size.medium
-  ) {
-    self.category = category
-    self.width = width
-    self.height = height
+  var thumbnailImage: some View {
+    Image(R.image.kick_1)
+      .resizable()
+      .roundCorner()
+      .frame(width: size.imageSize, height: size.imageSize)
   }
 
-  var body: some View {
-    ZStack {
-      Circle()
-        .stroke(R.color.light()!.color, lineWidth: 1)
-        .foregroundColor(R.color.white)
-      Image(category.imageName)
-        .frame(width: Constant.Icon.Size.small, height: Constant.Icon.Size.small)
+  var caption: some View {
+    VStack(alignment: .leading, spacing: 8) {
+      title
+      currentPrice
+
+      HStack {
+        regularPrice; discountRate
+      }
     }
+    .padding(.horizontal, 16)
+  }
+
+  var title: some View {
+    Text(product.name)
+      .textStyle(.productCardTitle)
+      .multilineTextAlignment(.leading)
+      .lineLimit(2)
+      .lineSpacing(0.5)
+  }
+
+  var currentPrice: some View {
+    Text("$\(product.currentPrice)")
+      .textStyle(.productCardPrice)
+      .lineSpacing(0.5)
+  }
+
+  var regularPrice: some View {
+    Text("$\(product.regularPrice)")
+      .strikethrough()
+      .textStyle(.productRegularPrice)
+  }
+
+  var discountRate: some View {
+    Text("\(product.discountRate)% Off")
+      .textStyle(.productDiscountRate)
   }
 }
 
-// MARK: - PreviewProvider
-struct ProductCategory_Previews: PreviewProvider {
+struct ProductCard_Previews: PreviewProvider {
   static var previews: some View {
-    ProductCard(.dress)
+    ProductCard(
+      product: Mock.products.first!,
+      size: .large
+    )
+      .previewLayout(.fixed(width: 180, height: 300))
   }
 }

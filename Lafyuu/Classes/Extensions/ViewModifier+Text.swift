@@ -9,6 +9,10 @@ import SwiftUI
 enum LafyuuTextStyle {
   case heading
   case seeMore
+  case productCardTitle
+  case productCardPrice
+  case productRegularPrice
+  case productDiscountRate
 
   var color: ColorResource {
     switch self {
@@ -16,11 +20,35 @@ enum LafyuuTextStyle {
       return R.color.dark
     case .seeMore:
       return R.color.blue
+    case .productCardTitle:
+      return R.color.dark
+    case .productCardPrice:
+      return R.color.blue
+    case .productRegularPrice:
+      return R.color.grey
+    case .productDiscountRate:
+      return R.color.red
     }
   }
 
   var fontSize: CGFloat {
-    14
+    switch self {
+    case .productRegularPrice, .productDiscountRate:
+      return 10
+    case .productCardTitle, .productCardPrice:
+      return 12
+    default:
+      return 14
+    }
+  }
+
+  var fontFamily: FontResource {
+    switch self {
+    case .productRegularPrice:
+      return R.font.poppinsRegular
+    default:
+      return R.font.poppinsBold
+    }
   }
 }
 
@@ -49,7 +77,7 @@ extension Text: ViewModifier {
 
     func body(content: Content) -> some View {
       content
-        .font(R.font.poppinsBold, size: style.fontSize)
+        .font(style.fontFamily, size: style.fontSize)
         .foregroundColor(style.color)
     }
   }

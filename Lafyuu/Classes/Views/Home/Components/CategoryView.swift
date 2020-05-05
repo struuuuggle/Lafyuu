@@ -35,7 +35,7 @@ extension CategoryView {
     ScrollView(.horizontal, showsIndicators: false) {
       HStack(spacing: 12) {
         ForEach(Category.allCases, id: \.self) { category in
-          ProductCard(category)
+          CategoryCard(category)
         }
       }
       .padding(.horizontal, 16)
