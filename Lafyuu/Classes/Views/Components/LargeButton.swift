@@ -12,7 +12,13 @@ struct LargeButton: View {
   private let height: CGFloat
   private let handler: (() -> Void)
 
-  init(label: String, type: ButtonType = .fill, width: CGFloat = 343, height: CGFloat = 56, handler: @escaping (() -> Void)) {
+  init(
+    label: String,
+    type: ButtonType = .fill,
+    width: CGFloat = 343,
+    height: CGFloat = 56,
+    handler: @escaping (() -> Void)
+  ) {
     self.label = label
     self.type = type
     self.width = width
@@ -23,21 +29,16 @@ struct LargeButton: View {
   var body: some View {
     Button(
       action: handler,
-      label: ({
+      label: {
         Text(label)
           .kerning(0.5)
-          .padding(
-            [.top, .bottom, .leading, .trailing],
-            16
-        )
+          .font(R.font.poppinsBold, size: 14)
+          .foregroundColor(type.fgColor)
           .frame(width: width, height: height)
-      })
-    )
-      .roundCorner(with: type.bgColor)
-      .font(R.font.poppinsBold, size: 14)
-      // TODO: 角が尖っている問題を修正
+          .padding(16)
+    })
       .background(type.bgColor)
-      .foregroundColor(type.fgColor)
+      .roundCorner()
   }
 }
 

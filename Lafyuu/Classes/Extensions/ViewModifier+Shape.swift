@@ -9,16 +9,20 @@ import SwiftUI
 extension View {
 
   func roundCorner(with color: ColorResource, radius: CGFloat = Constant.View.radius, lineWidth: CGFloat = 1) -> some View {
-    self.overlay(
-      RoundedRectangle(cornerRadius: radius)
-        .stroke(Color(color), lineWidth: lineWidth)
+    self
+      .cornerRadius(radius)
+      .overlay(
+        RoundedRectangle(cornerRadius: radius)
+          .stroke(Color(color), lineWidth: lineWidth)
     )
   }
 
-  func roundCorner(with color: Color, radius: CGFloat = Constant.View.radius, lineWidth: CGFloat = 1) -> some View {
-    self.overlay(
-      RoundedRectangle(cornerRadius: radius)
-        .stroke(color, lineWidth: lineWidth)
+  func roundCorner(with color: Color = .clear, radius: CGFloat = Constant.View.radius, lineWidth: CGFloat = 1) -> some View {
+    self
+      .cornerRadius(radius)
+      .overlay(
+        RoundedRectangle(cornerRadius: radius)
+          .stroke(color, lineWidth: lineWidth)
     )
   }
 }

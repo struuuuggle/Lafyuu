@@ -19,7 +19,7 @@ extension LoginDividerView {
     VStack {
       Divider()
         .background(R.color.light()!.color)
-        .padding([.leading, .trailing], 16)
+        .padding(.horizontal, 16)
     }
   }
 

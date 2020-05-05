@@ -25,7 +25,7 @@ struct EmailTextField: View {
         icon
         textField
       }
-      .padding([.leading, .trailing], 16)
+      .padding(.horizontal, 16)
     }
     .accentColor(Color.blue)
     .frame(

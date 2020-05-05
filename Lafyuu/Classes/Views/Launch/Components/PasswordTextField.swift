@@ -25,7 +25,7 @@ struct PasswordTextField: View {
         icon
         textField
       }
-      .padding([.leading, .trailing], 16)
+      .padding(.horizontal, 16)
     }
     .frame(
       width: width,

@@ -21,6 +21,18 @@
 		15A8C7D42460814200C82233 /* LaunchFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8C7D22460814200C82233 /* LaunchFootnote.swift */; };
 		15AE2823246143A5002FE574 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE2822246143A5002FE574 /* MainViewCoordinator.swift */; };
 		15AE2824246143A5002FE574 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE2822246143A5002FE574 /* MainViewCoordinator.swift */; };
+		15AE28262461471D002FE574 /* PromotionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE28252461471D002FE574 /* PromotionBanner.swift */; };
+		15AE28272461471D002FE574 /* PromotionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE28252461471D002FE574 /* PromotionBanner.swift */; };
+		15AE282924614C5F002FE574 /* PromotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE282824614C5F002FE574 /* PromotionType.swift */; };
+		15AE282A24614C5F002FE574 /* PromotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE282824614C5F002FE574 /* PromotionType.swift */; };
+		15AE282C2461513D002FE574 /* FlipClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE282B2461513D002FE574 /* FlipClock.swift */; };
+		15AE282D2461513D002FE574 /* FlipClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE282B2461513D002FE574 /* FlipClock.swift */; };
+		15AE283224617200002FE574 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283124617200002FE574 /* PageViewController.swift */; };
+		15AE283324617200002FE574 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283124617200002FE574 /* PageViewController.swift */; };
+		15AE283524617259002FE574 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283424617259002FE574 /* PageView.swift */; };
+		15AE283624617259002FE574 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283424617259002FE574 /* PageView.swift */; };
+		15AE283824617272002FE574 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283724617272002FE574 /* PageControl.swift */; };
+		15AE283924617272002FE574 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283724617272002FE574 /* PageControl.swift */; };
 		15B08F39245DD89C0070268A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */; };
 		15B08F3A245DD89C0070268A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */; };
 		15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC339D245E504200D0989B /* R+SwiftUI.swift */; };
@@ -95,6 +107,12 @@
 		15A8C7CE24606F5F00C82233 /* RegisterViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewCoordinator.swift; sourceTree = "<group>"; };
 		15A8C7D22460814200C82233 /* LaunchFootnote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootnote.swift; sourceTree = "<group>"; };
 		15AE2822246143A5002FE574 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
+		15AE28252461471D002FE574 /* PromotionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionBanner.swift; sourceTree = "<group>"; };
+		15AE282824614C5F002FE574 /* PromotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionType.swift; sourceTree = "<group>"; };
+		15AE282B2461513D002FE574 /* FlipClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClock.swift; sourceTree = "<group>"; };
+		15AE283124617200002FE574 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		15AE283424617259002FE574 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		15AE283724617272002FE574 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		15B08F36245DD7EE0070268A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BC339D245E504200D0989B /* R+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+SwiftUI.swift"; sourceTree = "<group>"; };
 		15BC33A3245E52DF00D0989B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -353,7 +371,12 @@
 		15FB2F69245E9D90007ACDA5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				15AE282B2461513D002FE574 /* FlipClock.swift */,
 				15FB2F6A245E9DDF007ACDA5 /* LargeButton.swift */,
+				15AE28252461471D002FE574 /* PromotionBanner.swift */,
+				15AE283124617200002FE574 /* PageViewController.swift */,
+				15AE283424617259002FE574 /* PageView.swift */,
+				15AE283724617272002FE574 /* PageControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -364,6 +387,7 @@
 				15FB2F6D245EA019007ACDA5 /* ButtonType.swift */,
 				15FB2FA1245ED32B007ACDA5 /* OAuthType.swift */,
 				15FB2FAC245F0329007ACDA5 /* LaunchType.swift */,
+				15AE282824614C5F002FE574 /* PromotionType.swift */,
 			);
 			path = DataTypes;
 			sourceTree = "<group>";
@@ -593,9 +617,11 @@
 			files = (
 				15A8C7CF24606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAD245F0329007ACDA5 /* LaunchType.swift in Sources */,
+				15AE283824617272002FE574 /* PageControl.swift in Sources */,
 				15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */,
 				15FC4980245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */,
 				15FB2F70245EAA58007ACDA5 /* Constant.swift in Sources */,
+				15AE282C2461513D002FE574 /* FlipClock.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				15FB2FAA245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
@@ -604,15 +630,19 @@
 				15FB2F9F245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA2245ED32B007ACDA5 /* OAuthType.swift in Sources */,
 				15BC33B7245E6AA700D0989B /* HomeView.swift in Sources */,
+				15AE28262461471D002FE574 /* PromotionBanner.swift in Sources */,
 				15A8C7CC24603E3600C82233 /* LoginViewCoordinator.swift in Sources */,
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
 				15FB2FA7245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
 				15BC33BB245E6AC800D0989B /* CartView.swift in Sources */,
+				15AE283524617259002FE574 /* PageView.swift in Sources */,
 				15FB2F64245E8831007ACDA5 /* EmailTextField.swift in Sources */,
 				15FB2F6E245EA019007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F68245E8FE7007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */,
+				15AE282924614C5F002FE574 /* PromotionType.swift in Sources */,
+				15AE283224617200002FE574 /* PageViewController.swift in Sources */,
 				15AE2823246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F6B245E9DDF007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F61245E8754007ACDA5 /* LoginView.swift in Sources */,
@@ -630,9 +660,11 @@
 			files = (
 				15A8C7D024606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAE245F0329007ACDA5 /* LaunchType.swift in Sources */,
+				15AE283924617272002FE574 /* PageControl.swift in Sources */,
 				15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */,
 				15FC4981245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */,
 				15FB2F7B245EC70B007ACDA5 /* Constant.swift in Sources */,
+				15AE282D2461513D002FE574 /* FlipClock.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				15FB2FAB245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
@@ -641,15 +673,19 @@
 				15FB2FA0245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA3245ED32B007ACDA5 /* OAuthType.swift in Sources */,
 				15FB2F7F245EC70B007ACDA5 /* HomeView.swift in Sources */,
+				15AE28272461471D002FE574 /* PromotionBanner.swift in Sources */,
 				15A8C7CD24603E3600C82233 /* LoginViewCoordinator.swift in Sources */,
 				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
 				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
 				15FB2FA8245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
 				15FB2F82245EC70B007ACDA5 /* CartView.swift in Sources */,
+				15AE283624617259002FE574 /* PageView.swift in Sources */,
 				15FB2F83245EC70B007ACDA5 /* EmailTextField.swift in Sources */,
 				15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,
+				15AE282A24614C5F002FE574 /* PromotionType.swift in Sources */,
+				15AE283324617200002FE574 /* PageViewController.swift in Sources */,
 				15AE2824246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */,
 				15FB2F88245EC70B007ACDA5 /* LoginView.swift in Sources */,

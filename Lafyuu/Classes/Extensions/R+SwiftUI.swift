@@ -21,6 +21,11 @@ extension View {
   @inlinable func foregroundColor(_ resource: ColorResourceType) -> some View {
     self.foregroundColor(Color(resource.name))
   }
+
+  /// Set the background view within `self` via R.color.
+  @inlinable func background(_ resource: ColorResourceType, alignment: Alignment = .center) -> some View {
+    self.background(Color(resource.name))
+  }
 }
 
 extension Image {
