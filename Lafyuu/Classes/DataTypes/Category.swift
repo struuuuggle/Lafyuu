@@ -7,22 +7,32 @@ import Foundation
 import Rswift
 
 enum Category: String, CaseIterable {
-  case bikini
-  case dress
   case manBag = "man_bag"
   case manShoes = "man_shoes"
   case manUnderwear = "man_underwear"
+  case manPants = "man_pants"
   case shirt
-  case skirt
   case tshirt
   case womanBag = "woman_bag"
   case womanpants = "woman_pants"
   case womanShoes = "woman_shoes"
   case womanTshirt = "woman_tshirt"
+  case bikini
+  case dress
+  case skirt
 }
 
 extension Category: Identifiable {
   var id: String { rawValue }
+}
+
+extension Category {
+  static var manFashionItems: [Category] {
+    [.manBag, .manShoes, .manUnderwear, .manPants, .shirt, .tshirt]
+  }
+  static var womanFashionItems: [Category] {
+    [.womanBag, .womanpants, .womanShoes, .womanTshirt, .bikini, .dress, .skirt]
+  }
 }
 
 extension Category {
@@ -52,6 +62,8 @@ extension Category {
       return "High Heels"
     case .womanTshirt:
       return "Woman T-Shirt"
+    case .manPants:
+      return "Man Pants"
     }
   }
 

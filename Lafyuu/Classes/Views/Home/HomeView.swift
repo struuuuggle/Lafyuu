@@ -33,35 +33,45 @@ struct HomeView: View {
             expiryDate: expiryDate
           )
 
-          HStack {
-            ProductCard(
-              product: Mock.products.randomElement()!,
-              size: .large
-            )
-            ProductCard(
-              product: Mock.products.randomElement()!,
-              size: .large
-            )
-          }
-          HStack {
-            ProductCard(
-              product: Mock.products.randomElement()!,
-              size: .large
-            )
-            ProductCard(
-              product: Mock.products.randomElement()!,
-              size: .large
-            )
-          }
-
-          Spacer()
+          homeProductContainer
         }
       }
-      .navigationBarTitle("Home")
-      .navigationBarItems(
-        trailing: HStack {
-          Image(R.image.love); Image(R.image.notification)
-      })
+      .navigationBarTitle(
+        Text("Home")
+          .foregroundColor(R.color.dark)
+      )
+        .navigationBarItems(
+          trailing: HStack {
+            Image(R.image.love); Image(R.image.notification)
+        })
+    }
+  }
+}
+
+// MARK: - Private properties
+extension HomeView {
+  private var homeProductContainer: some View {
+    VStack {
+      HStack {
+        ProductCard(
+          product: Mock.products.randomElement()!,
+          size: .large
+        )
+        ProductCard(
+          product: Mock.products.randomElement()!,
+          size: .large
+        )
+      }
+      HStack {
+        ProductCard(
+          product: Mock.products.randomElement()!,
+          size: .large
+        )
+        ProductCard(
+          product: Mock.products.randomElement()!,
+          size: .large
+        )
+      }
     }
   }
 }
