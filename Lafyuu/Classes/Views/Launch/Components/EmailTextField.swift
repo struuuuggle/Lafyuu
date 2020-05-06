@@ -57,6 +57,7 @@ extension EmailTextField {
       onCommit: ({
       })
     )
+      .keyboardType(.emailAddress)
       // TODO: stateを作ったら入力中のfontをboldに変更 [2020/05/03]
       .font(R.font.poppinsRegular, size: 12)
   }

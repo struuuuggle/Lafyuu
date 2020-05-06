@@ -12,19 +12,27 @@ struct ProductCard: View {
   let size: ProductCardSize
 
   var body: some View {
-    VStack {
-      thumbnailImage
-      ProductCardCaption(product: product, size: size)
-    }
-    .frame(width: size.width, height: size.height)
-    .roundCorner(with: R.color.light)
+    NavigationLink(
+      destination: ProductDetailView(product: product),
+      label: { buttonLabel }
+    )
+      .frame(width: size.width, height: size.height)
+      .roundCorner(with: R.color.light)
   }
 }
 
 // MARK: - Private properties
 extension ProductCard {
+  var buttonLabel: some View {
+    VStack {
+      thumbnailImage
+      ProductCardCaption(product: product, size: size)
+    }
+  }
+
   var thumbnailImage: some View {
     Image(product.imageUrl)
+      .renderingMode(.original)
       .resizable()
       .roundCorner()
       .frame(width: size.imageSize, height: size.imageSize)

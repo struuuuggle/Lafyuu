@@ -20,18 +20,23 @@ struct StarRating: View {
   var body: some View {
     HStack(spacing: starSpacing) {
       Image(starImage(at: 1, for: rate))
+        .renderingMode(.original)
         .resizable()
         .frame(width: size.starSize, height: size.starSize)
       Image(starImage(at: 2, for: rate))
+        .renderingMode(.original)
         .resizable()
         .frame(width: size.starSize, height: size.starSize)
       Image(starImage(at: 3, for: rate))
+        .renderingMode(.original)
         .resizable()
         .frame(width: size.starSize, height: size.starSize)
       Image(starImage(at: 4, for: rate))
+        .renderingMode(.original)
         .resizable()
         .frame(width: size.starSize, height: size.starSize)
       Image(starImage(at: 5, for: rate))
+        .renderingMode(.original)
         .resizable()
         .frame(width: size.starSize, height: size.starSize)
     }

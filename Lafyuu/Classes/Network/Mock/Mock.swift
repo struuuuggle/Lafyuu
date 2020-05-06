@@ -5,80 +5,198 @@
 
 import Foundation
 import Rswift
+import SwiftUI
 
 enum Mock {
   static let products: [Product] = [
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
+      reviews: [
+        .init(reviewerName: "James Lawson",
+              reviewerImage: R.image.james,
+              rate: 4,
+              comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+              date: Date()
+        )
+      ],
       imageUrl: ProductImage.allCases.randomElement()!.image,
       currentPrice: (10000...20000).randomElement()!,
       regularPrice: (35000...60000).randomElement()!,
-      discountRate: (1..<50).randomElement()!
+      discountRate: (1..<50).randomElement()!,
+      specification: .init(
+        shown: ["Laser", "Blue/Anthracite/Watermel", "on/White"],
+        style: "CD0113-400",
+        description: "The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+      )
     ),
   ]
 
@@ -90,6 +208,13 @@ enum Mock {
       PromotionBanner(type: .recommend, expiryDate: Date()),
       PromotionBanner(type: .recommend, expiryDate: Date()),
     ]
+  }
+
+  enum ProductDetailPager {
+    static let pages = Array(
+      repeating: Image(R.image.kick_detail),
+      count: 5
+    )
   }
 
   enum ProductImage: CaseIterable {

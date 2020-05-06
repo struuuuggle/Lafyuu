@@ -24,3 +24,14 @@ extension UIColor {
     Color(self)
   }
 }
+
+enum LafyuuColor: String, CaseIterable {
+  case yellow
+  case red
+  case purple
+  case green
+  case blue
+  case dark
+  case grey
+  case light
+}

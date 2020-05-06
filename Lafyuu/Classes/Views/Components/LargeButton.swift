@@ -39,6 +39,7 @@ struct LargeButton: View {
     })
       .background(type.bgColor)
       .roundCorner()
+      .animation(.easeOut)
   }
 }
 
