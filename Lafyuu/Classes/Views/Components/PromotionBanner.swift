@@ -10,10 +10,17 @@ struct PromotionBanner: View {
   let type: PromotionType
   let expiryDate: Date?
 
+  init(type: PromotionType, expiryDate: Date? = nil) {
+    self.type = type
+    self.expiryDate = expiryDate
+  }
+
   var body: some View {
     ZStack(alignment: .topLeading) {
       Image(type.image)
+        .resizable()
         .roundCorner()
+        .frame(height: 206)
       overlayItems
     }
     .padding(.horizontal, 16)

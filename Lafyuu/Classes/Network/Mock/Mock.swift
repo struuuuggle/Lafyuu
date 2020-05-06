@@ -123,4 +123,9 @@ enum Mock {
       }
     }
   }
+
+  enum Coupon {
+    static let code = "MEGSL"
+    static let discount: Int = 90
+  }
 }
