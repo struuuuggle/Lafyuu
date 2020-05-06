@@ -10,6 +10,13 @@ enum PromotionType {
   case recommend
 }
 
+extension PromotionType: Equatable {
+  // fragile
+  static func == (lhs: Self, rhs: Self) -> Bool {
+    lhs.bannerTitle == rhs.bannerTitle
+  }
+}
+
 // MARK: - For Promotion Banner
 extension PromotionType {
   var image: ImageResource {
@@ -26,7 +33,11 @@ extension PromotionType {
     case .sale(let discountRate):
       return "Super Flash Sale\n\(discountRate)% Off"
     case .recommend:
-      return "Recommended Product\n We recommend the best for you"
+      return "Recommended\nProduct"
     }
+  }
+
+  var recommeingFollowingText: String {
+    return "We recommend the best for you"
   }
 }

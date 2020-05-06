@@ -8,6 +8,7 @@ import SwiftUI
 struct SaleSectionView: View {
   let saleType: SaleType
   let products = Mock.products.shuffled()
+  let expiryDate: Date?
 
   var body: some View {
     VStack {
@@ -18,7 +19,7 @@ struct SaleSectionView: View {
         }),
         trailingItem: {
           NavigationLink(
-            destination: SaleView(saleType: saleType),
+            destination: SaleView(saleType: saleType, expiryDate: expiryDate),
             label: {
               Text("See More")
                 .textStyle(.seeMore)
@@ -45,7 +46,8 @@ extension SaleSectionView {
 }
 
 struct SaleSectionView_Previews: PreviewProvider {
+  static let expiryDate = Date()
   static var previews: some View {
-    SaleSectionView(saleType: .flashSale)
+    SaleSectionView(saleType: .flashSale, expiryDate: expiryDate)
   }
 }

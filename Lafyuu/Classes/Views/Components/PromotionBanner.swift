@@ -7,10 +7,8 @@ import Rswift
 import SwiftUI
 
 struct PromotionBanner: View {
-  @Binding var hourRemaining: TimeInterval
-  @Binding var minuteRemaining: TimeInterval
-  @Binding var secondRemaining: TimeInterval
   let type: PromotionType
+  let expiryDate: Date?
 
   var body: some View {
     ZStack(alignment: .topLeading) {
@@ -27,11 +25,14 @@ extension PromotionBanner {
   var overlayItems: some View {
     VStack(alignment: .leading, spacing: 28) {
       bannerTitle
-      FlipClock(
-        hourRemaining: $hourRemaining,
-        minuteRemaining: $minuteRemaining,
-        secondRemaining: $secondRemaining
-      )
+        .padding(.top, type == .recommend ? 12 : 0)
+
+      // To be clean around here
+      if type == .recommend {
+        recommendItem
+      } else {
+        saleItem
+      }
     }
     .padding(.top, 36)
     .padding(.leading, 24)
@@ -43,16 +44,24 @@ extension PromotionBanner {
       .font(R.font.poppinsBold, size: 24)
       .foregroundColor(R.color.white)
   }
+
+  var recommendItem: some View {
+    Text(type.recommeingFollowingText)
+      .kerning(0.5)
+      .fontWeight(.light)
+      .font(R.font.poppinsRegular, size: 12)
+      .foregroundColor(R.color.white)
+  }
+
+  var saleItem: some View {
+    FlipClock(expiryDate: expiryDate)
+  }
 }
 
 struct Banner_Previews: PreviewProvider {
+  static let expiryDate = Date()
   static var previews: some View {
-    PromotionBanner(
-      hourRemaining: .constant(8),
-      minuteRemaining: .constant(10),
-      secondRemaining: .constant(5),
-      type: .sale(50)
-    )
+    PromotionBanner(type: .recommend, expiryDate: expiryDate)
       .previewLayout(.fixed(width: 375, height: 222))
   }
 }

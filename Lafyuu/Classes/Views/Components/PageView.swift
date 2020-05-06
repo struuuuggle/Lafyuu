@@ -23,7 +23,6 @@ struct PageView<Page: View>: View {
         numberOfPages: viewControllers.count,
         currentPage: $currentPage
       )
-        .frame(height: 8)
     }
   }
 }
@@ -33,10 +32,8 @@ struct PageView_Previews: PreviewProvider {
     PageView(
       Array(
         repeating: PromotionBanner(
-          hourRemaining: .constant(8),
-          minuteRemaining: .constant(10),
-          secondRemaining: .constant(5),
-          type: .sale(50)
+          type: .sale(50),
+          expiryDate: Date()
         ),
         count: 5
       )

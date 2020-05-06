@@ -73,6 +73,16 @@ enum Mock {
     ),
   ]
 
+  enum PromotionPager {
+    static let pages = [
+      PromotionBanner(type: .sale(50), expiryDate: Date()),
+      PromotionBanner(type: .recommend, expiryDate: Date()),
+      PromotionBanner(type: .recommend, expiryDate: Date()),
+      PromotionBanner(type: .recommend, expiryDate: Date()),
+      PromotionBanner(type: .recommend, expiryDate: Date()),
+    ]
+  }
+
   enum ProductImage: CaseIterable {
     case bag1
     case bag2

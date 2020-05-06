@@ -7,26 +7,26 @@ import Combine
 import SwiftUI
 
 struct FlipClock: View {
-  @Binding var hourRemaining: TimeInterval
-  @Binding var minuteRemaining: TimeInterval
-  @Binding var secondRemaining: TimeInterval
-  let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+  @State private(set) var hourRemaining: TimeInterval = 8
+  @State private(set) var minuteRemaining: TimeInterval = 10
+  @State private(set) var secondRemaining: TimeInterval = 5
+  // TODO: parse date to display timeRemaining with String format [2020/05/06]
+  let expiryDate: Date?
+  let timer = Timer.publish(every: 1, tolerance: 0.1, on: .main, in: .common)
+  let cancellable: AnyCancellable?
 
   let width: CGFloat
   let height: CGFloat
 
   init(
-    hourRemaining: Binding<TimeInterval>,
-    minuteRemaining: Binding<TimeInterval>,
-    secondRemaining: Binding<TimeInterval>,
+    expiryDate: Date?,
     width: CGFloat = 150,
     height: CGFloat = 42
   ) {
-    self._hourRemaining = hourRemaining
-    self._minuteRemaining = minuteRemaining
-    self._secondRemaining = secondRemaining
+    self.expiryDate = expiryDate
     self.width = width
     self.height = height
+    self.cancellable = self.timer.connect() as? AnyCancellable
   }
 
   var body: some View {
@@ -41,8 +41,12 @@ struct FlipClock: View {
     .onReceive(timer) { _ in
       self.updateClock()
     }
+    .onDisappear(perform: {
+      self.cancellable?.cancel()
+    })
   }
 
+  // TODO: FIX [2020/05/06]
   private func updateClock() {
     if hourRemaining > 0, minuteRemaining == 0, secondRemaining == 0 {
       hourRemaining -= 1
@@ -70,7 +74,7 @@ extension FlipClock {
     var body: some View {
       ZStack {
         bgRectangle
-        Text(String(format: "%02d", timeRemaining))
+        Text(String(format: "%02d", Int(timeRemaining)))
           .kerning(0.5)
           .font(R.font.poppinsBold, size: 16)
           .foregroundColor(R.color.dark)
@@ -92,12 +96,11 @@ extension FlipClock {
 }
 
 struct FlipClock_Previews: PreviewProvider {
+  @State private(set) static var hourRemaining: TimeInterval = 8
+  @State private(set) static var minuteRemaining: TimeInterval = 10
+  @State private(set) static var secondRemaining: TimeInterval = 5
   static var previews: some View {
-    FlipClock(
-      hourRemaining: .constant(8),
-      minuteRemaining: .constant(10),
-      secondRemaining: .constant(5)
-    )
+    FlipClock(expiryDate: Date())
       .background(Color(R.color.grey.name))
       .previewLayout(.fixed(width: 174, height: 60))
   }

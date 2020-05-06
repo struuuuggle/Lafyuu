@@ -6,20 +6,16 @@
 import SwiftUI
 
 struct SaleView: View {
-  @State var hourRemaining: TimeInterval = 8
-  @State var minuteRemaining: TimeInterval = 34
-  @State var secondRemaining: TimeInterval = 52
   let saleType: SaleType
+  let expiryDate: Date?
 
   var body: some View {
     ScrollView(showsIndicators: false) {
       VStack(spacing: 12) {
 
         PromotionBanner(
-          hourRemaining: $hourRemaining,
-          minuteRemaining: $minuteRemaining,
-          secondRemaining: $secondRemaining,
-          type: .sale(50)
+          type: .sale(50),
+          expiryDate: expiryDate
         )
 
         HStack {
@@ -48,7 +44,8 @@ struct SaleView: View {
 }
 
 struct SaleView_Previews: PreviewProvider {
+  static let expiryDate = Date()
   static var previews: some View {
-    SaleView(saleType: .flashSale)
+    SaleView(saleType: .flashSale, expiryDate: expiryDate)
   }
 }

@@ -9,28 +9,28 @@ struct HomeView: View {
   @State var hourRemaining: TimeInterval = 8
   @State var minuteRemaining: TimeInterval = 34
   @State var secondRemaining: TimeInterval = 52
+  let expiryDate = Date()
+
+  init() {
+    UINavigationBar.appearance().tintColor = R.color.grey()
+  }
 
   var body: some View {
     NavigationView {
       ScrollView {
         VStack(spacing: 24) {
-          PromotionBanner(
-            hourRemaining: $hourRemaining,
-            minuteRemaining: $minuteRemaining,
-            secondRemaining: $secondRemaining,
-            type: .sale(50)
-          )
+          Spacer()
+          PageView(Mock.PromotionPager.pages)
+            .frame(height: 230)
 
           CategorySectionView()
 
-          SaleSectionView(saleType: .flashSale)
-          SaleSectionView(saleType: .megaSale)
+          SaleSectionView(saleType: .flashSale, expiryDate: expiryDate)
+          SaleSectionView(saleType: .megaSale, expiryDate: expiryDate)
 
           PromotionBanner(
-            hourRemaining: $hourRemaining,
-            minuteRemaining: $minuteRemaining,
-            secondRemaining: $secondRemaining,
-            type: .sale(50)
+            type: .recommend,
+            expiryDate: expiryDate
           )
 
           HStack {
@@ -57,8 +57,12 @@ struct HomeView: View {
           Spacer()
         }
       }
+      .navigationBarTitle("Home")
+      .navigationBarItems(
+        trailing: HStack {
+          Image(R.image.love); Image(R.image.notification)
+      })
     }
-    .navigationBarTitle("Home")
   }
 }
 
