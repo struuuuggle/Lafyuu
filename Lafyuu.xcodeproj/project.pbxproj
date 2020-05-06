@@ -65,6 +65,10 @@
 		15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BC245E6AD700D0989B /* AccountView.swift */; };
 		15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC33BE245E6AE400D0989B /* OfferView.swift */; };
 		15BC33C2245E795F00D0989B /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 15BC33C1245E795F00D0989B /* Rswift */; };
+		15DC11962462EC2A000AFAFD /* ProductCardCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */; };
+		15DC11972462EC2A000AFAFD /* ProductCardCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */; };
+		15DC11992462F14D000AFAFD /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11982462F14D000AFAFD /* StarRating.swift */; };
+		15DC119A2462F14D000AFAFD /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11982462F14D000AFAFD /* StarRating.swift */; };
 		15FB2F61245E8754007ACDA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F60245E8754007ACDA5 /* LoginView.swift */; };
 		15FB2F64245E8831007ACDA5 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F63245E8831007ACDA5 /* EmailTextField.swift */; };
 		15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */; };
@@ -154,6 +158,8 @@
 		15BC33BA245E6AC800D0989B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		15BC33BC245E6AD700D0989B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		15BC33BE245E6AE400D0989B /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardCaption.swift; sourceTree = "<group>"; };
+		15DC11982462F14D000AFAFD /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
 		15FB2F60245E8754007ACDA5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		15FB2F63245E8831007ACDA5 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -442,6 +448,8 @@
 				15AE283D246184B0002FE574 /* CategoryCard.swift */,
 				15AE283724617272002FE574 /* PageControl.swift */,
 				15AE284D2461B11B002FE574 /* ProductCard.swift */,
+				15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */,
+				15DC11982462F14D000AFAFD /* StarRating.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -718,6 +726,7 @@
 				15FB2F68245E8FE7007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */,
 				15AE282924614C5F002FE574 /* PromotionType.swift in Sources */,
+				15DC11992462F14D000AFAFD /* StarRating.swift in Sources */,
 				15AE283224617200002FE574 /* PageViewController.swift in Sources */,
 				15AE2823246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F6B245E9DDF007ACDA5 /* LargeButton.swift in Sources */,
@@ -727,6 +736,7 @@
 				15AE28452461920C002FE574 /* Category.swift in Sources */,
 				15AE285C2461CA4D002FE574 /* SaleSectionView.swift in Sources */,
 				15BC33BF245E6AE400D0989B /* OfferView.swift in Sources */,
+				15DC11962462EC2A000AFAFD /* ProductCardCaption.swift in Sources */,
 				15FB2FB4245F0634007ACDA5 /* NameTextField.swift in Sources */,
 				15FB2F72245EAAC4007ACDA5 /* ViewModifier+Shape.swift in Sources */,
 				15AE284E2461B11B002FE574 /* ProductCard.swift in Sources */,
@@ -772,6 +782,7 @@
 				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,
 				15AE282A24614C5F002FE574 /* PromotionType.swift in Sources */,
+				15DC119A2462F14D000AFAFD /* StarRating.swift in Sources */,
 				15AE283324617200002FE574 /* PageViewController.swift in Sources */,
 				15AE2824246143A5002FE574 /* MainViewCoordinator.swift in Sources */,
 				15FB2F87245EC70B007ACDA5 /* LargeButton.swift in Sources */,
@@ -781,6 +792,7 @@
 				15AE28462461920C002FE574 /* Category.swift in Sources */,
 				15AE285D2461CA4D002FE574 /* SaleSectionView.swift in Sources */,
 				15FB2F8A245EC70B007ACDA5 /* OfferView.swift in Sources */,
+				15DC11972462EC2A000AFAFD /* ProductCardCaption.swift in Sources */,
 				15FB2FB5245F0634007ACDA5 /* NameTextField.swift in Sources */,
 				15FB2F8B245EC70B007ACDA5 /* ViewModifier+Shape.swift in Sources */,
 				15AE284F2461B11B002FE574 /* ProductCard.swift in Sources */,

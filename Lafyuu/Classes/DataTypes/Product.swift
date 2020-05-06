@@ -9,6 +9,7 @@ import Rswift
 struct Product: Identifiable {
   let id: UUID = .init()
   let name: String
+  var rate: Int?
   // TODO: Use URL [2020/05/05]
   let imageUrl: ImageResource
   let currentPrice: Int

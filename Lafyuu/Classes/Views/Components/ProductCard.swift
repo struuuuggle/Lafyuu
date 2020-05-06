@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-typealias ProductCardSize = Constant.ProductCard.Size
+typealias ProductCardSize = Constant.ProductCardSize
 
 struct ProductCard: View {
   let product: Product
@@ -14,7 +14,7 @@ struct ProductCard: View {
   var body: some View {
     VStack {
       thumbnailImage
-      caption
+      ProductCardCaption(product: product, size: size)
     }
     .frame(width: size.width, height: size.height)
     .roundCorner(with: R.color.light)
@@ -29,51 +29,24 @@ extension ProductCard {
       .roundCorner()
       .frame(width: size.imageSize, height: size.imageSize)
   }
-
-  var caption: some View {
-    VStack(alignment: .leading, spacing: 8) {
-      title
-      currentPrice
-
-      HStack {
-        regularPrice; discountRate
-      }
-    }
-    .padding(.horizontal, 16)
-  }
-
-  var title: some View {
-    Text(product.name)
-      .textStyle(.productCardTitle)
-      .multilineTextAlignment(.leading)
-      .lineLimit(2)
-      .lineSpacing(0.5)
-  }
-
-  var currentPrice: some View {
-    Text("$\(product.currentPrice)")
-      .textStyle(.productCardPrice)
-      .lineSpacing(0.5)
-  }
-
-  var regularPrice: some View {
-    Text("$\(product.regularPrice)")
-      .strikethrough()
-      .textStyle(.productRegularPrice)
-  }
-
-  var discountRate: some View {
-    Text("\(product.discountRate)% Off")
-      .textStyle(.productDiscountRate)
-  }
 }
 
 struct ProductCard_Previews: PreviewProvider {
   static var previews: some View {
-    ProductCard(
-      product: Mock.products.first!,
-      size: .large
-    )
-      .previewLayout(.fixed(width: 180, height: 300))
+    Group {
+      ProductCard(
+        product: Mock.products.first!,
+        size: .normal
+      )
+        .previewDisplayName("Normal")
+        .previewLayout(.fixed(width: 150, height: 250))
+
+      ProductCard(
+        product: Mock.products.first!,
+        size: .large
+      )
+        .previewDisplayName("Large")
+        .previewLayout(.fixed(width: 180, height: 300))
+    }
   }
 }

@@ -10,35 +10,87 @@ enum Constant {
     static let radius: CGFloat = 5
   }
 
-  enum ProductCard {
-    enum Size {
-      case normal
-      case large
+  enum ProductCardSize: Equatable {
+    case normal
+    case large
 
-      var width: CGFloat {
-        switch self {
-        case .normal:
-          return 141
-        case .large:
-          return 165
-        }
-      }
-      var height: CGFloat {
-        switch self {
-        case .normal:
-          return 238
-        case .large:
-          return 282
-        }
-      }
+    static func == (lhs: Self, rhs: Self) -> Bool {
+      lhs.width == rhs.width
+    }
 
-      var imageSize: CGFloat {
-        switch self {
-        case .normal:
-          return 109
-        case .large:
-          return 133
-        }
+    var width: CGFloat {
+      switch self {
+      case .normal:
+        return 141
+      case .large:
+        return 165
+      }
+    }
+    var height: CGFloat {
+      switch self {
+      case .normal:
+        return 238
+      case .large:
+        return 282
+      }
+    }
+
+    var imageSize: CGFloat {
+      switch self {
+      case .normal:
+        return 109
+      case .large:
+        return 133
+      }
+    }
+  }
+
+  enum StarRatingSize {
+    case small
+    case medium
+    case big
+
+    var frameWidth: CGFloat {
+      switch self {
+      case .small:
+        return 68
+      case .medium:
+        return 96
+      case .big:
+        return 224
+      }
+    }
+
+    var frameHeight: CGFloat {
+      switch self {
+      case .small:
+        return 12
+      case .medium:
+        return 16
+      case .big:
+        return 32
+      }
+    }
+
+    var starSize: CGFloat {
+      switch self {
+      case .small:
+        return 12
+      case .medium:
+        return 16
+      case .big:
+        return 32
+      }
+    }
+
+    var starSpacing: CGFloat {
+      switch self {
+      case .small:
+        return 2
+      case .medium:
+        return 4
+      case .big:
+        return 16
       }
     }
   }
