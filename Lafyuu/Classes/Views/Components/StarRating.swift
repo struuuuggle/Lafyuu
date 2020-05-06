@@ -19,26 +19,12 @@ struct StarRating: View {
 
   var body: some View {
     HStack(spacing: starSpacing) {
-      Image(starImage(at: 1, for: rate))
-        .renderingMode(.original)
-        .resizable()
-        .frame(width: size.starSize, height: size.starSize)
-      Image(starImage(at: 2, for: rate))
-        .renderingMode(.original)
-        .resizable()
-        .frame(width: size.starSize, height: size.starSize)
-      Image(starImage(at: 3, for: rate))
-        .renderingMode(.original)
-        .resizable()
-        .frame(width: size.starSize, height: size.starSize)
-      Image(starImage(at: 4, for: rate))
-        .renderingMode(.original)
-        .resizable()
-        .frame(width: size.starSize, height: size.starSize)
-      Image(starImage(at: 5, for: rate))
-        .renderingMode(.original)
-        .resizable()
-        .frame(width: size.starSize, height: size.starSize)
+      ForEach(1...5, id: \.self) { i in
+        Image(self.starImage(at: i, for: self.rate))
+          .renderingMode(.original)
+          .resizable()
+          .frame(width: self.size.starSize, height: self.size.starSize)
+      }
     }
   }
 }
@@ -60,32 +46,32 @@ extension StarRating {
 struct StarRating_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      Group {
-        ForEach(1...5, id: \.self) { rate in
+      VStack {
+        ForEach(0...5, id: \.self) { rate in
           StarRating(
             rate: rate, size: .small)
-            .previewDisplayName("Small")
         }
       }
-      .previewLayout(.fixed(width: 120, height: 68))
+      .previewDisplayName("Small")
+      .previewLayout(.fixed(width: 120, height: 150))
 
-      Group {
-        ForEach(1...5, id: \.self) { rate in
+      VStack {
+        ForEach(0...5, id: \.self) { rate in
           StarRating(
             rate: rate, size: .medium)
-            .previewDisplayName("Medium")
         }
       }
-      .previewLayout(.fixed(width: 160, height: 96))
+      .previewDisplayName("Medium")
+      .previewLayout(.fixed(width: 150, height: 200))
 
-      Group {
-        ForEach(1...5, id: \.self) { rate in
+      VStack {
+        ForEach(0...5, id: \.self) { rate in
           StarRating(
             rate: rate, size: .big)
-            .previewDisplayName("Big")
         }
       }
+      .previewDisplayName("Large")
+      .previewLayout(.fixed(width: 300, height: 350))
     }
-    .previewLayout(.fixed(width: 320, height: 224))
   }
 }
