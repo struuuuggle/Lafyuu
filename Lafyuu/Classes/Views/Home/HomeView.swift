@@ -23,7 +23,7 @@ struct HomeView: View {
           PageView(Mock.PromotionPager.pages)
             .frame(height: 230)
 
-          CategorySectionView()
+          CategorySection()
 
           SaleSectionView(saleType: .flashSale, expiryDate: expiryDate)
           SaleSectionView(saleType: .megaSale, expiryDate: expiryDate)

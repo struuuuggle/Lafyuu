@@ -35,8 +35,8 @@
 		15AE283924617272002FE574 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283724617272002FE574 /* PageControl.swift */; };
 		15AE283E246184B0002FE574 /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283D246184B0002FE574 /* CategoryCard.swift */; };
 		15AE283F246184B0002FE574 /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE283D246184B0002FE574 /* CategoryCard.swift */; };
-		15AE284224618F47002FE574 /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE284124618F47002FE574 /* CategorySectionView.swift */; };
-		15AE284324618F47002FE574 /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE284124618F47002FE574 /* CategorySectionView.swift */; };
+		15AE284224618F47002FE574 /* CategorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE284124618F47002FE574 /* CategorySection.swift */; };
+		15AE284324618F47002FE574 /* CategorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE284124618F47002FE574 /* CategorySection.swift */; };
 		15AE28452461920C002FE574 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE28442461920C002FE574 /* Category.swift */; };
 		15AE28462461920C002FE574 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE28442461920C002FE574 /* Category.swift */; };
 		15AE284824619B2E002FE574 /* ViewModifier+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE284724619B2E002FE574 /* ViewModifier+Text.swift */; };
@@ -69,6 +69,8 @@
 		15DC11972462EC2A000AFAFD /* ProductCardCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */; };
 		15DC11992462F14D000AFAFD /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11982462F14D000AFAFD /* StarRating.swift */; };
 		15DC119A2462F14D000AFAFD /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC11982462F14D000AFAFD /* StarRating.swift */; };
+		15DC119C2462FE35000AFAFD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC119B2462FE35000AFAFD /* CategoryView.swift */; };
+		15DC119D2462FE35000AFAFD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC119B2462FE35000AFAFD /* CategoryView.swift */; };
 		15FB2F61245E8754007ACDA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F60245E8754007ACDA5 /* LoginView.swift */; };
 		15FB2F64245E8831007ACDA5 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F63245E8831007ACDA5 /* EmailTextField.swift */; };
 		15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */; };
@@ -140,7 +142,7 @@
 		15AE283424617259002FE574 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		15AE283724617272002FE574 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		15AE283D246184B0002FE574 /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
-		15AE284124618F47002FE574 /* CategorySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionView.swift; sourceTree = "<group>"; };
+		15AE284124618F47002FE574 /* CategorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySection.swift; sourceTree = "<group>"; };
 		15AE28442461920C002FE574 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		15AE284724619B2E002FE574 /* ViewModifier+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Text.swift"; sourceTree = "<group>"; };
 		15AE284A2461A9B4002FE574 /* HomeSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeader.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		15BC33BE245E6AE400D0989B /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
 		15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardCaption.swift; sourceTree = "<group>"; };
 		15DC11982462F14D000AFAFD /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
+		15DC119B2462FE35000AFAFD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		15FB2F60245E8754007ACDA5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		15FB2F63245E8831007ACDA5 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		15FB2F65245E8B6C007ACDA5 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -306,7 +309,7 @@
 		15AE284024618F39002FE574 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				15AE284124618F47002FE574 /* CategorySectionView.swift */,
+				15AE284124618F47002FE574 /* CategorySection.swift */,
 				15AE284A2461A9B4002FE574 /* HomeSectionHeader.swift */,
 				15AE285B2461CA4D002FE574 /* SaleSectionView.swift */,
 			);
@@ -353,6 +356,7 @@
 				15AE284024618F39002FE574 /* Components */,
 				15BC33B6245E6AA700D0989B /* HomeView.swift */,
 				15AE285E2461CC7B002FE574 /* SaleView.swift */,
+				15DC119B2462FE35000AFAFD /* CategoryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -705,6 +709,7 @@
 				15FB2FAA245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
 				1503307C245D92EB00333EF1 /* AppDelegate.swift in Sources */,
 				1503307E245D92EB00333EF1 /* SceneDelegate.swift in Sources */,
+				15DC119C2462FE35000AFAFD /* CategoryView.swift in Sources */,
 				15AE284824619B2E002FE574 /* ViewModifier+Text.swift in Sources */,
 				15FB2F9F245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA2245ED32B007ACDA5 /* OAuthType.swift in Sources */,
@@ -721,7 +726,7 @@
 				15AE283524617259002FE574 /* PageView.swift in Sources */,
 				15FB2F64245E8831007ACDA5 /* EmailTextField.swift in Sources */,
 				15AE28562461B623002FE574 /* Mock.swift in Sources */,
-				15AE284224618F47002FE574 /* CategorySectionView.swift in Sources */,
+				15AE284224618F47002FE574 /* CategorySection.swift in Sources */,
 				15FB2F6E245EA019007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F68245E8FE7007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */,
@@ -761,6 +766,7 @@
 				15FB2FAB245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
 				15FB2F7D245EC70B007ACDA5 /* AppDelegate.swift in Sources */,
 				15FB2F7E245EC70B007ACDA5 /* SceneDelegate.swift in Sources */,
+				15DC119D2462FE35000AFAFD /* CategoryView.swift in Sources */,
 				15AE284924619B2E002FE574 /* ViewModifier+Text.swift in Sources */,
 				15FB2FA0245ED0AF007ACDA5 /* ThirdPartyLoginButton.swift in Sources */,
 				15FB2FA3245ED32B007ACDA5 /* OAuthType.swift in Sources */,
@@ -777,7 +783,7 @@
 				15AE283624617259002FE574 /* PageView.swift in Sources */,
 				15FB2F83245EC70B007ACDA5 /* EmailTextField.swift in Sources */,
 				15AE28572461B623002FE574 /* Mock.swift in Sources */,
-				15AE284324618F47002FE574 /* CategorySectionView.swift in Sources */,
+				15AE284324618F47002FE574 /* CategorySection.swift in Sources */,
 				15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,

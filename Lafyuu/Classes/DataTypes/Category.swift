@@ -21,6 +21,10 @@ enum Category: String, CaseIterable {
   case womanTshirt = "woman_tshirt"
 }
 
+extension Category: Identifiable {
+  var id: String { rawValue }
+}
+
 extension Category {
   var name: String {
     switch self {
