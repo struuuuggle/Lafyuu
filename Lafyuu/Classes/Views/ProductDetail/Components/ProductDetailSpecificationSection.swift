@@ -59,10 +59,11 @@ extension ProductDetailSpecificationSection {
   private var containerDescription: some View {
     Text(specification?.description ?? "")
       .kerning(0.5)
+      .lineLimit(5)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.grey)
-      .lineLimit(5)
       .lineSpacing(0.5)
+      .frame(minHeight: 64)
   }
 }
 
