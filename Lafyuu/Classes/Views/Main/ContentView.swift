@@ -14,26 +14,30 @@ struct ContentView: View {
         .tabItem {
           VStack {
             Image(R.image.home)
+              .renderingMode(.template)
+              .accentColor(R.color.blue)
             Text("Home")
               .font(R.font.poppinsRegular, size: 10.0)
           }
-          .accentColor(R.color.blue)
       }
       .tag(0)
       ExploreView()
         .tabItem {
           VStack {
             Image(R.image.search)
+              .renderingMode(.template)
+              .accentColor(R.color.blue)
             Text("Explore")
               .font(R.font.poppinsRegular, size: 10.0)
           }
-          .accentColor(R.color.blue)
       }
       .tag(1)
       CartView()
         .tabItem {
           VStack {
             Image(R.image.cart)
+              .renderingMode(.template)
+              .accentColor(R.color.blue)
             Text("Cart")
               .font(R.font.poppinsRegular, size: 10.0)
           }
@@ -44,6 +48,8 @@ struct ContentView: View {
         .tabItem {
           VStack {
             Image(R.image.offer)
+              .renderingMode(.template)
+              .accentColor(R.color.blue)
             Text("Offer")
               .font(R.font.poppinsRegular, size: 10.0)
           }
@@ -54,6 +60,8 @@ struct ContentView: View {
         .tabItem {
           VStack {
             Image(R.image.user)
+              .renderingMode(.template)
+              .accentColor(R.color.blue)
             Text("Account")
               .font(R.font.poppinsRegular, size: 10.0)
           }
