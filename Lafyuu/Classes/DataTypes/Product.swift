@@ -29,8 +29,9 @@ struct ProductSpecification {
 struct Review {
   let reviewerName: String?
   // TODO: Use URL [2020/05/07]
-  var reviewerImage: ImageResource
+  let profileImage: ImageResource?
   let rate: Int?
+  let productImages: [ImageResource]
   let comment: String?
   let date: Date
 }

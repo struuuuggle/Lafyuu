@@ -51,3 +51,10 @@ extension Text {
     self.foregroundColor(Color(resource.name))
   }
 }
+
+// MARK: - Identifiable
+extension ImageResource: Identifiable {
+  public var id: String {
+    self.name
+  }
+}

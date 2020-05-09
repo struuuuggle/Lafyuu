@@ -3,6 +3,7 @@
 //  Copyright © 2020, Mikiya Abe. All rights reserved.
 //
 
+import Rswift
 import SwiftUI
 
 struct ProductDetailReviewerSection: View {
@@ -18,6 +19,8 @@ struct ProductDetailReviewerSection: View {
     VStack(alignment: .leading, spacing: 16) {
       reviewerInfo
       reviewComment
+      reviewImages
+      reviewDate
     }
   }
 }
@@ -41,6 +44,27 @@ extension ProductDetailReviewerSection {
       .lineLimit(10)
       .lineSpacing(5)
       .font(R.font.poppinsRegular, size: 12)
+      .foregroundColor(R.color.grey)
+  }
+
+  private var reviewImages: some View {
+    HStack {
+      ForEach(displayedReview?.productImages ?? [ImageResource](), id: \.name) { resource in
+        Image(resource)
+          .resizable()
+          .roundCorner()
+          .frame(
+            width: Constant.Image.reviewerProduct.size,
+            height: Constant.Image.reviewerProduct.size
+        )
+      }
+    }
+  }
+
+  private var reviewDate: some View {
+    Text(displayedReview?.date.yMMMd(local: .us) ?? "NO DATE")
+      .kerning(0.5)
+      .font(R.font.poppinsRegular, size: 10)
       .foregroundColor(R.color.grey)
   }
 }

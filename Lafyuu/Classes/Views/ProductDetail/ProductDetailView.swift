@@ -57,12 +57,24 @@ extension ProductDetailView {
   }
 
   private var recommendSection: some View {
-    EmptyView()
+    ScrollView(.horizontal, showsIndicators: false) {
+      VStack(alignment: .leading) {
+        SectionHeader(leadingText: "You Might Also Like")
+
+        HStack {
+          ForEach(Mock.products.shuffled(), id: \.id) { product in
+            ProductCard(product: product, size: .normal)
+          }
+        }
+      }
+    }
   }
 }
 
+// MARK: - PreviewProvider
 struct ProductDetailView_Previews: PreviewProvider {
   static var previews: some View {
     ProductDetailView(product: Mock.products.randomElement()!)
+      .previewLayout(.fixed(width: 375, height: 1805))
   }
 }

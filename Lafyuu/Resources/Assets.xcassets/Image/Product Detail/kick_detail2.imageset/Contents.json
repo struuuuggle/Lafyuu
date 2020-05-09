@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "kick_detail.png",
+      "filename" : "kick_detail2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "kick_detail@2x.png",
+      "filename" : "kick_detail2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "kick_detail@3x.png",
+      "filename" : "kick_detail2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

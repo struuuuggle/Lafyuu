@@ -8,14 +8,16 @@ import Rswift
 import SwiftUI
 
 enum Mock {
+
   static let products: [Product] = [
     .init(
       name: "FS - Nike Air Max 270 React ENG",
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -35,8 +37,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -56,8 +59,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -77,8 +81,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -98,8 +103,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -119,8 +125,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -140,8 +147,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -161,8 +169,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -182,8 +191,9 @@ enum Mock {
       rate: (1...5).randomElement(),
       reviews: [
         .init(reviewerName: "James Lawson",
-              reviewerImage: R.image.james,
+              profileImage: R.image.james,
               rate: 4,
+              productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
               comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
               date: Date()
         )
@@ -212,7 +222,7 @@ enum Mock {
 
   enum ProductDetailPager {
     static let pages = Array(
-      repeating: Image(R.image.kick_detail),
+      repeating: Image(R.image.kick_detail_top),
       count: 5
     )
   }
