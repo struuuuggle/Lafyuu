@@ -27,8 +27,8 @@
 		157A558124632AA300306FE1 /* ProductDetailColorSelectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A557F24632AA300306FE1 /* ProductDetailColorSelectionSection.swift */; };
 		157A558324632E1900306FE1 /* ProductDetailSpecificationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */; };
 		157A558424632E1900306FE1 /* ProductDetailSpecificationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */; };
-		157A55862463355100306FE1 /* ProductDetailReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ProductDetailReviewerSection.swift */; };
-		157A55872463355100306FE1 /* ProductDetailReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ProductDetailReviewerSection.swift */; };
+		157A55862463355100306FE1 /* ReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ReviewerSection.swift */; };
+		157A55872463355100306FE1 /* ReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ReviewerSection.swift */; };
 		1587A820246684990035B947 /* ReviewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A81F246684990035B947 /* ReviewFilter.swift */; };
 		1587A821246684990035B947 /* ReviewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A81F246684990035B947 /* ReviewFilter.swift */; };
 		1587A824246699A70035B947 /* ReviewStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A823246699A70035B947 /* ReviewStarButton.swift */; };
@@ -168,7 +168,7 @@
 		157A557C2463253D00306FE1 /* KickSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickSize.swift; sourceTree = "<group>"; };
 		157A557F24632AA300306FE1 /* ProductDetailColorSelectionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailColorSelectionSection.swift; sourceTree = "<group>"; };
 		157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailSpecificationSection.swift; sourceTree = "<group>"; };
-		157A55852463355100306FE1 /* ProductDetailReviewerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailReviewerSection.swift; sourceTree = "<group>"; };
+		157A55852463355100306FE1 /* ReviewerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewerSection.swift; sourceTree = "<group>"; };
 		1587A81F246684990035B947 /* ReviewFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFilter.swift; sourceTree = "<group>"; };
 		1587A823246699A70035B947 /* ReviewStarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewStarButton.swift; sourceTree = "<group>"; };
 		15A8C7CB24603E3600C82233 /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 				157A55792463245600306FE1 /* ProductDetailSizeSelectionSection.swift */,
 				157A557F24632AA300306FE1 /* ProductDetailColorSelectionSection.swift */,
 				157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */,
-				157A55852463355100306FE1 /* ProductDetailReviewerSection.swift */,
+				157A55852463355100306FE1 /* ReviewerSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -800,7 +800,7 @@
 				157A558024632AA300306FE1 /* ProductDetailColorSelectionSection.swift in Sources */,
 				15FB2F70245EAA58007ACDA5 /* Constant+View.swift in Sources */,
 				15AE282C2461513D002FE574 /* FlipClock.swift in Sources */,
-				157A55862463355100306FE1 /* ProductDetailReviewerSection.swift in Sources */,
+				157A55862463355100306FE1 /* ReviewerSection.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				15FB2FAA245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
@@ -872,7 +872,7 @@
 				157A558124632AA300306FE1 /* ProductDetailColorSelectionSection.swift in Sources */,
 				15FB2F7B245EC70B007ACDA5 /* Constant+View.swift in Sources */,
 				15AE282D2461513D002FE574 /* FlipClock.swift in Sources */,
-				157A55872463355100306FE1 /* ProductDetailReviewerSection.swift in Sources */,
+				157A55872463355100306FE1 /* ReviewerSection.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				15FB2FAB245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,

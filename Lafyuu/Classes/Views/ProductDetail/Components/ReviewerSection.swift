@@ -6,7 +6,7 @@
 import Rswift
 import SwiftUI
 
-struct ProductDetailReviewerSection: View {
+struct ReviewerSection: View {
   let reviews: [Review]
   let displayedReview: Review?
 
@@ -26,7 +26,7 @@ struct ProductDetailReviewerSection: View {
 }
 
 // MARK: - Private properties
-extension ProductDetailReviewerSection {
+extension ReviewerSection {
   private var reviewerInfo: some View {
     HStack(spacing: 16) {
       Image(R.image.james)
@@ -71,7 +71,7 @@ extension ProductDetailReviewerSection {
 
 struct ProductDetailReviewerSection_Previews: PreviewProvider {
   static var previews: some View {
-    ProductDetailReviewerSection(
+    ReviewerSection(
       reviews: Mock.products.randomElement()!.reviews
     )
       .padding(16)
