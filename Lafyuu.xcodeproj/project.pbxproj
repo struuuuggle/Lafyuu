@@ -13,6 +13,7 @@
 		15033082245D92EC00333EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033081245D92EC00333EF1 /* Assets.xcassets */; };
 		15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15033084245D92EC00333EF1 /* Preview Assets.xcassets */; };
 		15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15033086245D92EC00333EF1 /* LaunchScreen.storyboard */; };
+		150C14FB246D8BF700B6B288 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C14FA246D8BF700B6B288 /* DateTests.swift */; };
 		157A556C2463080000306FE1 /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A556B2463080000306FE1 /* CategorySectionView.swift */; };
 		157A556D2463080000306FE1 /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A556B2463080000306FE1 /* CategorySectionView.swift */; };
 		157A5573246316B500306FE1 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A5572246316B500306FE1 /* ProductDetailView.swift */; };
@@ -153,6 +154,16 @@
 		15FC4981245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		150C14F5246D8B5700B6B288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15033070245D92EB00333EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15FB2F73245EC70B007ACDA5;
+			remoteInfo = "Dev Lafyuu";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		15033078245D92EB00333EF1 /* Lafyuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lafyuu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1503307B245D92EB00333EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +174,9 @@
 		15033087245D92EC00333EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1503309A245DA7AE00333EF1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		150330A4245DA7BB00333EF1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		150C14F0246D8B5700B6B288 /* Dev LafyuuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dev LafyuuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		150C14F4246D8B5700B6B288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150C14FA246D8BF700B6B288 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		157A556B2463080000306FE1 /* CategorySectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySectionView.swift; sourceTree = "<group>"; };
 		157A5572246316B500306FE1 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		157A55762463243A00306FE1 /* ProductDetailProductSummaryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailProductSummaryContainer.swift; sourceTree = "<group>"; };
@@ -240,6 +254,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		150C14ED246D8B5700B6B288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15FB2F76245EC70B007ACDA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				1503307A245D92EB00333EF1 /* Lafyuu */,
+				150C14F1246D8B5700B6B288 /* DevLafyuuTests */,
 				15033079245D92EB00333EF1 /* Products */,
 				15BC33A5245E539800D0989B /* Frameworks */,
 			);
@@ -265,6 +287,7 @@
 			children = (
 				15033078245D92EB00333EF1 /* Lafyuu.app */,
 				15FB2F96245EC70B007ACDA5 /* Dev Lafyuu.app */,
+				150C14F0246D8B5700B6B288 /* Dev LafyuuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,6 +381,15 @@
 				15BC33A3245E52DF00D0989B /* R.generated.swift */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		150C14F1246D8B5700B6B288 /* DevLafyuuTests */ = {
+			isa = PBXGroup;
+			children = (
+				150C14FA246D8BF700B6B288 /* DateTests.swift */,
+				150C14F4246D8B5700B6B288 /* Info.plist */,
+			);
+			path = DevLafyuuTests;
 			sourceTree = "<group>";
 		};
 		157A556E2463168900306FE1 /* ProductDetail */ = {
@@ -621,6 +653,24 @@
 			productReference = 15033078245D92EB00333EF1 /* Lafyuu.app */;
 			productType = "com.apple.product-type.application";
 		};
+		150C14EF246D8B5700B6B288 /* Dev LafyuuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150C14F9246D8B5700B6B288 /* Build configuration list for PBXNativeTarget "Dev LafyuuTests" */;
+			buildPhases = (
+				150C14EC246D8B5700B6B288 /* Sources */,
+				150C14ED246D8B5700B6B288 /* Frameworks */,
+				150C14EE246D8B5700B6B288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150C14F6246D8B5700B6B288 /* PBXTargetDependency */,
+			);
+			name = "Dev LafyuuTests";
+			productName = "Dev LafyuuTests";
+			productReference = 150C14F0246D8B5700B6B288 /* Dev LafyuuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		15FB2F73245EC70B007ACDA5 /* Dev Lafyuu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15FB2F93245EC70B007ACDA5 /* Build configuration list for PBXNativeTarget "Dev Lafyuu" */;
@@ -656,6 +706,10 @@
 					15033077245D92EB00333EF1 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					150C14EF246D8B5700B6B288 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 15FB2F73245EC70B007ACDA5;
+					};
 				};
 			};
 			buildConfigurationList = 15033073245D92EB00333EF1 /* Build configuration list for PBXProject "Lafyuu" */;
@@ -676,6 +730,7 @@
 			targets = (
 				15033077245D92EB00333EF1 /* Lafyuu */,
 				15FB2F73245EC70B007ACDA5 /* Dev Lafyuu */,
+				150C14EF246D8B5700B6B288 /* Dev LafyuuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -690,6 +745,13 @@
 				15033088245D92EC00333EF1 /* LaunchScreen.storyboard in Resources */,
 				15033085245D92EC00333EF1 /* Preview Assets.xcassets in Resources */,
 				15033082245D92EC00333EF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150C14EE246D8B5700B6B288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +922,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		150C14EC246D8B5700B6B288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150C14FB246D8BF700B6B288 /* DateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15FB2F79245EC70B007ACDA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -934,6 +1004,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		150C14F6246D8B5700B6B288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15FB2F73245EC70B007ACDA5 /* Dev Lafyuu */;
+			targetProxy = 150C14F5246D8B5700B6B288 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15033086245D92EC00333EF1 /* LaunchScreen.storyboard */ = {
@@ -1105,6 +1183,48 @@
 			};
 			name = Release;
 		};
+		150C14F7246D8B5700B6B288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V7GGDY985;
+				INFOPLIST_FILE = DevLafyuuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.Dev-LafyuuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dev Lafyuu.app/Dev Lafyuu";
+			};
+			name = Debug;
+		};
+		150C14F8246D8B5700B6B288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V7GGDY985;
+				INFOPLIST_FILE = DevLafyuuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.struuuuggle.Dev-LafyuuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dev Lafyuu.app/Dev Lafyuu";
+			};
+			name = Release;
+		};
 		15FB2F94245EC70B007ACDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1166,6 +1286,15 @@
 			buildConfigurations = (
 				1503308D245D92EC00333EF1 /* Debug */,
 				1503308E245D92EC00333EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150C14F9246D8B5700B6B288 /* Build configuration list for PBXNativeTarget "Dev LafyuuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150C14F7246D8B5700B6B288 /* Debug */,
+				150C14F8246D8B5700B6B288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

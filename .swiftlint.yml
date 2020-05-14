@@ -7,6 +7,7 @@ disabled_rules:
 - nesting
 - identifier_name
 - trailing_comma
+- force_try
 
 # lint対象から除外するファイルのパス
 excluded:
