@@ -25,7 +25,7 @@ struct ProductDetailProductSummaryContainer: View {
           .foregroundColor(isLoveOn ? R.color.red : R.color.grey)
       }
 
-      StarRating(rate: 5, size: .medium)
+      StarRating(rate: .constant(5), size: .medium)
         .padding(.bottom, 12)
 
       Text("$\(product.currentPrice)")

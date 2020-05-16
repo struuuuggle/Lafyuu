@@ -16,7 +16,7 @@ struct ProductCardCaption: View {
       VStack(alignment: .leading, spacing: 4) {
         title
         if size == .large {
-          StarRating(rate: product.rate, size: .small)
+          StarRating(rate: .constant(product.rate), size: .small)
         }
       }
 

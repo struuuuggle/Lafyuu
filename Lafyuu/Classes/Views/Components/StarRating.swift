@@ -7,12 +7,12 @@ import Rswift
 import SwiftUI
 
 struct StarRating: View {
-  let rate: Int?
+  @Binding private(set) var rate: Int?
   let size: StarRatingSize
   let starSpacing: CGFloat
 
-  init(rate: Int?, size: StarRatingSize) {
-    self.rate = rate
+  init(rate: Binding<Int?>, size: StarRatingSize) {
+    self._rate = rate
     self.size = size
     self.starSpacing = size.starSpacing
   }
@@ -20,10 +20,16 @@ struct StarRating: View {
   var body: some View {
     HStack(spacing: starSpacing) {
       ForEach(1...5, id: \.self) { i in
-        Image(self.starImage(at: i, for: self.rate))
-          .renderingMode(.original)
-          .resizable()
-          .frame(width: self.size.starSize, height: self.size.starSize)
+        Button(
+          action: {
+            self.rate = i
+        },
+          label: {
+            Image(self.starImage(at: i, for: self.rate))
+              .renderingMode(.original)
+              .resizable()
+              .frame(width: self.size.starSize, height: self.size.starSize)
+        })
       }
     }
   }
@@ -44,12 +50,13 @@ extension StarRating {
 
 // MARK: - PreviewProvider
 struct StarRating_Previews: PreviewProvider {
+  @State static private var rate: Int? = 0
   static var previews: some View {
     Group {
       VStack {
         ForEach(0...5, id: \.self) { rate in
           StarRating(
-            rate: rate, size: .small)
+            rate: .constant(rate), size: .small)
         }
       }
       .previewDisplayName("Small")
@@ -58,7 +65,7 @@ struct StarRating_Previews: PreviewProvider {
       VStack {
         ForEach(0...5, id: \.self) { rate in
           StarRating(
-            rate: rate, size: .medium)
+            rate: .constant(rate), size: .medium)
         }
       }
       .previewDisplayName("Medium")
@@ -67,11 +74,17 @@ struct StarRating_Previews: PreviewProvider {
       VStack {
         ForEach(0...5, id: \.self) { rate in
           StarRating(
-            rate: rate, size: .big)
+            rate: .constant(rate), size: .big)
         }
       }
       .previewDisplayName("Large")
       .previewLayout(.fixed(width: 300, height: 350))
+
+      VStack {
+        StarRating(rate: $rate, size: .big)
+      }
+      .previewDisplayName("Tappable")
+      .previewLayout(.fixed(width: 300, height: 60))
     }
   }
 }

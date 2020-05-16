@@ -43,7 +43,7 @@ extension ProductDetailView {
       SectionHeader(leadingText: "ReviewProduct", trailingText: "See More")
 
       HStack {
-        StarRating(rate: product.rate, size: .medium)
+        StarRating(rate: .constant(product.rate), size: .medium)
         Text("\(product.rate ?? 0)")
           .kerning(0.5)
           .font(R.font.poppinsBold, size: 10)

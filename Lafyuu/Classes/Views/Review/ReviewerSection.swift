@@ -28,7 +28,7 @@ extension ReviewerSection {
       VStack(alignment: .leading, spacing: 4) {
         Text(review?.reviewerName ?? "Anonymous")
           .textStyle(.heading)
-        StarRating(rate: review?.rate, size: .medium)
+        StarRating(rate: .constant(review?.rate), size: .medium)
       }
       Spacer()
     }
