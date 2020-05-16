@@ -263,4 +263,39 @@ enum Mock {
     static let code = "MEGSL"
     static let discount: Int = 90
   }
+
+  enum Review {
+    static let reviews: [Dev_Lafyuu.Review] = [
+      .init(reviewerName: "James Lawson",
+            profileImage: R.image.james,
+            rate: 4,
+            productImages: [R.image.kick_detail1, R.image.kick_detail2, R.image.kick_detail3],
+            comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.",
+            date: Date()
+      ),
+      .init(reviewerName: "Laura Octavian",
+            profileImage: R.image.laura,
+            rate: 4,
+            productImages: [],
+            comment: "This is really amazing product, i like the design of product, I hope can buy it again!",
+            date: Date()
+      ),
+      .init(
+        reviewerName: "Jhonson Bridge",
+        profileImage: R.image.jhonson,
+        rate: 5,
+        productImages: [],
+        comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit",
+        date: Date()
+      ),
+      .init(
+        reviewerName: "Friffin Rod",
+        profileImage: R.image.griffin,
+        rate: 5,
+        productImages: [R.image.kick_detail2, R.image.kick_detail3],
+        comment: "air max are always very comfortable fit, clean and just perfect in every way. just the box was too small",
+        date: Date()
+      )
+    ]
+  }
 }

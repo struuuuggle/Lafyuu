@@ -26,7 +26,8 @@ struct ProductSpecification {
   let description: String
 }
 
-struct Review {
+struct Review: Identifiable {
+  let id: UUID = .init()
   let reviewerName: String?
   // TODO: Use URL [2020/05/07]
   let profileImage: ImageResource?

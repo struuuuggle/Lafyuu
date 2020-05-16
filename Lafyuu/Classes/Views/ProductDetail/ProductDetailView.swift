@@ -24,7 +24,7 @@ struct ProductDetailView: View {
 
         reviewProductSection
 
-        ReviewerSection(reviews: product.reviews)
+        ReviewerSection(review: product.reviews.first)
 
         recommendSection
 
