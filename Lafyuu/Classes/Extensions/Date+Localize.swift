@@ -32,7 +32,7 @@ extension Date {
   ///     now.yMMMd(local: .us) // May 9, 2020
   ///     now.yMMMd(local: .jp) // 2020年5月9日
   ///     now.yMMMd(local: .gb) // 9 May 2020
-  ///     now.yMMMd(local: .fr) // 9 mai 2020
+  ///     now.yMMMd(local: .fr) // 9 May 2020
   ///
   /// - Parameters:
   ///   - identifier: An enum case which specifies the date locale identifier (such as "jp" or "us"), "jp" by default.
@@ -53,13 +53,13 @@ extension Date {
   ///
   ///     let now = Date()
   ///     now.hm12 // "00:44 AM"
-  var hm12: String {
+  func hm12(local identifier: LocaleIdentifier) -> String {
     let df = DateFormatter()
 
     df.dateFormat = DateFormatter.dateFormat(
       fromTemplate: Template.hm12.rawValue,
       options: 0,
-      locale: Locale.current
+      locale: Locale(identifier: identifier.rawValue)
     )
 
     return df.string(from: self)
@@ -69,13 +69,13 @@ extension Date {
   ///
   ///     let now = Date()
   ///     now.hm24 // "23:44"
-  var hm24: String {
+  func hm24(local identifier: LocaleIdentifier) -> String {
     let df = DateFormatter()
 
     df.dateFormat = DateFormatter.dateFormat(
       fromTemplate: Template.hm24.rawValue,
       options: 0,
-      locale: Locale.current
+      locale: Locale(identifier: identifier.rawValue)
     )
 
     return df.string(from: self)
@@ -85,13 +85,13 @@ extension Date {
   ///
   ///     let now = Date()
   ///     now.hms12 // "11:44:30 PM"
-  var hms12: String {
+  func hms12(local identifier: LocaleIdentifier) -> String {
     let df = DateFormatter()
 
     df.dateFormat = DateFormatter.dateFormat(
       fromTemplate: Template.hms12.rawValue,
       options: 0,
-      locale: Locale.current
+      locale: Locale(identifier: identifier.rawValue)
     )
 
     return df.string(from: self)
@@ -101,13 +101,13 @@ extension Date {
   ///
   ///     let now = Date()
   ///     now.hms24 // "23:44:30"
-  var hms24: String {
+  func hms24(local identifier: LocaleIdentifier) -> String {
     let df = DateFormatter()
 
     df.dateFormat = DateFormatter.dateFormat(
       fromTemplate: Template.hms24.rawValue,
       options: 0,
-      locale: Locale.current
+      locale: Locale(identifier: identifier.rawValue)
     )
 
     return df.string(from: self)
