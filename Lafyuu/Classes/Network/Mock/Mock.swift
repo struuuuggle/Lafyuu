@@ -7,8 +7,9 @@ import Foundation
 import Rswift
 import SwiftUI
 
-enum Mock {
+enum Mock {}
 
+extension Mock {
   static let products: [Product] = [
     .init(
       name: "FS - Nike Air Max 270 React ENG",
@@ -209,7 +210,9 @@ enum Mock {
       )
     ),
   ]
+}
 
+extension Mock {
   enum PromotionPager {
     static let pages = [
       PromotionBanner(type: .sale(50), expiryDate: Date()),
@@ -219,14 +222,18 @@ enum Mock {
       PromotionBanner(type: .recommend, expiryDate: Date()),
     ]
   }
+}
 
+extension Mock {
   enum ProductDetailPager {
     static let pages = Array(
       repeating: Image(R.image.kick_detail_top),
       count: 5
     )
   }
+}
 
+extension Mock {
   enum ProductImage: CaseIterable {
     case bag1
     case bag2
@@ -258,12 +265,16 @@ enum Mock {
       }
     }
   }
+}
 
+extension Mock {
   enum Coupon {
     static let code = "MEGSL"
     static let discount: Int = 90
   }
+}
 
+extension Mock {
   enum Review {
     static let reviews: [Dev_Lafyuu.Review] = [
       .init(reviewerName: "James Lawson",
