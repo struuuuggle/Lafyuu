@@ -25,7 +25,7 @@ extension WriteReviewView {
       Text("Please write Overall level of satisfaction with your shipping / Delivery Service")
         .textStyle(.heading)
         .lineSpacing(0.5)
-      HStack(spacing: 16) {
+      HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         StarRating(rate: $rate, size: .big)
         Text("\(rate.wrappedValue ?? 0)/5")
           .kerning(0.5)

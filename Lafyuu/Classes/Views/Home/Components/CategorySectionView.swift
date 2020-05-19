@@ -21,7 +21,7 @@ struct CategorySection: View {
 extension CategorySection {
   var container: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack(spacing: 12) {
+      HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         ForEach(Category.allCases, id: \.self) { category in
           CategoryCard(category)
         }

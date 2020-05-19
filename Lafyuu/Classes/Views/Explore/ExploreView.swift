@@ -21,6 +21,7 @@ extension ExploreView {
   private var manFashionSection: some View {
     VStack(alignment: .leading) {
       SectionHeader<EmptyView>(leadingText: "Man Fashion")
+      // TODO: Fixed spacing [2020/05/20]
       HStack(spacing: 32) {
         CategoryCard(.shirt)
         CategoryCard(.manBag)

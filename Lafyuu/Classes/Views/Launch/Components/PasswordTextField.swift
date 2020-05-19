@@ -21,7 +21,7 @@ struct PasswordTextField: View {
   var body: some View {
     ZStack {
       tfBackground
-      HStack(spacing: 10) {
+      HStack(spacing: Constant.Spacing.inline.rawValue) {
         icon
         textField
       }

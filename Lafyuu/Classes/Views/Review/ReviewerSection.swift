@@ -22,7 +22,7 @@ struct ReviewerSection: View {
 // MARK: - Private properties
 extension ReviewerSection {
   private var reviewerInfo: some View {
-    HStack(spacing: 16) {
+    HStack(spacing: Constant.Spacing.horizontal.rawValue) {
       // TODO: Set profile image as placeholer [2020/05/16]
       Image(review?.profileImage ?? R.image.james)
       VStack(alignment: .leading, spacing: 4) {

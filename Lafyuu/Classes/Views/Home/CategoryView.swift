@@ -30,7 +30,7 @@ extension CategoryView {
         Rectangle()
           .foregroundColor(R.color.white)
 
-        HStack(spacing: 16) {
+        HStack(spacing: Constant.Spacing.horizontal.rawValue) {
           Image(category.imageName)
             .frame(width: Constant.Icon.Size.small, height: Constant.Icon.Size.small)
           Text(category.name)

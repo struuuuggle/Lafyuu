@@ -20,7 +20,7 @@ struct ProductDetailColorSelectionSection: View {
 extension ProductDetailColorSelectionSection {
   private var container: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack(spacing: 16) {
+      HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         ForEach(LafyuuColor.allCases, id: \.self) { color in
           self.colorButton(color: color)
         }

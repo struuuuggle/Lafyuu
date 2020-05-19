@@ -46,7 +46,7 @@ extension ThirdPartyLoginButton {
   }
 
   private var logoLayer: some View {
-    HStack(spacing: 10) {
+    HStack(spacing: Constant.Spacing.inline.rawValue) {
       Image(oAuthType.logo)
         .renderingMode(.original)
         .frame(

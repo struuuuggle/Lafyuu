@@ -35,7 +35,7 @@ struct SaleSectionView: View {
 extension SaleSectionView {
   private var saleSectionContainer: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack(spacing: 12) {
+      HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         ForEach(products, id: \.id) { product in
           ProductCard(product: product, size: .normal)
         }

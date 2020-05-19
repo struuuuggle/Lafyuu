@@ -9,6 +9,7 @@ extension Constant {
   enum Spacing: CGFloat {
     case horizontal = 16
     case vertical = 24
+    case inline = 10
   }
 
   static let lafyuuPadding: CGFloat = 16

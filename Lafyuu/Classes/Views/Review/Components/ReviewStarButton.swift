@@ -30,7 +30,7 @@ struct ReviewStarButton: View {
   }
 
   private func buttonLabel(rate: ProductReviewRate) -> some View {
-    HStack(spacing: 10) {
+    HStack(spacing: Constant.Spacing.inline.rawValue) {
       Image(R.image.star_filled)
         .resizable()
         .frame(

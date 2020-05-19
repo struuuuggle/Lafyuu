@@ -20,7 +20,7 @@ struct ProductDetailSizeSelectionSection: View {
 extension ProductDetailSizeSelectionSection {
   private var container: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack(spacing: 16) {
+      HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         ForEach(KickSize.mens, id: \.self) { size in
           self.sizeButton(size: size)
         }
