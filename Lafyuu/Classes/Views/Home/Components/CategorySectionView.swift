@@ -8,8 +8,10 @@ import SwiftUI
 struct CategorySection: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 12) {
-      SectionHeader(leadingText: "Category", trailingText: "More Category")
-        .padding(.horizontal, 16)
+      SectionHeader(leadingText: "Category", trailingText: "More Category") {
+        CategoryView()
+      }
+      .padding(.horizontal, 16)
       container
     }
   }
@@ -29,13 +31,21 @@ extension CategorySection {
   }
 }
 
-struct SectionHeader: View {
+struct SectionHeader<Content>: View where Content: View {
   let leadingText: String
   var trailingText: String?
+  var destinationView: (() -> Content)
 
-  init(leadingText: String, trailingText: String? = nil) {
+  init(leadingText: String, trailingText: String? = nil, destination: (() -> EmptyView)? = nil) {
     self.leadingText = leadingText
     self.trailingText = trailingText
+    self.destinationView = { EmptyView() as! Content }
+  }
+
+  @inlinable init(leadingText: String, trailingText: String? = nil, @ViewBuilder destination: @escaping (() -> Content)) {
+    self.leadingText = leadingText
+    self.trailingText = trailingText
+    self.destinationView = destination
   }
 
   var body: some View {
@@ -46,7 +56,7 @@ struct SectionHeader: View {
 
       if trailingText != nil {
         NavigationLink(
-          destination: CategoryView(),
+          destination: destinationView(),
           label: {
             Text(trailingText!)
               .textStyle(.seeMore)

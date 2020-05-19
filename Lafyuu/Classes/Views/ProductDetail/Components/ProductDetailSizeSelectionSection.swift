@@ -10,7 +10,7 @@ struct ProductDetailSizeSelectionSection: View {
 
   var body: some View {
     VStack(spacing: 12) {
-      SectionHeader(leadingText: "Select Size")
+      SectionHeader<EmptyView>(leadingText: "Select Size")
       container
     }
   }

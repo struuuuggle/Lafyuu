@@ -10,18 +10,20 @@ struct ReviewProductView: View {
 
   var body: some View {
     VStack {
-      ScrollView(.horizontal, showsIndicators: false) {
-        ReviewFilter()
-      }
-      .padding(.horizontal, 16)
       ScrollView(.vertical, showsIndicators: false) {
+        ScrollView(.horizontal, showsIndicators: false) {
+          ReviewFilter()
+        }
         VStack(spacing: 24) {
           ForEach(reviews, id: \.id) { review in
             ReviewerSection(review: review)
           }
-          LargeButton(label: "Write Review") {
-            // TODO: Go to white review view [2020/05/16]
-          }
+          NavigationLink(
+            destination: WriteReviewView(),
+            label: {
+              // TODO: Adapt LargeButton for NavigationLink [2020/05/19]
+              LargeButton(label: "Write Review") {}
+          })
         }
       }
       .padding(.horizontal, 16)

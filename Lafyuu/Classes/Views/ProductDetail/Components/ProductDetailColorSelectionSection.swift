@@ -10,7 +10,7 @@ struct ProductDetailColorSelectionSection: View {
 
   var body: some View {
     VStack(spacing: 12) {
-      SectionHeader(leadingText: "Select Color")
+      SectionHeader<EmptyView>(leadingText: "Select Color")
       container
     }
   }

@@ -37,7 +37,7 @@ extension WriteReviewView {
 
   private func reviewInputSection(text: Binding<String>) -> some View {
     VStack(spacing: 16) {
-      SectionHeader(leadingText: "Write Your Review")
+      SectionHeader<EmptyView>(leadingText: "Write Your Review")
       TextView(placeholder: "Write your review here", text: text)
         .roundCorner(with: R.color.light)
         .frame(height: 160)
@@ -46,7 +46,7 @@ extension WriteReviewView {
 
   private var addPhotoSection: some View {
     VStack {
-      SectionHeader(leadingText: "Add Photo")
+      SectionHeader<EmptyView>(leadingText: "Add Photo")
       HStack {
         Button(
           action: {

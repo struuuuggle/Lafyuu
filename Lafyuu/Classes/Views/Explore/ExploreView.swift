@@ -20,7 +20,7 @@ struct ExploreView: View {
 extension ExploreView {
   private var manFashionSection: some View {
     VStack(alignment: .leading) {
-      SectionHeader(leadingText: "Man Fashion")
+      SectionHeader<EmptyView>(leadingText: "Man Fashion")
       HStack(spacing: 32) {
         CategoryCard(.shirt)
         CategoryCard(.manBag)
@@ -36,7 +36,7 @@ extension ExploreView {
 
   private var womanFashionSection: some View {
     VStack(alignment: .leading) {
-      SectionHeader(leadingText: "Woman Fashion")
+      SectionHeader<EmptyView>(leadingText: "Woman Fashion")
       HStack(spacing: 32) {
         CategoryCard(.dress)
         CategoryCard(.womanTshirt)

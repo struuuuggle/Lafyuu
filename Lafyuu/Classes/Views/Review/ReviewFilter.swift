@@ -31,6 +31,7 @@ extension ReviewFilter {
     })
       .frame(width: width, height: height)
       .background(Color(R.color.blue).opacity(0.1))
+      .roundCorner()
   }
 }
 

@@ -40,7 +40,7 @@ struct TextView: UIViewRepresentable {
   }
 
   func updateUIView(_ uiView: UITextView, context: Context) {
-    text = uiView.text
+    uiView.text = text
   }
 }
 

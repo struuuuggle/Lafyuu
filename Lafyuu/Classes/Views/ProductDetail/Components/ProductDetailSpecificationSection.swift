@@ -10,7 +10,7 @@ struct ProductDetailSpecificationSection: View {
 
   var body: some View {
     VStack(spacing: 12) {
-      SectionHeader(leadingText: "Specification")
+      SectionHeader<EmptyView>(leadingText: "Specification")
       container
     }
   }

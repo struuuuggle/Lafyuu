@@ -10,7 +10,7 @@ struct ProductDetailView: View {
 
   var body: some View {
     ScrollView {
-      VStack(spacing: 24) {
+      VStack(spacing: Constant.Spacing.vertical.rawValue) {
         PageView(Mock.ProductDetailPager.pages)
           .frame(height: 262)
 
@@ -30,7 +30,7 @@ struct ProductDetailView: View {
 
         LargeButton(label: "Add To Card") {}
       }
-      .padding(16)
+      .padding(Constant.lafyuuPadding)
     }
   }
 }
@@ -40,7 +40,9 @@ extension ProductDetailView {
 
   private var reviewProductSection: some View {
     VStack(alignment: .leading) {
-      SectionHeader(leadingText: "ReviewProduct", trailingText: "See More")
+      SectionHeader(leadingText: "ReviewProduct", trailingText: "See More") {
+        ReviewProductView(reviews: self.product.reviews)
+      }
 
       HStack {
         StarRating(rate: .constant(product.rate), size: .medium)
@@ -59,9 +61,9 @@ extension ProductDetailView {
   private var recommendSection: some View {
     ScrollView(.horizontal, showsIndicators: false) {
       VStack(alignment: .leading) {
-        SectionHeader(leadingText: "You Might Also Like")
+        SectionHeader<EmptyView>(leadingText: "You Might Also Like")
 
-        HStack {
+        HStack(spacing: Constant.Spacing.horizontal.rawValue) {
           ForEach(Mock.products.shuffled(), id: \.id) { product in
             ProductCard(product: product, size: .normal)
           }
