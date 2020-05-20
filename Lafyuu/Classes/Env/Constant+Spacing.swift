@@ -14,3 +14,10 @@ extension Constant {
 
   static let lafyuuPadding: CGFloat = 16
 }
+
+extension View {
+  /// Add the Lafyuu padding value which behaves the same way as `.padding(16)`
+  func lafyuuPadding() -> some View {
+    self.padding(Constant.lafyuuPadding)
+  }
+}

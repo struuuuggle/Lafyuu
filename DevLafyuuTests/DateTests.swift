@@ -48,6 +48,13 @@ class DateTests: XCTestCase {
     XCTAssertNotNil(regex.firstMatch(in: actual, range: NSRange(actual.startIndex..., in: actual)), "actual: \(actual)")
   }
 
+  // MARK: - Tests Date.yMMMdhm12()
+  func testUs_yMMMdhm12() throws {
+    regex = try! NSRegularExpression(pattern: #"[A-Z][a-z]{2}\s\d{1,2},\s\d{1,4},\s\d{1,2}:\d{2}\s(AM|PM)"#)
+    let actual = now.yMMMdhm12(local: .us)
+    XCTAssertNotNil(regex.firstMatch(in: actual, range: NSRange(actual.startIndex..., in: actual)), "actual: \(actual)")
+  }
+
   // MARK: - Tests Date.hm12(local:)
 
   func testUs_hm12() throws {

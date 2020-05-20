@@ -310,3 +310,28 @@ extension Mock {
     ]
   }
 }
+
+extension Mock {
+  enum NotificationOffer {
+    static let offers: [Offer] = [
+      .init(
+        id: .init(),
+        title: "The Best Title",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo",
+        date: Date()
+      ),
+      .init(
+        id: .init(),
+        title: "SUMMER OFFER 98% Cashback",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: Date()
+      ),
+      .init(
+        id: .init(),
+        title: "Special Offer 25% OFF",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo",
+        date: Date()
+      )
+    ]
+  }
+}

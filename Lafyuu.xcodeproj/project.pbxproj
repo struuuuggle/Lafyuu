@@ -160,6 +160,8 @@
 		15FC319A2466E11A00FAA0FC /* Date+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC31982466E11A00FAA0FC /* Date+Localize.swift */; };
 		15FC4980245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */; };
 		15FC4981245FFF8B00A9FF23 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */; };
+		15FC7D4D2475853500651213 /* NotificationOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC7D4C2475853500651213 /* NotificationOfferView.swift */; };
+		15FC7D4E2475853500651213 /* NotificationOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC7D4C2475853500651213 /* NotificationOfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +257,7 @@
 		15FC31952466DC2B00FAA0FC /* Constant+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Image.swift"; sourceTree = "<group>"; };
 		15FC31982466E11A00FAA0FC /* Date+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Localize.swift"; sourceTree = "<group>"; };
 		15FC497F245FFF8B00A9FF23 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		15FC7D4C2475853500651213 /* NotificationOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +369,7 @@
 				15BC33AF245E6A5B00D0989B /* Home */,
 				15BC33B5245E6A9100D0989B /* Launch */,
 				15BC33B4245E6A8700D0989B /* Main */,
+				15FC7D4A2475841D00651213 /* Notification */,
 				15BC33B2245E6A6800D0989B /* Offer */,
 				157A556E2463168900306FE1 /* ProductDetail */,
 				1587A81E2466847A0035B947 /* Review */,
@@ -644,6 +648,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		15FC7D4A2475841D00651213 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				15FC7D4C2475853500651213 /* NotificationOfferView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -873,6 +885,7 @@
 				15AE284B2461A9B4002FE574 /* HomeSectionHeader.swift in Sources */,
 				15A8C7CF24606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAD245F0329007ACDA5 /* LaunchType.swift in Sources */,
+				15FC7D4D2475853500651213 /* NotificationOfferView.swift in Sources */,
 				15AE283824617272002FE574 /* PageControl.swift in Sources */,
 				157A557D2463253D00306FE1 /* KickSize.swift in Sources */,
 				15BC33B9245E6ABA00D0989B /* ExploreView.swift in Sources */,
@@ -958,6 +971,7 @@
 				15AE284C2461A9B4002FE574 /* HomeSectionHeader.swift in Sources */,
 				15A8C7D024606F5F00C82233 /* RegisterViewCoordinator.swift in Sources */,
 				15FB2FAE245F0329007ACDA5 /* LaunchType.swift in Sources */,
+				15FC7D4E2475853500651213 /* NotificationOfferView.swift in Sources */,
 				15AE283924617272002FE574 /* PageControl.swift in Sources */,
 				157A557E2463253D00306FE1 /* KickSize.swift in Sources */,
 				15FB2F7A245EC70B007ACDA5 /* ExploreView.swift in Sources */,

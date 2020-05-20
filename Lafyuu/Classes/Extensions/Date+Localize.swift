@@ -16,6 +16,7 @@ extension Date {
 
   enum Template: String {
     case date = "yMMMd"
+    case datehm12 = "yMMMd hm"
     case hm12 = "hm"
     case hm24 = "Hm"
     case hms12 = "hms"
@@ -42,6 +43,26 @@ extension Date {
 
     df.dateFormat = DateFormatter.dateFormat(
       fromTemplate: Template.date.rawValue,
+      options: 0,
+      locale: Locale(identifier: identifier.rawValue)
+    )
+
+    return df.string(from: self)
+  }
+
+  /// Returns a localized string representation of a given date.(e.g. May 9, 2020 1:03 PM")
+  ///
+  ///     let now = Date()
+  ///     now.yMMMdhm12(local: .us) // May 9, 2020 1:03 PM"
+  ///
+  /// - Parameters:
+  ///   - identifier: An enum case which specifies the date locale identifier (such as "jp" or "us"), "jp" by default.
+  /// - Returns: A localized string representation of a given date.
+  func yMMMdhm12(local identifier: LocaleIdentifier = .jp) -> String {
+    let df = DateFormatter()
+
+    df.dateFormat = DateFormatter.dateFormat(
+      fromTemplate: Template.datehm12.rawValue,
       options: 0,
       locale: Locale(identifier: identifier.rawValue)
     )
