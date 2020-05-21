@@ -11,7 +11,7 @@ struct LaunchHeaderView: View {
   var body: some View {
     VStack(spacing: 16) {
       appIcon
-      VStack(spacing: 8) {
+      VStack(spacing: .tightVertical) {
         title
         subtitle
       }

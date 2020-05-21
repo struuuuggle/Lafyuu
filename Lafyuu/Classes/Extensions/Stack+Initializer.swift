@@ -19,6 +19,18 @@ extension HStack {
   @inlinable init(alignment: VerticalAlignment = .center, spacing: Constant.Spacing, @ViewBuilder content: () -> Content) {
     self.init(alignment: alignment, spacing: spacing.rawValue, content: content)
   }
+
+  /// Convenience Initilizer
+  ///
+  ///     HStack(spacing: .tightHorizontal) {
+  ///         ...
+  ///     }
+  /// - Parameters:
+  ///   - spacing: The distance between adjacent subviews, or nil if you want the stack to choose a default distance for each pair of subviews.
+  ///   - content: A view builder that creates the content of this stack.
+  @inlinable init(spacing: Constant.Spacing, @ViewBuilder content: () -> Content) {
+    self.init(alignment: .center, spacing: spacing.rawValue, content: content)
+  }
 }
 
 extension VStack {
@@ -34,5 +46,17 @@ extension VStack {
   ///   - content: A view builder that creates the content of this stack.
   @inlinable init(alignment: HorizontalAlignment = .center, spacing: Constant.Spacing, @ViewBuilder content: () -> Content) {
     self.init(alignment: alignment, spacing: spacing.rawValue, content: content)
+  }
+
+  /// Convenience Initilizer
+  ///
+  ///     VStack(spacing: .vertical) {
+  ///         ...
+  ///     }
+  /// - Parameters:
+  ///   - spacing: The distance between adjacent subviews, or nil if you want the stack to choose a default distance for each pair of subviews.
+  ///   - content: A view builder that creates the content of this stack.
+  @inlinable init(spacing: Constant.Spacing, @ViewBuilder content: () -> Content) {
+    self.init(alignment: .center, spacing: spacing.rawValue, content: content)
   }
 }

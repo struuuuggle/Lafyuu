@@ -7,7 +7,7 @@ import SwiftUI
 
 struct ExploreView: View {
   var body: some View {
-    VStack(spacing: 24) {
+    VStack(spacing: .vertical) {
       manFashionSection
       womanFashionSection
       Spacer()

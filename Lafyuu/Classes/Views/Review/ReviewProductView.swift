@@ -14,7 +14,7 @@ struct ReviewProductView: View {
         ScrollView(.horizontal, showsIndicators: false) {
           ReviewFilter()
         }
-        VStack(spacing: 24) {
+        VStack(spacing: .vertical) {
           ForEach(reviews, id: \.id) { review in
             ReviewerSection(review: review)
           }

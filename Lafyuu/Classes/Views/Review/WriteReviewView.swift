@@ -9,7 +9,7 @@ struct WriteReviewView: View {
   @State private(set) var rate: Int? = 0
   @State private(set) var reviewText: String = ""
   var body: some View {
-    VStack(spacing: 24) {
+    VStack(spacing: .vertical) {
       starRating(rate: $rate)
       reviewInputSection(text: $reviewText)
       addPhotoSection

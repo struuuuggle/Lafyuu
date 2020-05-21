@@ -23,7 +23,7 @@ struct LoginView: View {
       LaunchHeaderView(type: type)
 
       VStack(spacing: 16) {
-        VStack(spacing: 8) {
+        VStack(spacing: .tightVertical) {
           // TODO: 入力中にTextFieldをハイライトする [2020/05/03]
           EmailTextField(placeholder: "Your Email", email: $email)
           PasswordTextField(placeholder: "Password", password: $password)
@@ -33,7 +33,7 @@ struct LoginView: View {
           self.delegate?.login()
         }
         LoginDividerView()
-        VStack(spacing: 8) {
+        VStack(spacing: .tightVertical) {
           ThirdPartyLoginButton(loginType: .google) {
           }
           ThirdPartyLoginButton(loginType: .facebook) {

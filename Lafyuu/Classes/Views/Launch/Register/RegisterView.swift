@@ -40,7 +40,7 @@ struct RegisterView: View {
 // MARK: - private properties
 extension RegisterView {
   private var formStack: some View {
-    VStack(spacing: 8) {
+    VStack(spacing: .tightVertical) {
       NameTextField(
         placeholder: "Full Name",
         name: $fullName
