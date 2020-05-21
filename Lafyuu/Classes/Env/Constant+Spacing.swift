@@ -6,9 +6,13 @@
 import SwiftUI
 
 extension Constant {
-  enum Spacing: CGFloat {
+  public enum Spacing: CGFloat {
     case horizontal = 16
+    case tightHorizontal = 12
+
     case vertical = 24
+    case tightVertical = 8
+
     case inline = 10
   }
 

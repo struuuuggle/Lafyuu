@@ -13,7 +13,7 @@ struct NotificationFeedView: View {
       ForEach(feeds, id: \.id) { feed in
         NotificationRow(
           image: Mock.ProductImage.allCases.randomElement()!.image,
-          imageSize: .thumbnail,
+          imageStyle: .notificationFeedThumbnail,
           content: feed
         )
       }

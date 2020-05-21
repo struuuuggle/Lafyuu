@@ -13,7 +13,7 @@ struct NotificationOfferView: View {
       ForEach(offers, id: \.id) { offer in
         NotificationRow(
           image: R.image.offer,
-          imageSize: .icon,
+          imageStyle: .notificationIcon,
           content: offer
         )
       }

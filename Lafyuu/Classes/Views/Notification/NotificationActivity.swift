@@ -13,7 +13,7 @@ struct NotificationActivity: View {
       ForEach(activities, id: \.id) { activity in
         NotificationRow(
           image: R.image.transaction,
-          imageSize: .icon,
+          imageStyle: .notificationIcon,
           content: activity
         )
       }

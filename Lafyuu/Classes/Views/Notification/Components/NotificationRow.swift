@@ -8,17 +8,14 @@ import SwiftUI
 
 struct NotificationRow<T: BaseNotificationContent>: View {
   private(set) var image: ImageResource
-  private(set) var imageSize: Self.ImageSize
+  private(set) var imageStyle: LafyuuImageStyle
   private(set) var content: T
 
   var body: some View {
-    HStack(alignment: .top, spacing: 12) {
+    HStack(alignment: .top, spacing: .tightHorizontal) {
       Image(image)
-        .resizable()
-        .renderingMode(imageSize.render)
-        .foregroundColor(R.color.blue)
-        .frame(width: imageSize.frame, height: imageSize.frame)
-      VStack(alignment: .leading, spacing: 8) {
+        .imageStyle(imageStyle)
+      VStack(alignment: .leading, spacing: .tightVertical) {
         Text(content.title)
           .textStyle(.heading)
         Text(content.description)
@@ -30,50 +27,32 @@ struct NotificationRow<T: BaseNotificationContent>: View {
   }
 }
 
-// MARK: - Private Entities
-extension NotificationRow {
-  enum ImageSize {
-    case icon
-    case thumbnail
-
-    var frame: CGFloat {
-      switch self {
-      case .icon:
-        return 24
-      case .thumbnail:
-        return 48
-      }
-    }
-
-    var render: Image.TemplateRenderingMode {
-      switch self {
-      case .icon:
-        return .template
-      case .thumbnail:
-        return .original
-      }
-    }
-  }
-}
-
 struct NotificationOfferRow_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       NotificationRow(
         image: R.image.offer,
-        imageSize: .icon,
+        imageStyle: .notificationIcon,
         content: Mock.NotificationOffer.offers.randomElement()!
       )
         .lafyuuPadding()
-        .previewLayout(.fixed(width: 400, height: 200))
+        .previewLayout(.fixed(width: 400, height: 160))
 
       NotificationRow(
         image: Mock.ProductImage.allCases.randomElement()!.image,
-        imageSize: .thumbnail,
+        imageStyle: .notificationFeedThumbnail,
         content: Mock.NotificationFeed.feeds.randomElement()!
       )
         .lafyuuPadding()
-        .previewLayout(.fixed(width: 400, height: 200))
+        .previewLayout(.fixed(width: 400, height: 160))
+
+      NotificationRow(
+        image: R.image.transaction,
+        imageStyle: .notificationIcon,
+        content: Mock.NotificationActivity.activities.randomElement()!
+      )
+        .lafyuuPadding()
+        .previewLayout(.fixed(width: 400, height: 160))
     }
   }
 }

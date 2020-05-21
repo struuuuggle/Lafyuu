@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-enum Constant {}
+public enum Constant {}
 
 extension Constant {
   enum View {
