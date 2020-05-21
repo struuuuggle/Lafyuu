@@ -60,17 +60,17 @@ struct NotificationOfferRow_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       NotificationRow(
-        image: R.image.kick_1,
-        imageSize: .thumbnail,
+        image: R.image.offer,
+        imageSize: .icon,
         content: Mock.NotificationOffer.offers.randomElement()!
       )
         .lafyuuPadding()
         .previewLayout(.fixed(width: 400, height: 200))
 
       NotificationRow(
-        image: R.image.offer,
-        imageSize: .icon,
-        content: Mock.NotificationOffer.offers.randomElement()!
+        image: Mock.ProductImage.allCases.randomElement()!.image,
+        imageSize: .thumbnail,
+        content: Mock.NotificationFeed.feeds.randomElement()!
       )
         .lafyuuPadding()
         .previewLayout(.fixed(width: 400, height: 200))

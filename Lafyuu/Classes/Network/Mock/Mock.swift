@@ -364,6 +364,31 @@ extension Mock {
   }
 }
 
+extension Mock {
+  enum NotificationActivity {
+    static let activities: [Activity] = [
+      .init(
+        id: .init(),
+        title: "Transaction Nike Air Zoom Product",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo",
+        date: Date()
+      ),
+      .init(
+        id: .init(),
+        title: "Transaction Nike Air Zoom Pegasus 36 Miami",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: Date()
+      ),
+      .init(
+        id: .init(),
+        title: "Transaction Nike Air Max",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo",
+        date: Date()
+      )
+    ]
+  }
+}
+
 // MARK: - Helper
 
 extension URL {
