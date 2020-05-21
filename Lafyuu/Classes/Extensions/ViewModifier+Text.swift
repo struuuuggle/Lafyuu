@@ -9,10 +9,14 @@ import SwiftUI
 enum LafyuuTextStyle {
   case heading
   case seeMore
+  // MARK: Product
   case productCardTitle
   case productCardPrice
   case productRegularPrice
   case productDiscountRate
+  // MARK: Notification
+  case notificationOfferDescription
+  case notificationOfferDate
 
   var color: ColorResource {
     switch self {
@@ -28,26 +32,52 @@ enum LafyuuTextStyle {
       return R.color.grey
     case .productDiscountRate:
       return R.color.red
+    case .notificationOfferDescription:
+      return R.color.grey
+    case .notificationOfferDate:
+      return R.color.dark
     }
   }
 
   var fontSize: CGFloat {
     switch self {
-    case .productRegularPrice, .productDiscountRate:
-      return 10
-    case .productCardTitle, .productCardPrice:
-      return 12
-    default:
+    case .heading:
       return 14
+    case .seeMore:
+      return 14
+    case .productCardTitle:
+      return 12
+    case .productCardPrice:
+      return 12
+    case .productRegularPrice:
+      return 10
+    case .productDiscountRate:
+      return 10
+    case .notificationOfferDescription:
+      return 12
+    case .notificationOfferDate:
+      return 10
     }
   }
 
   var fontFamily: FontResource {
     switch self {
+    case .heading:
+      return R.font.poppinsBold
+    case .seeMore:
+      return R.font.poppinsBold
+    case .productCardTitle:
+      return R.font.poppinsBold
+    case .productCardPrice:
+      return R.font.poppinsBold
     case .productRegularPrice:
       return R.font.poppinsRegular
-    default:
+    case .productDiscountRate:
       return R.font.poppinsBold
+    case .notificationOfferDescription:
+      return R.font.poppinsRegular
+    case .notificationOfferDate:
+      return R.font.poppinsRegular
     }
   }
 }

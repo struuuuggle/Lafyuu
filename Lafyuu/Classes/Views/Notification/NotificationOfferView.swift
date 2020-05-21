@@ -11,7 +11,11 @@ struct NotificationOfferView: View {
   var body: some View {
     VStack {
       ForEach(offers, id: \.id) { offer in
-        NotificationOfferRow(offer: offer)
+        NotificationOfferRow(
+          image: R.image.offer,
+          imageSize: .icon,
+          offer: offer
+        )
       }
       .lafyuuPadding()
       Spacer()
