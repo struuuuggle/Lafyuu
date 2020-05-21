@@ -335,3 +335,45 @@ extension Mock {
     ]
   }
 }
+
+extension Mock {
+  enum NotificationFeed {
+    static let feeds: [Feed] = [
+      .init(
+        id: .init(),
+        title: "New Product",
+        description: "Nike Air Zoom Pegasus 36 Miami - Special For your Activity",
+        date: Date(),
+        imageUrl: R.image.kick_1.url
+      ),
+      .init(
+        id: .init(),
+        title: "Best Product",
+        description: "Nike Air Zoom Pegasus 36 Miami - Special For your Activity",
+        date: Date(),
+        imageUrl: R.image.kick_2.url
+      ),
+      .init(
+        id: .init(),
+        title: "New Product",
+        description: "Nike Air Zoom Pegasus 36 Miami - Special For your Activity",
+        date: Date(),
+        imageUrl: R.image.kick_3.url
+      )
+    ]
+  }
+}
+
+// MARK: - Helper
+
+extension URL {
+  var image: ImageResource {
+    R.image.kick_1
+  }
+}
+
+extension ImageResource {
+  var url: URL {
+    URL(string: "https://github.com/struuuuggle/Lafyuu/")!
+  }
+}

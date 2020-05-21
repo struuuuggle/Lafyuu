@@ -6,10 +6,10 @@
 import Rswift
 import SwiftUI
 
-struct NotificationOfferRow: View {
+struct NotificationRow<T: BaseNotificationContent>: View {
   private(set) var image: ImageResource
   private(set) var imageSize: Self.ImageSize
-  private(set) var offer: Offer
+  private(set) var content: T
 
   var body: some View {
     HStack(alignment: .top, spacing: 12) {
@@ -19,11 +19,11 @@ struct NotificationOfferRow: View {
         .foregroundColor(R.color.blue)
         .frame(width: imageSize.frame, height: imageSize.frame)
       VStack(alignment: .leading, spacing: 8) {
-        Text(offer.title)
+        Text(content.title)
           .textStyle(.heading)
-        Text(offer.description)
+        Text(content.description)
           .textStyle(.notificationOfferDescription)
-        Text(offer.date.yMMMdhm12(local: .us))
+        Text(content.date.yMMMdhm12(local: .us))
           .textStyle(.notificationOfferDate)
       }
     }
@@ -31,7 +31,7 @@ struct NotificationOfferRow: View {
 }
 
 // MARK: - Private Entities
-extension NotificationOfferRow {
+extension NotificationRow {
   enum ImageSize {
     case icon
     case thumbnail
@@ -59,18 +59,18 @@ extension NotificationOfferRow {
 struct NotificationOfferRow_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      NotificationOfferRow(
+      NotificationRow(
         image: R.image.kick_1,
         imageSize: .thumbnail,
-        offer: Mock.NotificationOffer.offers.randomElement()!
+        content: Mock.NotificationOffer.offers.randomElement()!
       )
         .lafyuuPadding()
         .previewLayout(.fixed(width: 400, height: 200))
 
-      NotificationOfferRow(
+      NotificationRow(
         image: R.image.offer,
         imageSize: .icon,
-        offer: Mock.NotificationOffer.offers.randomElement()!
+        content: Mock.NotificationOffer.offers.randomElement()!
       )
         .lafyuuPadding()
         .previewLayout(.fixed(width: 400, height: 200))
