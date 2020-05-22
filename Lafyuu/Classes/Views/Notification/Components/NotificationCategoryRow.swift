@@ -41,11 +41,10 @@ struct NotificationCategoryRow<T: BaseNotificationContent>: View {
       Spacer()
 
       Image(R.image.alert_red)
-        .resizable()
-        .frame(width: 24, height: 24) // TODO: Set actual number [2020/05/22]
+        .imageStyle(.notificationCategoryAlert)
 
     }
-    .lafyuuPadding()
+    .padding(.horizontal, .horizontal)
     .frame(height: 56)
   }
 }

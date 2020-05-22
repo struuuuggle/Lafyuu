@@ -5,8 +5,8 @@
 
 import SwiftUI
 
-struct NotificationFeedView: View {
-  @State var feeds: [Feed]
+struct NotificationFeedView<T: BaseNotificationContent>: View {
+  @State var feeds: [T]
 
   var body: some View {
     VStack {

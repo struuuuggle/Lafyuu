@@ -5,8 +5,8 @@
 
 import SwiftUI
 
-struct NotificationActivity: View {
-  @State var activities: [Activity]
+struct NotificationActivityView<T: BaseNotificationContent>: View {
+  @State var activities: [T]
 
   var body: some View {
     VStack {
@@ -25,6 +25,6 @@ struct NotificationActivity: View {
 
 struct NotificationActivity_Previews: PreviewProvider {
   static var previews: some View {
-    NotificationActivity(activities: Mock.NotificationActivity.activities)
+    NotificationActivityView(activities: Mock.NotificationActivity.activities)
   }
 }

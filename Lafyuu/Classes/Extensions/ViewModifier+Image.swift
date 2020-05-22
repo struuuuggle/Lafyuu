@@ -25,7 +25,7 @@ enum LafyuuImageStyle {
   var frame: CGFloat {
     switch self {
     case .notificationCategoryAlert:
-      return 20
+      return 24
     case .notificationIcon:
       return 24
     case .notificationFeedThumbnail:
@@ -36,7 +36,7 @@ enum LafyuuImageStyle {
   var render: Image.TemplateRenderingMode {
     switch self {
     case .notificationCategoryAlert:
-      return .template
+      return .original
     case .notificationIcon:
       return .template
     case .notificationFeedThumbnail:

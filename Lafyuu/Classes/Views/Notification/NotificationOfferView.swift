@@ -5,8 +5,8 @@
 
 import SwiftUI
 
-struct NotificationOfferView: View {
-  @State var offers: [Offer]
+struct NotificationOfferView<T: BaseNotificationContent>: View {
+  @State var offers: [T]
 
   var body: some View {
     VStack {

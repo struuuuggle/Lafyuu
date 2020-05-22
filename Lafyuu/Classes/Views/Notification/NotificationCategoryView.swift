@@ -5,25 +5,40 @@
 
 import SwiftUI
 
-struct NotificationCategoryView<S, T, U>: View where S: BaseNotificationContent, T: BaseNotificationContent, U: BaseNotificationContent {
+struct NotificationCategoryView<S, T, U>: View
+  where S: BaseNotificationContent,
+  T: BaseNotificationContent,
+  U: BaseNotificationContent {
   @State private(set) var offers: [S]
   @State private(set) var feeds: [T]
   @State private(set) var activities: [U]
 
   var body: some View {
     VStack {
-      NotificationCategoryRow(
-        type: .offer,
-        contents: offers
-      )
-      NotificationCategoryRow(
-        type: .feed,
-        contents: feeds
-      )
-      NotificationCategoryRow(
-        type: .activity,
-        contents: activities
-      )
+      NavigationLink(
+        destination: NotificationOfferView(offers: offers),
+        label: {
+          NotificationCategoryRow(
+            type: .offer,
+            contents: offers
+          )
+      })
+      NavigationLink(
+        destination: NotificationFeedView(feeds: feeds),
+        label: {
+          NotificationCategoryRow(
+            type: .feed,
+            contents: feeds
+          )
+      })
+      NavigationLink(
+        destination: NotificationActivityView(activities: activities),
+        label: {
+          NotificationCategoryRow(
+            type: .activity,
+            contents: activities
+          )
+      })
       Spacer()
     }
   }
