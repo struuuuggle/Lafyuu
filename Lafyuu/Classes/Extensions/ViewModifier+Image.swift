@@ -7,11 +7,14 @@ import Rswift
 import SwiftUI
 
 enum LafyuuImageStyle {
+  case notificationCategoryAlert
   case notificationIcon
   case notificationFeedThumbnail
 
   var color: ColorResource {
     switch self {
+    case .notificationCategoryAlert:
+      return R.color.red
     case .notificationIcon:
       return R.color.blue
     case .notificationFeedThumbnail:
@@ -21,6 +24,8 @@ enum LafyuuImageStyle {
 
   var frame: CGFloat {
     switch self {
+    case .notificationCategoryAlert:
+      return 20
     case .notificationIcon:
       return 24
     case .notificationFeedThumbnail:
@@ -30,6 +35,8 @@ enum LafyuuImageStyle {
 
   var render: Image.TemplateRenderingMode {
     switch self {
+    case .notificationCategoryAlert:
+      return .template
     case .notificationIcon:
       return .template
     case .notificationFeedThumbnail:

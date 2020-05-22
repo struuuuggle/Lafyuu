@@ -42,7 +42,18 @@ struct HomeView: View {
       )
         .navigationBarItems(
           trailing: HStack {
-            Image(R.image.love); Image(R.image.notification)
+            NavigationLink(
+              destination: EmptyView(),
+              label: { Image(R.image.love) }
+            )
+            NavigationLink(
+              destination: NotificationCategoryView(
+                offers: Mock.NotificationOffer.offers,
+                feeds: Mock.NotificationFeed.feeds,
+                activities: Mock.NotificationActivity.activities
+              ),
+              label: { Image(R.image.notification) }
+            )
         })
     }
   }

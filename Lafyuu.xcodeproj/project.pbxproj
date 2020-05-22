@@ -42,6 +42,10 @@
 		157A558424632E1900306FE1 /* ProductDetailSpecificationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */; };
 		157A55862463355100306FE1 /* ReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ReviewerSection.swift */; };
 		157A55872463355100306FE1 /* ReviewerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A55852463355100306FE1 /* ReviewerSection.swift */; };
+		15839005247803AE005255D3 /* NotificationCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15839004247803AE005255D3 /* NotificationCategoryRow.swift */; };
+		15839006247803AE005255D3 /* NotificationCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15839004247803AE005255D3 /* NotificationCategoryRow.swift */; };
+		1583900824780BD0005255D3 /* NotificationCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1583900724780BD0005255D3 /* NotificationCategoryView.swift */; };
+		1583900924780BD0005255D3 /* NotificationCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1583900724780BD0005255D3 /* NotificationCategoryView.swift */; };
 		1587A820246684990035B947 /* ReviewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A81F246684990035B947 /* ReviewFilter.swift */; };
 		1587A821246684990035B947 /* ReviewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A81F246684990035B947 /* ReviewFilter.swift */; };
 		1587A824246699A70035B947 /* ReviewStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1587A823246699A70035B947 /* ReviewStarButton.swift */; };
@@ -217,6 +221,8 @@
 		157A557F24632AA300306FE1 /* ProductDetailColorSelectionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailColorSelectionSection.swift; sourceTree = "<group>"; };
 		157A558224632E1900306FE1 /* ProductDetailSpecificationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailSpecificationSection.swift; sourceTree = "<group>"; };
 		157A55852463355100306FE1 /* ReviewerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewerSection.swift; sourceTree = "<group>"; };
+		15839004247803AE005255D3 /* NotificationCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategoryRow.swift; sourceTree = "<group>"; };
+		1583900724780BD0005255D3 /* NotificationCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategoryView.swift; sourceTree = "<group>"; };
 		1587A81F246684990035B947 /* ReviewFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFilter.swift; sourceTree = "<group>"; };
 		1587A823246699A70035B947 /* ReviewStarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewStarButton.swift; sourceTree = "<group>"; };
 		158E061924700AB700974006 /* WriteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewView.swift; sourceTree = "<group>"; };
@@ -682,6 +688,7 @@
 			children = (
 				15FC7D52247590FA00651213 /* Components */,
 				15FC7D4C2475853500651213 /* NotificationOfferView.swift */,
+				1583900724780BD0005255D3 /* NotificationCategoryView.swift */,
 				1541881F2476D5D80063F68B /* NotificationFeedView.swift */,
 				154188282476DE850063F68B /* NotificationActivity.swift */,
 			);
@@ -692,6 +699,7 @@
 			isa = PBXGroup;
 			children = (
 				15FC7D532475911000651213 /* NotificationRow.swift */,
+				15839004247803AE005255D3 /* NotificationCategoryRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -939,6 +947,7 @@
 				157A55862463355100306FE1 /* ReviewerSection.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
+				1583900824780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
 				15FB2FAA245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
 				1503307C245D92EB00333EF1 /* AppDelegate.swift in Sources */,
 				1503307E245D92EB00333EF1 /* SceneDelegate.swift in Sources */,
@@ -974,6 +983,7 @@
 				157A556C2463080000306FE1 /* CategorySectionView.swift in Sources */,
 				157A558324632E1900306FE1 /* ProductDetailSpecificationSection.swift in Sources */,
 				157A557A2463245600306FE1 /* ProductDetailSizeSelectionSection.swift in Sources */,
+				15839005247803AE005255D3 /* NotificationCategoryRow.swift in Sources */,
 				15FB2F6E245EA019007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F68245E8FE7007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F66245E8B6C007ACDA5 /* PasswordTextField.swift in Sources */,
@@ -1033,6 +1043,7 @@
 				157A55872463355100306FE1 /* ReviewerSection.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
+				1583900924780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
 				15FB2FAB245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
 				15FB2F7D245EC70B007ACDA5 /* AppDelegate.swift in Sources */,
 				15FB2F7E245EC70B007ACDA5 /* SceneDelegate.swift in Sources */,
@@ -1068,6 +1079,7 @@
 				157A556D2463080000306FE1 /* CategorySectionView.swift in Sources */,
 				157A558424632E1900306FE1 /* ProductDetailSpecificationSection.swift in Sources */,
 				157A557B2463245600306FE1 /* ProductDetailSizeSelectionSection.swift in Sources */,
+				15839006247803AE005255D3 /* NotificationCategoryRow.swift in Sources */,
 				15FB2F84245EC70B007ACDA5 /* ButtonType.swift in Sources */,
 				15FB2F85245EC70B007ACDA5 /* Color+Theme.swift in Sources */,
 				15FB2F86245EC70B007ACDA5 /* PasswordTextField.swift in Sources */,
