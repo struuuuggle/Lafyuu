@@ -90,7 +90,7 @@ class DateTests: XCTestCase {
   }
 
   func testJp_hm24() throws {
-    regex = try! NSRegularExpression(pattern: #"\d{2}:\d{2}"#)
+    regex = try! NSRegularExpression(pattern: #"\d{1,2}:\d{2}"#)
     let actual = now.hm24(local: .jp)
     XCTAssertNotNil(regex.firstMatch(in: actual, range: NSRange(actual.startIndex..., in: actual)), "actual: \(actual)")
   }
@@ -142,7 +142,7 @@ class DateTests: XCTestCase {
   }
 
   func testJp_hms24() throws {
-    regex = try! NSRegularExpression(pattern: #"\d{2}:\d{2}:\d{2}"#)
+    regex = try! NSRegularExpression(pattern: #"\d{1,2}:\d{2}:\d{2}"#)
     let actual = now.hms24(local: .jp)
     XCTAssertNotNil(regex.firstMatch(in: actual, range: NSRange(actual.startIndex..., in: actual)), "actual: \(actual)")
   }
