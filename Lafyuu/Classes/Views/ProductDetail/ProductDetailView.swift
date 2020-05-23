@@ -10,7 +10,7 @@ struct ProductDetailView: View {
 
   var body: some View {
     ScrollView {
-      VStack(spacing: Constant.Spacing.vertical.rawValue) {
+      VStack(spacing: Constant.Spacing.wideVertical.rawValue) {
         PageView(Mock.ProductDetailPager.pages)
           .frame(height: 262)
 

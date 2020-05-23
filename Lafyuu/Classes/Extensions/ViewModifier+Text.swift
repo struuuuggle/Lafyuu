@@ -8,7 +8,9 @@ import SwiftUI
 
 enum LafyuuTextStyle {
   case heading
+  case heading6
   case seeMore
+  case largeButtonLabel
   // MARK: Product
   case productCardTitle
   case productCardPrice
@@ -17,13 +19,21 @@ enum LafyuuTextStyle {
   // MARK: Notification
   case notificationOfferDescription
   case notificationOfferDate
+  // MARK: PaymentCard
+  case paymentCardNumber
+  case paymentCardHolderLabel
+  case paymentCardExpireDateLabel
 
   var color: ColorResource {
     switch self {
     case .heading:
       return R.color.dark
+    case .heading6:
+      return R.color.white
     case .seeMore:
       return R.color.blue
+    case .largeButtonLabel:
+      return R.color.white
     case .productCardTitle:
       return R.color.dark
     case .productCardPrice:
@@ -36,6 +46,12 @@ enum LafyuuTextStyle {
       return R.color.grey
     case .notificationOfferDate:
       return R.color.dark
+    case .paymentCardNumber:
+      return R.color.white
+    case .paymentCardHolderLabel:
+      return R.color.white
+    case .paymentCardExpireDateLabel:
+      return R.color.white
     }
   }
 
@@ -43,7 +59,11 @@ enum LafyuuTextStyle {
     switch self {
     case .heading:
       return 14
+    case .heading6:
+      return 10
     case .seeMore:
+      return 14
+    case .largeButtonLabel:
       return 14
     case .productCardTitle:
       return 12
@@ -56,6 +76,12 @@ enum LafyuuTextStyle {
     case .notificationOfferDescription:
       return 12
     case .notificationOfferDate:
+      return 10
+    case .paymentCardNumber:
+      return 24
+    case .paymentCardHolderLabel:
+      return 10
+    case .paymentCardExpireDateLabel:
       return 10
     }
   }
@@ -64,7 +90,11 @@ enum LafyuuTextStyle {
     switch self {
     case .heading:
       return R.font.poppinsBold
+    case .heading6:
+      return R.font.poppinsBold
     case .seeMore:
+      return R.font.poppinsBold
+    case .largeButtonLabel:
       return R.font.poppinsBold
     case .productCardTitle:
       return R.font.poppinsBold
@@ -78,6 +108,21 @@ enum LafyuuTextStyle {
       return R.font.poppinsRegular
     case .notificationOfferDate:
       return R.font.poppinsRegular
+    case .paymentCardNumber:
+      return R.font.poppinsBold
+    case .paymentCardHolderLabel:
+      return R.font.poppinsRegular
+    case .paymentCardExpireDateLabel:
+      return R.font.poppinsRegular
+    }
+  }
+
+  var opacity: Double {
+    switch self {
+    case .paymentCardHolderLabel, .paymentCardExpireDateLabel:
+      return 0.5
+    default:
+      return 1.0
     }
   }
 }
@@ -109,6 +154,7 @@ extension Text: ViewModifier {
       content
         .font(style.fontFamily, size: style.fontSize)
         .foregroundColor(style.color)
+        .opacity(style.opacity)
     }
   }
 }

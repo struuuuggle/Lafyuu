@@ -389,6 +389,31 @@ extension Mock {
   }
 }
 
+extension Mock {
+  enum PaymentCard {
+    static let cardInformationList: [PaymentCardInformation] = [
+      .init(
+        id: .init(),
+        number: "6326 9124 8124 9875",
+        lastName: "Valentin",
+        firstName: "Angela",
+        expiringMonth: 12,
+        expiringYear: 2024,
+        paymentCardType: .visa
+      ),
+      .init(
+        id: .init(),
+        number: "3943 5204 5913 0097",
+        lastName: "Mende",
+        firstName: "Lorenzo",
+        expiringMonth: 12,
+        expiringYear: 2024,
+        paymentCardType: .amex
+      )
+    ]
+  }
+}
+
 // MARK: - Helper
 
 extension URL {

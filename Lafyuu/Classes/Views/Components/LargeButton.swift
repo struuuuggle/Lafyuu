@@ -6,40 +6,41 @@
 import SwiftUI
 
 struct LargeButton: View {
-  private let label: String
-  private let type: ButtonType
-  private let width: CGFloat
-  private let height: CGFloat
-  private let handler: (() -> Void)
+  private(set) var label: String
+  private(set) var type: ButtonType
+  private(set) var handler: (() -> Void)
 
-  init(
-    label: String,
-    type: ButtonType = .fill,
-    width: CGFloat = 343,
-    height: CGFloat = 56,
-    handler: @escaping (() -> Void)
-  ) {
+  init(label: String, type: ButtonType = .fill, handler: @escaping (() -> Void)) {
     self.label = label
     self.type = type
-    self.width = width
-    self.height = height
     self.handler = handler
   }
 
   var body: some View {
     Button(
       action: handler,
-      label: {
-        Text(label)
-          .kerning(0.5)
-          .font(R.font.poppinsBold, size: 14)
-          .foregroundColor(type.fgColor)
-          .padding(16)
-          .frame(width: width, height: height)
-    })
-      .background(type.bgColor)
-      .roundCorner()
+      label: { buttonLabel }
+    )
       .animation(.easeOut)
+  }
+}
+
+// MARK: - Private properties
+extension LargeButton {
+  private var buttonLabel: some View {
+    ZStack {
+      largeButtonBackground
+
+      Text(label)
+        .textStyle(.largeButtonLabel)
+    }
+    .frame(height: Constant.LargeButton.height)
+  }
+
+  private var largeButtonBackground: some View {
+    Rectangle()
+      .foregroundColor(R.color.blue)
+      .roundCorner()
   }
 }
 
@@ -48,6 +49,7 @@ struct LargeButton_Previews: PreviewProvider {
     LargeButton(label: "Large Button") {
       print("Tap Large Button")
     }
-    .previewLayout(.fixed(width: 375, height: 64))
+    .lafyuuPadding()
+    .previewLayout(.fixed(width: 375, height: 100))
   }
 }

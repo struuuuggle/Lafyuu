@@ -10,7 +10,8 @@ extension Constant {
     case horizontal = 16
     case tightHorizontal = 12
 
-    case vertical = 24
+    case wideVertical = 24
+    //    case vertical = 16
     case tightVertical = 8
 
     case inline = 10

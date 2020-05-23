@@ -18,7 +18,7 @@ struct HomeView: View {
   var body: some View {
     NavigationView {
       ScrollView {
-        VStack(spacing: .vertical) {
+        VStack(spacing: .wideVertical) {
           Spacer()
           PageView(Mock.PromotionPager.pages)
             .frame(height: 230)
