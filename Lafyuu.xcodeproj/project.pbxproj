@@ -66,6 +66,10 @@
 		159245852476E4A500A92521 /* ViewModifier+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159245832476E4A500A92521 /* ViewModifier+Image.swift */; };
 		159245872476E82B00A92521 /* Stack+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159245862476E82B00A92521 /* Stack+Initializer.swift */; };
 		159245882476E82B00A92521 /* Stack+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159245862476E82B00A92521 /* Stack+Initializer.swift */; };
+		15986978247ADC830099D5B5 /* LafyuuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15986977247ADC830099D5B5 /* LafyuuTextField.swift */; };
+		15986979247ADC830099D5B5 /* LafyuuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15986977247ADC830099D5B5 /* LafyuuTextField.swift */; };
+		1598697B247ADD560099D5B5 /* Constant+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1598697A247ADD560099D5B5 /* Constant+TextField.swift */; };
+		1598697C247ADD560099D5B5 /* Constant+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1598697A247ADD560099D5B5 /* Constant+TextField.swift */; };
 		159BBCB424783B6100047B0A /* AddPaymentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* AddPaymentRow.swift */; };
 		159BBCB524783B6100047B0A /* AddPaymentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* AddPaymentRow.swift */; };
 		159BBCB724783E9C00047B0A /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB624783E9C00047B0A /* AddPaymentView.swift */; };
@@ -251,6 +255,8 @@
 		158E061C24704BB600974006 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		159245832476E4A500A92521 /* ViewModifier+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Image.swift"; sourceTree = "<group>"; };
 		159245862476E82B00A92521 /* Stack+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+Initializer.swift"; sourceTree = "<group>"; };
+		15986977247ADC830099D5B5 /* LafyuuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LafyuuTextField.swift; sourceTree = "<group>"; };
+		1598697A247ADD560099D5B5 /* Constant+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+TextField.swift"; sourceTree = "<group>"; };
 		159BBCB324783B6100047B0A /* AddPaymentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentRow.swift; sourceTree = "<group>"; };
 		159BBCB624783E9C00047B0A /* AddPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentView.swift; sourceTree = "<group>"; };
 		159BBCB924783F7600047B0A /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
@@ -451,6 +457,7 @@
 				15FC318C2466DB0300FAA0FC /* Constant+ProductCardSize.swift */,
 				15FC31922466DB9B00FAA0FC /* Constant+StarRatingSize.swift */,
 				15FB2F6F245EAA58007ACDA5 /* Constant+View.swift */,
+				1598697A247ADD560099D5B5 /* Constant+TextField.swift */,
 				15FC31952466DC2B00FAA0FC /* Constant+Image.swift */,
 				1569162C24741C1100A04210 /* Constant+Spacing.swift */,
 				15BC33A3245E52DF00D0989B /* R.generated.swift */,
@@ -683,6 +690,7 @@
 				15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */,
 				15DC11982462F14D000AFAFD /* StarRating.swift */,
 				158E061C24704BB600974006 /* TextView.swift */,
+				15986977247ADC830099D5B5 /* LafyuuTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1025,6 +1033,8 @@
 				15FC31902466DB7700FAA0FC /* Constant+Icon.swift in Sources */,
 				15BC339E245E504200D0989B /* R+SwiftUI.swift in Sources */,
 				15BC33BD245E6AD700D0989B /* AccountView.swift in Sources */,
+				15986978247ADC830099D5B5 /* LafyuuTextField.swift in Sources */,
+				1598697B247ADD560099D5B5 /* Constant+TextField.swift in Sources */,
 				15FB2FA7245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
 				15FC318A2466A56D00FAA0FC /* ProductReviewRate.swift in Sources */,
 				15AE283E246184B0002FE574 /* CategoryCard.swift in Sources */,
@@ -1130,6 +1140,8 @@
 				15FC31912466DB7700FAA0FC /* Constant+Icon.swift in Sources */,
 				15FB2F80245EC70B007ACDA5 /* R+SwiftUI.swift in Sources */,
 				15FB2F81245EC70B007ACDA5 /* AccountView.swift in Sources */,
+				15986979247ADC830099D5B5 /* LafyuuTextField.swift in Sources */,
+				1598697C247ADD560099D5B5 /* Constant+TextField.swift in Sources */,
 				15FB2FA8245EFFBA007ACDA5 /* RegisterView.swift in Sources */,
 				15FC318B2466A56D00FAA0FC /* ProductReviewRate.swift in Sources */,
 				15AE283F246184B0002FE574 /* CategoryCard.swift in Sources */,
