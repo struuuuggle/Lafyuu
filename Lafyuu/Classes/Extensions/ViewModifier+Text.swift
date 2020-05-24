@@ -23,6 +23,8 @@ enum LafyuuTextStyle {
   case paymentCardNumber
   case paymentCardHolderLabel
   case paymentCardExpireDateLabel
+  // MARK: Alert
+  case alertMessage
 
   var color: ColorResource {
     switch self {
@@ -52,6 +54,8 @@ enum LafyuuTextStyle {
       return R.color.white
     case .paymentCardExpireDateLabel:
       return R.color.white
+    case .alertMessage:
+      return R.color.red
     }
   }
 
@@ -83,6 +87,8 @@ enum LafyuuTextStyle {
       return 10
     case .paymentCardExpireDateLabel:
       return 10
+    case .alertMessage:
+      return 12
     }
   }
 
@@ -114,6 +120,8 @@ enum LafyuuTextStyle {
       return R.font.poppinsRegular
     case .paymentCardExpireDateLabel:
       return R.font.poppinsRegular
+    case .alertMessage:
+      return R.font.poppinsBold
     }
   }
 

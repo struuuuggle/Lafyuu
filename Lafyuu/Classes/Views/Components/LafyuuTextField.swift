@@ -7,7 +7,7 @@ import SwiftUI
 
 struct LafyuuTextField: View {
   private(set) var placeholder: String
-  @State private(set) var text: String
+  @Binding private(set) var text: String
   var body: some View {
     TextField(
       placeholder,
@@ -26,7 +26,7 @@ struct LafyuuTextField_Previews: PreviewProvider {
   static var previews: some View {
     LafyuuTextField(
       placeholder: "Enter Card Number",
-      text: text
+      text: $text
     )
       .lafyuuPadding()
       .previewLayout(.fixed(width: 375, height: 60))
