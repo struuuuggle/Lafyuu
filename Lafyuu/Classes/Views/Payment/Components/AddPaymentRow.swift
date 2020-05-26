@@ -12,7 +12,7 @@ enum PaymentType: String {
   case bankTransfer
 
   var text: String {
-    self .rawValue
+    rawValue
   }
 
   var image: ImageResource {
@@ -27,7 +27,7 @@ enum PaymentType: String {
   }
 }
 
-struct AddPaymentRow: View {
+struct ListRow: View {
   private(set) var type: PaymentType
 
   var body: some View {
@@ -47,15 +47,15 @@ struct AddPaymentRow: View {
 struct AddPaymentRow_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      AddPaymentRow(type: .creditOrDebit)
+      ListRow(type: .creditOrDebit)
         .previewLayout(.fixed(width: 375, height: 60))
         .previewDisplayName(PaymentType.creditOrDebit.text)
 
-      AddPaymentRow(type: .paypal)
+      ListRow(type: .paypal)
         .previewLayout(.fixed(width: 375, height: 60))
         .previewDisplayName(PaymentType.paypal.text)
 
-      AddPaymentRow(type: .bankTransfer)
+      ListRow(type: .bankTransfer)
         .previewLayout(.fixed(width: 375, height: 60))
         .previewDisplayName(PaymentType.bankTransfer.text)
     }

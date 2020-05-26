@@ -7,7 +7,25 @@ import SwiftUI
 
 struct AccountView: View {
   var body: some View {
-    Text("Account View")
+    VStack {
+      NavigationLink(
+        destination: EmptyView(),
+        label: { ListRow(entry: .profile) }
+      )
+      NavigationLink(
+        destination: EmptyView(),
+        label: { ListRow(entry: .order) }
+      )
+      NavigationLink(
+        destination: EmptyView(),
+        label: { ListRow(entry: .address) }
+      )
+      NavigationLink(
+        destination: AddPaymentView(),
+        label: { ListRow(entry: .payment) }
+      )
+      Spacer()
+    }
   }
 }
 

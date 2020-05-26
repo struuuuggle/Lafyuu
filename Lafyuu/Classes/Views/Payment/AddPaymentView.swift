@@ -10,15 +10,15 @@ struct AddPaymentView: View {
     VStack {
       NavigationLink(
         destination: PaymentCardView(),
-        label: { AddPaymentRow(type: .creditOrDebit) }
+        label: { ListRow(entry: .creditOrDebit) }
       )
       NavigationLink(
         destination: PaymentAddCardView(),
-        label: { AddPaymentRow(type: .paypal) }
+        label: { ListRow(entry: .paypal) }
       )
       NavigationLink(
         destination: EmptyView(),
-        label: { AddPaymentRow(type: .bankTransfer) }
+        label: { ListRow(entry: .bankTransfer) }
       )
       Spacer()
     }

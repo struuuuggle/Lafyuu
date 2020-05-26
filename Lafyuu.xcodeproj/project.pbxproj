@@ -70,8 +70,8 @@
 		15986979247ADC830099D5B5 /* LafyuuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15986977247ADC830099D5B5 /* LafyuuTextField.swift */; };
 		1598697B247ADD560099D5B5 /* Constant+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1598697A247ADD560099D5B5 /* Constant+TextField.swift */; };
 		1598697C247ADD560099D5B5 /* Constant+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1598697A247ADD560099D5B5 /* Constant+TextField.swift */; };
-		159BBCB424783B6100047B0A /* AddPaymentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* AddPaymentRow.swift */; };
-		159BBCB524783B6100047B0A /* AddPaymentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* AddPaymentRow.swift */; };
+		159BBCB424783B6100047B0A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* ListRow.swift */; };
+		159BBCB524783B6100047B0A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB324783B6100047B0A /* ListRow.swift */; };
 		159BBCB724783E9C00047B0A /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB624783E9C00047B0A /* AddPaymentView.swift */; };
 		159BBCB824783E9C00047B0A /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB624783E9C00047B0A /* AddPaymentView.swift */; };
 		159BBCBA24783F7600047B0A /* PaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BBCB924783F7600047B0A /* PaymentCardView.swift */; };
@@ -259,7 +259,7 @@
 		159245862476E82B00A92521 /* Stack+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+Initializer.swift"; sourceTree = "<group>"; };
 		15986977247ADC830099D5B5 /* LafyuuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LafyuuTextField.swift; sourceTree = "<group>"; };
 		1598697A247ADD560099D5B5 /* Constant+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+TextField.swift"; sourceTree = "<group>"; };
-		159BBCB324783B6100047B0A /* AddPaymentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentRow.swift; sourceTree = "<group>"; };
+		159BBCB324783B6100047B0A /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		159BBCB624783E9C00047B0A /* AddPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentView.swift; sourceTree = "<group>"; };
 		159BBCB924783F7600047B0A /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
 		159BBCBC24783FA300047B0A /* PaymentAddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAddCardView.swift; sourceTree = "<group>"; };
@@ -498,6 +498,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		1586F810247D738B00C32C79 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1587A81E2466847A0035B947 /* Review */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,7 +539,6 @@
 		159BBCB224783B4500047B0A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				159BBCB324783B6100047B0A /* AddPaymentRow.swift */,
 				151F4966247972AB00EC93A8 /* PaymentCard.swift */,
 			);
 			path = Components;
@@ -627,6 +633,7 @@
 		15BC33B3245E6A6D00D0989B /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				1586F810247D738B00C32C79 /* Components */,
 				15BC33BC245E6AD700D0989B /* AccountView.swift */,
 			);
 			path = Account;
@@ -685,6 +692,7 @@
 			children = (
 				15AE282B2461513D002FE574 /* FlipClock.swift */,
 				15FB2F6A245E9DDF007ACDA5 /* LargeButton.swift */,
+				159BBCB324783B6100047B0A /* ListRow.swift */,
 				15AE28252461471D002FE574 /* PromotionBanner.swift */,
 				15AE283124617200002FE574 /* PageViewController.swift */,
 				15AE283424617259002FE574 /* PageView.swift */,
@@ -1011,7 +1019,7 @@
 				159BBCBA24783F7600047B0A /* PaymentCardView.swift in Sources */,
 				15AE282C2461513D002FE574 /* FlipClock.swift in Sources */,
 				157A55862463355100306FE1 /* ReviewerSection.swift in Sources */,
-				159BBCB424783B6100047B0A /* AddPaymentRow.swift in Sources */,
+				159BBCB424783B6100047B0A /* ListRow.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				1583900824780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
@@ -1119,7 +1127,7 @@
 				159BBCBB24783F7600047B0A /* PaymentCardView.swift in Sources */,
 				15AE282D2461513D002FE574 /* FlipClock.swift in Sources */,
 				157A55872463355100306FE1 /* ReviewerSection.swift in Sources */,
-				159BBCB524783B6100047B0A /* AddPaymentRow.swift in Sources */,
+				159BBCB524783B6100047B0A /* ListRow.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				1583900924780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
