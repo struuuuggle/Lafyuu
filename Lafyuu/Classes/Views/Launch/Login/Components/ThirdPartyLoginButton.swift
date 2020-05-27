@@ -7,13 +7,11 @@ import SwiftUI
 
 struct ThirdPartyLoginButton: View {
   private let oAuthType: OAuthType
-  private let width: CGFloat
   private let height: CGFloat
   private let handler: (() -> Void)
 
-  init(loginType: OAuthType, width: CGFloat = 343, height: CGFloat = 56, handler: @escaping (() -> Void)) {
+  init(loginType: OAuthType, height: CGFloat = 56, handler: @escaping (() -> Void)) {
     self.oAuthType = loginType
-    self.width = width
     self.height = height
     self.handler = handler
   }
@@ -63,14 +61,24 @@ extension ThirdPartyLoginButton {
       buttonText
       logoLayer
     }
-    .frame(width: width, height: height)
+    .frame(height: height)
   }
 }
 
 struct ThirdPartyLoginButton_Previews: PreviewProvider {
   static var previews: some View {
-    ThirdPartyLoginButton(loginType: .google) {
+    Group {
+      ThirdPartyLoginButton(loginType: .google) {
+      }
+      .lafyuuPadding()
+      .previewLayout(.fixed(width: 375, height: 64))
+      .previewDisplayName(OAuthType.google.rawValue)
+
+      ThirdPartyLoginButton(loginType: .facebook) {
+      }
+      .lafyuuPadding()
+      .previewLayout(.fixed(width: 375, height: 64))
+      .previewDisplayName(OAuthType.facebook.rawValue)
     }
-    .previewLayout(.fixed(width: 375, height: 64))
   }
 }

@@ -8,13 +8,11 @@ import SwiftUI
 struct PasswordTextField: View {
   @Binding private(set) var password: String
   let placeholder: String
-  let width: CGFloat
   let height: CGFloat
 
-  init(placeholder: String, password: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+  init(placeholder: String, password: Binding<String>, height: CGFloat = 48) {
     self.placeholder = placeholder
     self._password = password
-    self.width = width
     self.height = height
   }
 
@@ -27,10 +25,7 @@ struct PasswordTextField: View {
       }
       .padding(.horizontal, 16)
     }
-    .frame(
-      width: width,
-      height: height
-    )
+    .frame(height: height)
   }
 }
 
@@ -72,9 +67,9 @@ struct PasswordTextField_Previews: PreviewProvider {
   static var previews: some View {
     PasswordTextField(
       placeholder: "Password", password: .constant(""),
-      width: 343,
       height: 48
     )
+      .lafyuuPadding()
       .previewLayout(.fixed(width: 375, height: 64))
   }
 }

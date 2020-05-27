@@ -8,13 +8,11 @@ import SwiftUI
 struct EmailTextField: View {
   @Binding private(set) var email: String
   let placeholder: String
-  let width: CGFloat
   let height: CGFloat
 
-  init(placeholder: String, email: Binding<String>, width: CGFloat = 343, height: CGFloat = 48) {
+  init(placeholder: String, email: Binding<String>, height: CGFloat = 48) {
     self.placeholder = placeholder
     self._email = email
-    self.width = width
     self.height = height
   }
 
@@ -28,10 +26,7 @@ struct EmailTextField: View {
       .padding(.horizontal, 16)
     }
     .accentColor(Color.blue)
-    .frame(
-      width: width,
-      height: height
-    )
+    .frame(height: height)
   }
 }
 
@@ -68,6 +63,7 @@ struct EmailTextField_Previews: PreviewProvider {
     EmailTextField(
       placeholder: "Your Email", email: .constant("")
     )
+      .lafyuuPadding()
       .previewLayout(.fixed(width: 375, height: 64))
   }
 }

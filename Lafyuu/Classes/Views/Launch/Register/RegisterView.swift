@@ -23,12 +23,8 @@ struct RegisterView: View {
       Spacer()
       LaunchHeaderView(type: type)
 
-      VStack(spacing: 16) {
-        formStack
-        LargeButton(label: "Sign Up") {
-          self.delegate?.signUp()
-        }
-      }
+      formContainer
+
       LaunchFootnote(type: type) {
         self.delegate?.tryToLogin()
       }
@@ -39,6 +35,16 @@ struct RegisterView: View {
 
 // MARK: - private properties
 extension RegisterView {
+  private var formContainer: some View {
+    VStack(spacing: 16) {
+      formStack
+      LargeButton(label: "Sign Up") {
+        self.delegate?.signUp()
+      }
+    }
+    .padding(.horizontal, .horizontal)
+  }
+
   private var formStack: some View {
     VStack(spacing: .tightVertical) {
       NameTextField(
