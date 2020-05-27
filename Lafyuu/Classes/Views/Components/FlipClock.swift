@@ -75,7 +75,7 @@ extension FlipClock {
       ZStack {
         bgRectangle
         Text(String(format: "%02d", Int(timeRemaining)))
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .font(R.font.poppinsBold, size: 16)
           .foregroundColor(R.color.dark)
       }

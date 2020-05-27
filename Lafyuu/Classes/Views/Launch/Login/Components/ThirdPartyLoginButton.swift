@@ -33,7 +33,7 @@ extension ThirdPartyLoginButton {
     HStack {
       Spacer()
       Text("Login with \(oAuthType.rawValue)")
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(
           R.font.poppinsBold,
           size: 14

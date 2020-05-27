@@ -47,11 +47,11 @@ extension ProductDetailView {
       HStack {
         StarRating(rate: .constant(product.rate), size: .medium)
         Text("\(product.rate ?? 0)")
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .font(R.font.poppinsBold, size: 10)
           .foregroundColor(R.color.grey)
         Text("(\(product.reviewerCount ?? 0) Review)")
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .font(R.font.poppinsRegular, size: 10)
           .foregroundColor(R.color.grey)
       }

@@ -25,7 +25,7 @@ extension ReviewFilter {
   private func allReviewButton(width: CGFloat = 100, height: CGFloat = 50, action: @escaping () -> Void) -> some View {
     Button(action: action, label: {
       Text("All Review")
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(R.font.poppinsBold, size: 12)
         .foregroundColor(R.color.blue)
     })

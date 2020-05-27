@@ -26,7 +26,7 @@ extension ButtonType {
     case .fill:
       return R.color.blue()!.color
     case .clear:
-      return Color.clear
+      return .clear
     }
   }
 }

@@ -36,7 +36,7 @@ extension ReviewerSection {
 
   private var reviewComment: some View {
     Text(review?.comment ?? "NO COMMENT")
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .lineLimit(10)
       .lineSpacing(5)
       .font(R.font.poppinsRegular, size: 12)
@@ -60,7 +60,7 @@ extension ReviewerSection {
   private var reviewDate: some View {
     HStack {
       Text(review?.date.yMMMd(local: .us) ?? "NO DATE")
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(R.font.poppinsRegular, size: 10)
         .foregroundColor(R.color.grey)
       Spacer()

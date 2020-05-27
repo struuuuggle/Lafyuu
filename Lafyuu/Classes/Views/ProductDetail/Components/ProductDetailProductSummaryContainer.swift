@@ -15,7 +15,7 @@ struct ProductDetailProductSummaryContainer: View {
       HStack(alignment: .top, spacing: 44) {
 
         Text(product.name)
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .lineLimit(2)
           .font(R.font.poppinsBold, size: 20)
           .foregroundColor(R.color.dark)
@@ -29,7 +29,7 @@ struct ProductDetailProductSummaryContainer: View {
         .padding(.bottom, 12)
 
       Text("$\(product.currentPrice)")
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(R.font.poppinsBold, size: 20)
         .foregroundColor(R.color.blue)
     }

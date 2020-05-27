@@ -30,7 +30,7 @@ struct CategoryCard: View {
 extension CategoryCard {
   private var productCaption: some View {
     Text(category.name)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .lineLimit(2)
       .multilineTextAlignment(.center)
       .font(R.font.poppinsRegular, size: 10)

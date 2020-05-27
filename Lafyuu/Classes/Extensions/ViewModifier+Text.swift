@@ -147,7 +147,7 @@ extension Text: ViewModifier {
   ///
   func textStyle(_ style: LafyuuTextStyle) -> some View {
     self
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .modifier(LafyuuTextModifier(style))
   }
 

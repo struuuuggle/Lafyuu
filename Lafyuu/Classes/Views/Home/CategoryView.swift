@@ -34,7 +34,7 @@ extension CategoryView {
           Image(category.imageName)
             .frame(width: Constant.Icon.Size.small, height: Constant.Icon.Size.small)
           Text(category.name)
-            .kerning(0.5)
+            .kerning(Constant.Text.kerning)
             .foregroundColor(R.color.dark)
             .font(R.font.poppinsBold, size: 12)
           Spacer()

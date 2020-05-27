@@ -65,7 +65,7 @@ extension LoginView {
 
   private var forgotPasswordText: some View {
     Text("Forgot Password?")
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsBold, size: 12)
       .foregroundColor(R.color.blue)
   }

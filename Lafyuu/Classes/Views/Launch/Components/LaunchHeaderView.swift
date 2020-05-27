@@ -28,14 +28,14 @@ extension LaunchHeaderView {
 
   var title: some View {
     Text(type.title)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsBold, size: 16)
       .foregroundColor(R.color.dark)
   }
 
   var subtitle: some View {
     Text(type.subtitle)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.grey)
       .frame(height: 22)

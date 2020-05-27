@@ -18,6 +18,8 @@
 		151F49652478EEEB00EC93A8 /* Constant+LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F49632478EEEB00EC93A8 /* Constant+LargeButton.swift */; };
 		151F4967247972AB00EC93A8 /* PaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F4966247972AB00EC93A8 /* PaymentCard.swift */; };
 		151F4968247972AB00EC93A8 /* PaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F4966247972AB00EC93A8 /* PaymentCard.swift */; };
+		1532076D247ED2F800F4B955 /* Constant+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532076C247ED2F800F4B955 /* Constant+Text.swift */; };
+		1532076E247ED2F800F4B955 /* Constant+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532076C247ED2F800F4B955 /* Constant+Text.swift */; };
 		154188202476D5D80063F68B /* NotificationFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541881F2476D5D80063F68B /* NotificationFeedView.swift */; };
 		154188212476D5D80063F68B /* NotificationFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541881F2476D5D80063F68B /* NotificationFeedView.swift */; };
 		154188232476D6640063F68B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154188222476D6640063F68B /* Feed.swift */; };
@@ -233,6 +235,7 @@
 		150C14FA246D8BF700B6B288 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		151F49632478EEEB00EC93A8 /* Constant+LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+LargeButton.swift"; sourceTree = "<group>"; };
 		151F4966247972AB00EC93A8 /* PaymentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCard.swift; sourceTree = "<group>"; };
+		1532076C247ED2F800F4B955 /* Constant+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Text.swift"; sourceTree = "<group>"; };
 		1541881F2476D5D80063F68B /* NotificationFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFeedView.swift; sourceTree = "<group>"; };
 		154188222476D6640063F68B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		154188252476DE220063F68B /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -457,14 +460,15 @@
 			isa = PBXGroup;
 			children = (
 				15FC318F2466DB7700FAA0FC /* Constant+Icon.swift */,
-				15FC318C2466DB0300FAA0FC /* Constant+ProductCardSize.swift */,
-				15FC31922466DB9B00FAA0FC /* Constant+StarRatingSize.swift */,
-				15FB2F6F245EAA58007ACDA5 /* Constant+View.swift */,
-				1598697A247ADD560099D5B5 /* Constant+TextField.swift */,
 				15FC31952466DC2B00FAA0FC /* Constant+Image.swift */,
-				1569162C24741C1100A04210 /* Constant+Spacing.swift */,
-				15BC33A3245E52DF00D0989B /* R.generated.swift */,
 				151F49632478EEEB00EC93A8 /* Constant+LargeButton.swift */,
+				15FC318C2466DB0300FAA0FC /* Constant+ProductCardSize.swift */,
+				1569162C24741C1100A04210 /* Constant+Spacing.swift */,
+				15FC31922466DB9B00FAA0FC /* Constant+StarRatingSize.swift */,
+				1532076C247ED2F800F4B955 /* Constant+Text.swift */,
+				1598697A247ADD560099D5B5 /* Constant+TextField.swift */,
+				15FB2F6F245EAA58007ACDA5 /* Constant+View.swift */,
+				15BC33A3245E52DF00D0989B /* R.generated.swift */,
 			);
 			path = Env;
 			sourceTree = "<group>";
@@ -573,8 +577,8 @@
 		15BC339C245E501D00D0989B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				155A8614247ACE120020E64B /* Color+Initializer.swift */,
 				15B61B04247C23C300DDA5CC /* Binding+Subjects.swift */,
+				155A8614247ACE120020E64B /* Color+Initializer.swift */,
 				15FB2F67245E8FE7007ACDA5 /* Color+Theme.swift */,
 				15FC31982466E11A00FAA0FC /* Date+Localize.swift */,
 				15BC339D245E504200D0989B /* R+SwiftUI.swift */,
@@ -690,19 +694,19 @@
 		15FB2F69245E9D90007ACDA5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				15AE283D246184B0002FE574 /* CategoryCard.swift */,
 				15AE282B2461513D002FE574 /* FlipClock.swift */,
+				15986977247ADC830099D5B5 /* LafyuuTextField.swift */,
 				15FB2F6A245E9DDF007ACDA5 /* LargeButton.swift */,
 				159BBCB324783B6100047B0A /* ListRow.swift */,
-				15AE28252461471D002FE574 /* PromotionBanner.swift */,
-				15AE283124617200002FE574 /* PageViewController.swift */,
-				15AE283424617259002FE574 /* PageView.swift */,
-				15AE283D246184B0002FE574 /* CategoryCard.swift */,
 				15AE283724617272002FE574 /* PageControl.swift */,
+				15AE283424617259002FE574 /* PageView.swift */,
+				15AE283124617200002FE574 /* PageViewController.swift */,
 				15AE284D2461B11B002FE574 /* ProductCard.swift */,
 				15DC11952462EC2A000AFAFD /* ProductCardCaption.swift */,
+				15AE28252461471D002FE574 /* PromotionBanner.swift */,
 				15DC11982462F14D000AFAFD /* StarRating.swift */,
 				158E061C24704BB600974006 /* TextView.swift */,
-				15986977247ADC830099D5B5 /* LafyuuTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1021,6 +1025,7 @@
 				157A55862463355100306FE1 /* ReviewerSection.swift in Sources */,
 				159BBCB424783B6100047B0A /* ListRow.swift in Sources */,
 				15BC33AB245E554C00D0989B /* R.generated.swift in Sources */,
+				1532076D247ED2F800F4B955 /* Constant+Text.swift in Sources */,
 				15FB2F9C245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				1583900824780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
 				15FB2FAA245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,
@@ -1129,6 +1134,7 @@
 				157A55872463355100306FE1 /* ReviewerSection.swift in Sources */,
 				159BBCB524783B6100047B0A /* ListRow.swift in Sources */,
 				15FB2F7C245EC70B007ACDA5 /* R.generated.swift in Sources */,
+				1532076E247ED2F800F4B955 /* Constant+Text.swift in Sources */,
 				15FB2F9D245ECD68007ACDA5 /* LoginDividerView.swift in Sources */,
 				1583900924780BD0005255D3 /* NotificationCategoryView.swift in Sources */,
 				15FB2FAB245F001B007ACDA5 /* LaunchHeaderView.swift in Sources */,

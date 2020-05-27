@@ -28,7 +28,7 @@ extension WriteReviewView {
       HStack(spacing: Constant.Spacing.horizontal.rawValue) {
         StarRating(rate: $rate, size: .big)
         Text("\(rate.wrappedValue ?? 0)/5")
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .font(R.font.poppinsBold, size: 14)
           .foregroundColor(R.color.grey)
       }

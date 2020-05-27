@@ -17,14 +17,14 @@ struct LaunchFootnote: View {
   var body: some View {
     HStack(spacing: 4) {
       Text(type.footnoteLabel)
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(R.font.poppinsRegular, size: 12)
         .foregroundColor(R.color.grey)
       Button(
         action: action,
         label: {
           Text(type.footnoteButonText)
-            .kerning(0.5)
+            .kerning(Constant.Text.kerning)
             .font(R.font.poppinsBold, size: 12)
       })
         .foregroundColor(R.color.blue)

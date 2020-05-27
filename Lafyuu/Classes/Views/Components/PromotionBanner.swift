@@ -47,14 +47,14 @@ extension PromotionBanner {
 
   var bannerTitle: some View {
     Text(type.bannerTitle)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsBold, size: 24)
       .foregroundColor(R.color.white)
   }
 
   var recommendItem: some View {
     Text(type.recommeingFollowingText)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .fontWeight(.light)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.white)

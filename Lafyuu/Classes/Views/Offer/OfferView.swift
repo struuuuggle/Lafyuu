@@ -40,7 +40,7 @@ extension OfferView {
       Rectangle()
         .foregroundColor(R.color.blue)
       Text("Use \"\(code)\" Coupon For\nGet \(discount)% off")
-        .kerning(0.5)
+        .kerning(Constant.Text.kerning)
         .font(R.font.poppinsBold, size: 16)
         .lineSpacing(0.5)
         .foregroundColor(R.color.white)

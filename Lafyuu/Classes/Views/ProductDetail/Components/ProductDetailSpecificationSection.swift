@@ -33,7 +33,7 @@ extension ProductDetailSpecificationSection {
 
   private func containerLeadingText(_ text: String) -> Text {
     Text(text)
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.dark)
   }
@@ -42,7 +42,7 @@ extension ProductDetailSpecificationSection {
     VStack(alignment: .trailing) {
       ForEach(specification?.shown ?? [], id: \.self) { shown in
         Text(shown)
-          .kerning(0.5)
+          .kerning(Constant.Text.kerning)
           .font(R.font.poppinsRegular, size: 12)
           .foregroundColor(R.color.grey)
       }
@@ -51,14 +51,14 @@ extension ProductDetailSpecificationSection {
 
   private var containerStyle: some View {
     Text(specification?.style ?? "")
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.grey)
   }
 
   private var containerDescription: some View {
     Text(specification?.description ?? "")
-      .kerning(0.5)
+      .kerning(Constant.Text.kerning)
       .lineLimit(5)
       .font(R.font.poppinsRegular, size: 12)
       .foregroundColor(R.color.grey)
