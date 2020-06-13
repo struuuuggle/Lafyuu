@@ -7,8 +7,11 @@ import Rswift
 import SwiftUI
 
 enum LafyuuTextStyle {
+  // MARK: Heading
   case heading
   case heading6
+  // MARK: Body Text
+  case normal
   case seeMore
   case largeButtonLabel
   // MARK: Product
@@ -32,6 +35,8 @@ enum LafyuuTextStyle {
       return R.color.dark
     case .heading6:
       return R.color.white
+    case .normal:
+      return R.color.grey
     case .seeMore:
       return R.color.blue
     case .largeButtonLabel:
@@ -65,6 +70,8 @@ enum LafyuuTextStyle {
       return 14
     case .heading6:
       return 10
+    case .normal:
+      return 12
     case .seeMore:
       return 14
     case .largeButtonLabel:
@@ -98,6 +105,8 @@ enum LafyuuTextStyle {
       return R.font.poppinsBold
     case .heading6:
       return R.font.poppinsBold
+    case .normal:
+      return R.font.poppinsRegular
     case .seeMore:
       return R.font.poppinsBold
     case .largeButtonLabel:

@@ -34,4 +34,5 @@ enum LafyuuColor: String, CaseIterable {
   case dark
   case grey
   case light
+  case clear
 }

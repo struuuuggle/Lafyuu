@@ -8,10 +8,11 @@ import SwiftUI
 extension Constant {
   enum Image {
     case reviewerProduct
+    case profileImage
 
     var size: CGFloat {
       switch self {
-      case .reviewerProduct:
+      case .reviewerProduct, .profileImage:
         return 72
       }
     }

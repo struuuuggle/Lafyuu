@@ -414,6 +414,31 @@ extension Mock {
   }
 }
 
+extension Mock {
+  enum Profile {
+    static let profileList: [Dev_Lafyuu.Profile] = [
+      .init(
+        fullName: "Maximus Gold",
+        accountName: "@derlaxy",
+        profileImagePath: nil,
+        gender: .male,
+        birthDay: Date(timeIntervalSince1970: 99999999),
+        email: "Derlaxy@yahoo.com",
+        phoneNumber: "3075550133"
+      ),
+      .init(
+        fullName: "Sheila Glenn",
+        accountName: "@shglennnnnn",
+        profileImagePath: nil,
+        gender: nil,
+        birthDay: Date(timeIntervalSince1970: 98899999),
+        email: "shglennnnn@yahoo.com",
+        phoneNumber: "0326415846"
+      )
+    ]
+  }
+}
+
 // MARK: - Helper
 
 extension URL {

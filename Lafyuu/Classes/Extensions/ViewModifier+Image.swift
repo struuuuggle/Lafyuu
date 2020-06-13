@@ -10,6 +10,7 @@ enum LafyuuImageStyle {
   case notificationCategoryAlert
   case notificationIcon
   case notificationFeedThumbnail
+  case profileImage
 
   var color: ColorResource {
     switch self {
@@ -19,6 +20,8 @@ enum LafyuuImageStyle {
       return R.color.blue
     case .notificationFeedThumbnail:
       return R.color.blue
+    case .profileImage:
+      return R.color.clear
     }
   }
 
@@ -30,6 +33,8 @@ enum LafyuuImageStyle {
       return 24
     case .notificationFeedThumbnail:
       return 48
+    case .profileImage:
+      return 72
     }
   }
 
@@ -40,6 +45,8 @@ enum LafyuuImageStyle {
     case .notificationIcon:
       return .template
     case .notificationFeedThumbnail:
+      return .original
+    case .profileImage:
       return .original
     }
   }
