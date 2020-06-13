@@ -12,7 +12,7 @@ struct ExploreView: View {
       womanFashionSection
       Spacer()
     }
-    .padding(16)
+    .lafyuuPadding()
   }
 }
 
@@ -22,13 +22,13 @@ extension ExploreView {
     VStack(alignment: .leading) {
       SectionHeader<EmptyView>(leadingText: "Man Fashion")
       // TODO: Fixed spacing [2020/05/20]
-      HStack(spacing: 32) {
+      HStack(spacing: 24) {
         CategoryCard(.shirt)
         CategoryCard(.manBag)
         CategoryCard(.tshirt)
         CategoryCard(.manShoes)
       }
-      HStack(spacing: 32) {
+      HStack(spacing: 24) {
         CategoryCard(.manPants)
         CategoryCard(.manUnderwear)
       }
@@ -38,13 +38,13 @@ extension ExploreView {
   private var womanFashionSection: some View {
     VStack(alignment: .leading) {
       SectionHeader<EmptyView>(leadingText: "Woman Fashion")
-      HStack(spacing: 32) {
+      HStack(spacing: 24) {
         CategoryCard(.dress)
         CategoryCard(.womanTshirt)
         CategoryCard(.womanpants)
         CategoryCard(.skirt)
       }
-      HStack(spacing: 32) {
+      HStack(spacing: 24) {
         CategoryCard(.womanBag)
         CategoryCard(.womanShoes)
         CategoryCard(.bikini)
